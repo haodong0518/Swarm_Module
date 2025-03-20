@@ -1,0 +1,16 @@
+msg/Rolling.idl
+msg/Rolling.msg
+msg/SetMode.idl
+msg/SetMode.msg
+msg/SetPosition.idl
+msg/SetPosition.msg
+srv/GetPosition.idl
+srv/GetPosition.srv
+srv/Movement.idl
+srv/Movement.srv
+srv/SetBending.idl
+srv/SetBending.srv
+srv/SetExtension.idl
+srv/SetExtension.srv
+srv/SetVelocity.idl
+srv/SetVelocity.srv

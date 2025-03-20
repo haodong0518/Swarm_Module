@@ -1,0 +1,7 @@
+# Constants
+# Request
+float64 bend_state
+int32 face
+---
+# Response
+bool success

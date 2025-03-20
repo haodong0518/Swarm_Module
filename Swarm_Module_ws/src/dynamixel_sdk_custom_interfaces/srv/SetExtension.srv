@@ -1,0 +1,7 @@
+# Constants
+# Request
+float64 extend_state
+string side
+---
+# Response
+bool success

@@ -1,0 +1,36 @@
+{
+  "type_description_msg": {
+    "type_description": {
+      "type_name": "dynamixel_sdk_custom_interfaces/srv/SetBending_Request",
+      "fields": [
+        {
+          "name": "bend_state",
+          "type": {
+            "type_id": 11,
+            "capacity": 0,
+            "string_capacity": 0,
+            "nested_type_name": ""
+          },
+          "default_value": ""
+        },
+        {
+          "name": "face",
+          "type": {
+            "type_id": 6,
+            "capacity": 0,
+            "string_capacity": 0,
+            "nested_type_name": ""
+          },
+          "default_value": ""
+        }
+      ]
+    },
+    "referenced_type_descriptions": []
+  },
+  "type_hashes": [
+    {
+      "type_name": "dynamixel_sdk_custom_interfaces/srv/SetBending_Request",
+      "hash_string": "RIHS01_3898001652df4c44c03cbcd0320f0931dc58b8273e0639f9f7ad470719cc5855"
+    }
+  ]
+}

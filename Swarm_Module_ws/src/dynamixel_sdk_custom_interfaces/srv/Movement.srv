@@ -1,0 +1,9 @@
+# Constants
+# Request 
+string movement
+string robot_switch
+int32 time_period
+int32 twist_dir
+---
+# Response
+bool success

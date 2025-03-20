@@ -1,0 +1,7 @@
+# Constants
+# Request
+string state
+int32 time_period
+---
+# Response
+bool success

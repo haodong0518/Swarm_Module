@@ -1,0 +1,13 @@
+{
+  "package_name": "dynamixel_sdk_custom_interfaces",
+  "non_idl_tuples": [
+    "/home/haodong/modular_ws/src/dynamixel_sdk_custom_interfaces:msg/SetPosition.msg",
+    "/home/haodong/modular_ws/src/dynamixel_sdk_custom_interfaces:msg/Rolling.msg",
+    "/home/haodong/modular_ws/src/dynamixel_sdk_custom_interfaces:msg/SetMode.msg",
+    "/home/haodong/modular_ws/src/dynamixel_sdk_custom_interfaces:srv/GetPosition.srv",
+    "/home/haodong/modular_ws/src/dynamixel_sdk_custom_interfaces:srv/SetVelocity.srv",
+    "/home/haodong/modular_ws/src/dynamixel_sdk_custom_interfaces:srv/SetExtension.srv",
+    "/home/haodong/modular_ws/src/dynamixel_sdk_custom_interfaces:srv/SetBending.srv",
+    "/home/haodong/modular_ws/src/dynamixel_sdk_custom_interfaces:srv/Movement.srv"
+  ]
+}

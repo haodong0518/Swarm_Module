@@ -1,0 +1,36 @@
+{
+  "type_description_msg": {
+    "type_description": {
+      "type_name": "dynamixel_sdk_custom_interfaces/srv/SetCrawling_Request",
+      "fields": [
+        {
+          "name": "state",
+          "type": {
+            "type_id": 17,
+            "capacity": 0,
+            "string_capacity": 0,
+            "nested_type_name": ""
+          },
+          "default_value": ""
+        },
+        {
+          "name": "time_period",
+          "type": {
+            "type_id": 6,
+            "capacity": 0,
+            "string_capacity": 0,
+            "nested_type_name": ""
+          },
+          "default_value": ""
+        }
+      ]
+    },
+    "referenced_type_descriptions": []
+  },
+  "type_hashes": [
+    {
+      "type_name": "dynamixel_sdk_custom_interfaces/srv/SetCrawling_Request",
+      "hash_string": "RIHS01_1ef6389dd8a728c6969653158d3dac924bcae9dd0b0ca3ffe61cc105498b3d59"
+    }
+  ]
+}
