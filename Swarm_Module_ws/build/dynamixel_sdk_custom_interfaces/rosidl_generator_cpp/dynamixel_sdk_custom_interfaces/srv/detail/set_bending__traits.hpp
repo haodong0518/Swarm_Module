@@ -28,17 +28,17 @@ inline void to_flow_style_yaml(
   std::ostream & out)
 {
   out << "{";
-  // member: bend_state
+  // member: bending_range
   {
-    out << "bend_state: ";
-    rosidl_generator_traits::value_to_yaml(msg.bend_state, out);
+    out << "bending_range: ";
+    rosidl_generator_traits::value_to_yaml(msg.bending_range, out);
     out << ", ";
   }
 
-  // member: face
+  // member: bending_face
   {
-    out << "face: ";
-    rosidl_generator_traits::value_to_yaml(msg.face, out);
+    out << "bending_face: ";
+    rosidl_generator_traits::value_to_yaml(msg.bending_face, out);
   }
   out << "}";
 }  // NOLINT(readability/fn_size)
@@ -47,23 +47,23 @@ inline void to_block_style_yaml(
   const SetBending_Request & msg,
   std::ostream & out, size_t indentation = 0)
 {
-  // member: bend_state
+  // member: bending_range
   {
     if (indentation > 0) {
       out << std::string(indentation, ' ');
     }
-    out << "bend_state: ";
-    rosidl_generator_traits::value_to_yaml(msg.bend_state, out);
+    out << "bending_range: ";
+    rosidl_generator_traits::value_to_yaml(msg.bending_range, out);
     out << "\n";
   }
 
-  // member: face
+  // member: bending_face
   {
     if (indentation > 0) {
       out << std::string(indentation, ' ');
     }
-    out << "face: ";
-    rosidl_generator_traits::value_to_yaml(msg.face, out);
+    out << "bending_face: ";
+    rosidl_generator_traits::value_to_yaml(msg.bending_face, out);
     out << "\n";
   }
 }  // NOLINT(readability/fn_size)

@@ -4,7 +4,7 @@
       "type_name": "dynamixel_sdk_custom_interfaces/srv/SetBending_Request",
       "fields": [
         {
-          "name": "bend_state",
+          "name": "bending_range",
           "type": {
             "type_id": 11,
             "capacity": 0,
@@ -14,7 +14,7 @@
           "default_value": ""
         },
         {
-          "name": "face",
+          "name": "bending_face",
           "type": {
             "type_id": 6,
             "capacity": 0,
@@ -30,7 +30,7 @@
   "type_hashes": [
     {
       "type_name": "dynamixel_sdk_custom_interfaces/srv/SetBending_Request",
-      "hash_string": "RIHS01_3898001652df4c44c03cbcd0320f0931dc58b8273e0639f9f7ad470719cc5855"
+      "hash_string": "RIHS01_bd19c34bb66b7dc70c8c34aeb46d70108c3b0001965b17927d25d43d506d6e9c"
     }
   ]
 }

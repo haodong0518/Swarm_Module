@@ -36,11 +36,11 @@ cdr_serialize(
   const dynamixel_sdk_custom_interfaces::srv::SetBending_Request & ros_message,
   eprosima::fastcdr::Cdr & cdr)
 {
-  // Member: bend_state
-  cdr << ros_message.bend_state;
+  // Member: bending_range
+  cdr << ros_message.bending_range;
 
-  // Member: face
-  cdr << ros_message.face;
+  // Member: bending_face
+  cdr << ros_message.bending_face;
 
   return true;
 }
@@ -51,11 +51,11 @@ cdr_deserialize(
   eprosima::fastcdr::Cdr & cdr,
   dynamixel_sdk_custom_interfaces::srv::SetBending_Request & ros_message)
 {
-  // Member: bend_state
-  cdr >> ros_message.bend_state;
+  // Member: bending_range
+  cdr >> ros_message.bending_range;
 
-  // Member: face
-  cdr >> ros_message.face;
+  // Member: bending_face
+  cdr >> ros_message.bending_face;
 
   return true;
 }
@@ -74,16 +74,16 @@ get_serialized_size(
   (void)padding;
   (void)wchar_size;
 
-  // Member: bend_state
+  // Member: bending_range
   {
-    size_t item_size = sizeof(ros_message.bend_state);
+    size_t item_size = sizeof(ros_message.bending_range);
     current_alignment += item_size +
       eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
   }
 
-  // Member: face
+  // Member: bending_face
   {
-    size_t item_size = sizeof(ros_message.face);
+    size_t item_size = sizeof(ros_message.bending_face);
     current_alignment += item_size +
       eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
   }
@@ -111,14 +111,14 @@ max_serialized_size_SetBending_Request(
   full_bounded = true;
   is_plain = true;
 
-  // Member: bend_state
+  // Member: bending_range
   {
     size_t array_size = 1;
     last_member_size = array_size * sizeof(uint64_t);
     current_alignment += array_size * sizeof(uint64_t) +
       eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint64_t));
   }
-  // Member: face
+  // Member: bending_face
   {
     size_t array_size = 1;
     last_member_size = array_size * sizeof(uint32_t);
@@ -134,7 +134,7 @@ max_serialized_size_SetBending_Request(
     using DataType = dynamixel_sdk_custom_interfaces::srv::SetBending_Request;
     is_plain =
       (
-      offsetof(DataType, face) +
+      offsetof(DataType, bending_face) +
       last_member_size
       ) == ret_val;
   }
@@ -148,11 +148,11 @@ cdr_serialize_key(
   const dynamixel_sdk_custom_interfaces::srv::SetBending_Request & ros_message,
   eprosima::fastcdr::Cdr & cdr)
 {
-  // Member: bend_state
-  cdr << ros_message.bend_state;
+  // Member: bending_range
+  cdr << ros_message.bending_range;
 
-  // Member: face
-  cdr << ros_message.face;
+  // Member: bending_face
+  cdr << ros_message.bending_face;
 
   return true;
 }
@@ -170,16 +170,16 @@ get_serialized_size_key(
   (void)padding;
   (void)wchar_size;
 
-  // Member: bend_state
+  // Member: bending_range
   {
-    size_t item_size = sizeof(ros_message.bend_state);
+    size_t item_size = sizeof(ros_message.bending_range);
     current_alignment += item_size +
       eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
   }
 
-  // Member: face
+  // Member: bending_face
   {
-    size_t item_size = sizeof(ros_message.face);
+    size_t item_size = sizeof(ros_message.bending_face);
     current_alignment += item_size +
       eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
   }
@@ -206,7 +206,7 @@ max_serialized_size_key_SetBending_Request(
   full_bounded = true;
   is_plain = true;
 
-  // Member: bend_state
+  // Member: bending_range
   {
     size_t array_size = 1;
     last_member_size = array_size * sizeof(uint64_t);
@@ -214,7 +214,7 @@ max_serialized_size_key_SetBending_Request(
       eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint64_t));
   }
 
-  // Member: face
+  // Member: bending_face
   {
     size_t array_size = 1;
     last_member_size = array_size * sizeof(uint32_t);
@@ -230,7 +230,7 @@ max_serialized_size_key_SetBending_Request(
     using DataType = dynamixel_sdk_custom_interfaces::srv::SetBending_Request;
     is_plain =
       (
-      offsetof(DataType, face) +
+      offsetof(DataType, bending_face) +
       last_member_size
       ) == ret_val;
   }

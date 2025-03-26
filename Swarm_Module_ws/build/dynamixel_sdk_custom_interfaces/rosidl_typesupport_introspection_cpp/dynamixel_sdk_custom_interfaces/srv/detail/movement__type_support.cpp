@@ -38,7 +38,7 @@ void Movement_Request_fini_function(void * message_memory)
   typed_message->~Movement_Request();
 }
 
-static const ::rosidl_typesupport_introspection_cpp::MessageMember Movement_Request_message_member_array[4] = {
+static const ::rosidl_typesupport_introspection_cpp::MessageMember Movement_Request_message_member_array[5] = {
   {
     "movement",  // name
     ::rosidl_typesupport_introspection_cpp::ROS_TYPE_STRING,  // type
@@ -49,24 +49,6 @@ static const ::rosidl_typesupport_introspection_cpp::MessageMember Movement_Requ
     0,  // array size
     false,  // is upper bound
     offsetof(dynamixel_sdk_custom_interfaces::srv::Movement_Request, movement),  // bytes offset in struct
-    nullptr,  // default value
-    nullptr,  // size() function pointer
-    nullptr,  // get_const(index) function pointer
-    nullptr,  // get(index) function pointer
-    nullptr,  // fetch(index, &value) function pointer
-    nullptr,  // assign(index, value) function pointer
-    nullptr  // resize(index) function pointer
-  },
-  {
-    "robot_switch",  // name
-    ::rosidl_typesupport_introspection_cpp::ROS_TYPE_STRING,  // type
-    0,  // upper bound of string
-    nullptr,  // members of sub message
-    false,  // is key
-    false,  // is array
-    0,  // array size
-    false,  // is upper bound
-    offsetof(dynamixel_sdk_custom_interfaces::srv::Movement_Request, robot_switch),  // bytes offset in struct
     nullptr,  // default value
     nullptr,  // size() function pointer
     nullptr,  // get_const(index) function pointer
@@ -110,13 +92,49 @@ static const ::rosidl_typesupport_introspection_cpp::MessageMember Movement_Requ
     nullptr,  // fetch(index, &value) function pointer
     nullptr,  // assign(index, value) function pointer
     nullptr  // resize(index) function pointer
+  },
+  {
+    "bending_face",  // name
+    ::rosidl_typesupport_introspection_cpp::ROS_TYPE_INT32,  // type
+    0,  // upper bound of string
+    nullptr,  // members of sub message
+    false,  // is key
+    false,  // is array
+    0,  // array size
+    false,  // is upper bound
+    offsetof(dynamixel_sdk_custom_interfaces::srv::Movement_Request, bending_face),  // bytes offset in struct
+    nullptr,  // default value
+    nullptr,  // size() function pointer
+    nullptr,  // get_const(index) function pointer
+    nullptr,  // get(index) function pointer
+    nullptr,  // fetch(index, &value) function pointer
+    nullptr,  // assign(index, value) function pointer
+    nullptr  // resize(index) function pointer
+  },
+  {
+    "bending_range",  // name
+    ::rosidl_typesupport_introspection_cpp::ROS_TYPE_FLOAT,  // type
+    0,  // upper bound of string
+    nullptr,  // members of sub message
+    false,  // is key
+    false,  // is array
+    0,  // array size
+    false,  // is upper bound
+    offsetof(dynamixel_sdk_custom_interfaces::srv::Movement_Request, bending_range),  // bytes offset in struct
+    nullptr,  // default value
+    nullptr,  // size() function pointer
+    nullptr,  // get_const(index) function pointer
+    nullptr,  // get(index) function pointer
+    nullptr,  // fetch(index, &value) function pointer
+    nullptr,  // assign(index, value) function pointer
+    nullptr  // resize(index) function pointer
   }
 };
 
 static const ::rosidl_typesupport_introspection_cpp::MessageMembers Movement_Request_message_members = {
   "dynamixel_sdk_custom_interfaces::srv",  // message namespace
   "Movement_Request",  // message name
-  4,  // number of fields
+  5,  // number of fields
   sizeof(dynamixel_sdk_custom_interfaces::srv::Movement_Request),
   false,  // has_any_key_member_
   Movement_Request_message_member_array,  // message members

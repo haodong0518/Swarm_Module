@@ -1,0 +1,25 @@
+[1.453s] Invoking command in '/home/haodong/Swarm_Module/Swarm_Module_ws/src/dynamixel_motor': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/haodong/Swarm_Module/Swarm_Module_ws/build/dynamixel_motor/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/haodong/Swarm_Module/Swarm_Module_ws/install/dynamixel_motor/lib/python3.12/site-packages:/home/haodong/Swarm_Module/Swarm_Module_ws/install/dynamixel_sdk_custom_interfaces/lib/python3.12/site-packages:/home/haodong/Swarm_Module/Swarm_Module_ws/install/dynamixel_motor/lib/python3.12/site-packages:/home/haodong/ws_moveit/install/moveit_task_constructor_core/lib/python3.12/site-packages:/home/haodong/ws_moveit/install/moveit_task_constructor_msgs/lib/python3.12/site-packages:/home/haodong/ws_moveit/install/moveit_py/lib/python3.12/site-packages:/home/haodong/ws_moveit/install/moveit_msgs/lib/python3.12/site-packages:/home/haodong/ws_moveit/install/moveit_configs_utils/lib/python3.12/site-packages:/home/haodong/ws/franka/install/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/dynamixel_motor build --build-base /home/haodong/Swarm_Module/Swarm_Module_ws/build/dynamixel_motor/build install --record /home/haodong/Swarm_Module/Swarm_Module_ws/build/dynamixel_motor/install.log --single-version-externally-managed install_data
+[1.831s] running egg_info
+[1.864s] writing ../../build/dynamixel_motor/dynamixel_motor.egg-info/PKG-INFO
+[1.865s] writing dependency_links to ../../build/dynamixel_motor/dynamixel_motor.egg-info/dependency_links.txt
+[1.865s] writing entry points to ../../build/dynamixel_motor/dynamixel_motor.egg-info/entry_points.txt
+[1.865s] writing requirements to ../../build/dynamixel_motor/dynamixel_motor.egg-info/requires.txt
+[1.865s] writing top-level names to ../../build/dynamixel_motor/dynamixel_motor.egg-info/top_level.txt
+[1.931s] reading manifest file '../../build/dynamixel_motor/dynamixel_motor.egg-info/SOURCES.txt'
+[1.931s] adding license file 'LICENSE'
+[1.932s] writing manifest file '../../build/dynamixel_motor/dynamixel_motor.egg-info/SOURCES.txt'
+[1.932s] running build
+[1.932s] running build_py
+[1.933s] copying dynamixel_motor/MovementControl.py -> /home/haodong/Swarm_Module/Swarm_Module_ws/build/dynamixel_motor/build/lib/dynamixel_motor
+[1.933s] running install
+[1.939s] running install_lib
+[1.974s] copying /home/haodong/Swarm_Module/Swarm_Module_ws/build/dynamixel_motor/build/lib/dynamixel_motor/MovementControl.py -> /home/haodong/Swarm_Module/Swarm_Module_ws/install/dynamixel_motor/lib/python3.12/site-packages/dynamixel_motor
+[1.975s] byte-compiling /home/haodong/Swarm_Module/Swarm_Module_ws/install/dynamixel_motor/lib/python3.12/site-packages/dynamixel_motor/MovementControl.py to MovementControl.cpython-312.pyc
+[1.979s] running install_data
+[1.979s] running install_egg_info
+[2.015s] removing '/home/haodong/Swarm_Module/Swarm_Module_ws/install/dynamixel_motor/lib/python3.12/site-packages/dynamixel_motor-0.0.0-py3.12.egg-info' (and everything under it)
+[2.015s] Copying ../../build/dynamixel_motor/dynamixel_motor.egg-info to /home/haodong/Swarm_Module/Swarm_Module_ws/install/dynamixel_motor/lib/python3.12/site-packages/dynamixel_motor-0.0.0-py3.12.egg-info
+[2.016s] running install_scripts
+[2.216s] Installing MovementControl script to /home/haodong/Swarm_Module/Swarm_Module_ws/install/dynamixel_motor/lib/dynamixel_motor
+[2.216s] writing list of installed files to '/home/haodong/Swarm_Module/Swarm_Module_ws/build/dynamixel_motor/install.log'
+[2.237s] Invoked command in '/home/haodong/Swarm_Module/Swarm_Module_ws/src/dynamixel_motor' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/haodong/Swarm_Module/Swarm_Module_ws/build/dynamixel_motor/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/haodong/Swarm_Module/Swarm_Module_ws/install/dynamixel_motor/lib/python3.12/site-packages:/home/haodong/Swarm_Module/Swarm_Module_ws/install/dynamixel_sdk_custom_interfaces/lib/python3.12/site-packages:/home/haodong/Swarm_Module/Swarm_Module_ws/install/dynamixel_motor/lib/python3.12/site-packages:/home/haodong/ws_moveit/install/moveit_task_constructor_core/lib/python3.12/site-packages:/home/haodong/ws_moveit/install/moveit_task_constructor_msgs/lib/python3.12/site-packages:/home/haodong/ws_moveit/install/moveit_py/lib/python3.12/site-packages:/home/haodong/ws_moveit/install/moveit_msgs/lib/python3.12/site-packages:/home/haodong/ws_moveit/install/moveit_configs_utils/lib/python3.12/site-packages:/home/haodong/ws/franka/install/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/dynamixel_motor build --build-base /home/haodong/Swarm_Module/Swarm_Module_ws/build/dynamixel_motor/build install --record /home/haodong/Swarm_Module/Swarm_Module_ws/build/dynamixel_motor/install.log --single-version-externally-managed install_data

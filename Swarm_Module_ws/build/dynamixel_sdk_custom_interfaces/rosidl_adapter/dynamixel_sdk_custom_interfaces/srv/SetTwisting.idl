@@ -1,0 +1,15 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from dynamixel_sdk_custom_interfaces/srv/SetTwisting.srv
+// generated code does not contain a copyright notice
+
+
+module dynamixel_sdk_custom_interfaces {
+  module srv {
+    struct SetTwisting_Request {
+      int32 twist_dir;
+    };
+    struct SetTwisting_Response {
+      boolean success;
+    };
+  };
+};

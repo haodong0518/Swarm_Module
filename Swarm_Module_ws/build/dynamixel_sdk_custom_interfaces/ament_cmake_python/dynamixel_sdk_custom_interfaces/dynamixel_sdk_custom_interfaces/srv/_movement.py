@@ -14,6 +14,8 @@ ros_python_check_fields = getenv('ROS_PYTHON_CHECK_FIELDS', default='')
 
 import builtins  # noqa: E402, I100
 
+import math  # noqa: E402, I100
+
 import rosidl_parser.definition  # noqa: E402, I100
 
 
@@ -63,26 +65,29 @@ class Movement_Request(metaclass=Metaclass_Movement_Request):
 
     __slots__ = [
         '_movement',
-        '_robot_switch',
         '_time_period',
         '_twist_dir',
+        '_bending_face',
+        '_bending_range',
         '_check_fields',
     ]
 
     _fields_and_field_types = {
         'movement': 'string',
-        'robot_switch': 'string',
         'time_period': 'int32',
         'twist_dir': 'int32',
+        'bending_face': 'int32',
+        'bending_range': 'float',
     }
 
     # This attribute is used to store an rosidl_parser.definition variable
     # related to the data type of each of the components the message.
     SLOT_TYPES = (
         rosidl_parser.definition.UnboundedString(),  # noqa: E501
-        rosidl_parser.definition.UnboundedString(),  # noqa: E501
         rosidl_parser.definition.BasicType('int32'),  # noqa: E501
         rosidl_parser.definition.BasicType('int32'),  # noqa: E501
+        rosidl_parser.definition.BasicType('int32'),  # noqa: E501
+        rosidl_parser.definition.BasicType('float'),  # noqa: E501
     )
 
     def __init__(self, **kwargs):
@@ -95,9 +100,10 @@ class Movement_Request(metaclass=Metaclass_Movement_Request):
                 'Invalid arguments passed to constructor: %s' % \
                 ', '.join(sorted(k for k in kwargs.keys() if '_' + k not in self.__slots__))
         self.movement = kwargs.get('movement', str())
-        self.robot_switch = kwargs.get('robot_switch', str())
         self.time_period = kwargs.get('time_period', int())
         self.twist_dir = kwargs.get('twist_dir', int())
+        self.bending_face = kwargs.get('bending_face', int())
+        self.bending_range = kwargs.get('bending_range', float())
 
     def __repr__(self):
         typename = self.__class__.__module__.split('.')
@@ -131,11 +137,13 @@ class Movement_Request(metaclass=Metaclass_Movement_Request):
             return False
         if self.movement != other.movement:
             return False
-        if self.robot_switch != other.robot_switch:
-            return False
         if self.time_period != other.time_period:
             return False
         if self.twist_dir != other.twist_dir:
+            return False
+        if self.bending_face != other.bending_face:
+            return False
+        if self.bending_range != other.bending_range:
             return False
         return True
 
@@ -156,19 +164,6 @@ class Movement_Request(metaclass=Metaclass_Movement_Request):
                 isinstance(value, str), \
                 "The 'movement' field must be of type 'str'"
         self._movement = value
-
-    @builtins.property
-    def robot_switch(self):
-        """Message field 'robot_switch'."""
-        return self._robot_switch
-
-    @robot_switch.setter
-    def robot_switch(self, value):
-        if self._check_fields:
-            assert \
-                isinstance(value, str), \
-                "The 'robot_switch' field must be of type 'str'"
-        self._robot_switch = value
 
     @builtins.property
     def time_period(self):
@@ -199,6 +194,36 @@ class Movement_Request(metaclass=Metaclass_Movement_Request):
             assert value >= -2147483648 and value < 2147483648, \
                 "The 'twist_dir' field must be an integer in [-2147483648, 2147483647]"
         self._twist_dir = value
+
+    @builtins.property
+    def bending_face(self):
+        """Message field 'bending_face'."""
+        return self._bending_face
+
+    @bending_face.setter
+    def bending_face(self, value):
+        if self._check_fields:
+            assert \
+                isinstance(value, int), \
+                "The 'bending_face' field must be of type 'int'"
+            assert value >= -2147483648 and value < 2147483648, \
+                "The 'bending_face' field must be an integer in [-2147483648, 2147483647]"
+        self._bending_face = value
+
+    @builtins.property
+    def bending_range(self):
+        """Message field 'bending_range'."""
+        return self._bending_range
+
+    @bending_range.setter
+    def bending_range(self, value):
+        if self._check_fields:
+            assert \
+                isinstance(value, float), \
+                "The 'bending_range' field must be of type 'float'"
+            assert not (value < -3.402823466e+38 or value > 3.402823466e+38) or math.isinf(value), \
+                "The 'bending_range' field must be a float in [-3.402823466e+38, 3.402823466e+38]"
+        self._bending_range = value
 
 
 # Import statements for member types

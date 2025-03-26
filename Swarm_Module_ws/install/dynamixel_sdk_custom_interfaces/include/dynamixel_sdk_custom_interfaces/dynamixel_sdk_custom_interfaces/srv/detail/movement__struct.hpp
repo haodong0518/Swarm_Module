@@ -42,23 +42,24 @@ struct Movement_Request_
       rosidl_runtime_cpp::MessageInitialization::ZERO == _init)
     {
       this->movement = "";
-      this->robot_switch = "";
       this->time_period = 0l;
       this->twist_dir = 0l;
+      this->bending_face = 0l;
+      this->bending_range = 0.0f;
     }
   }
 
   explicit Movement_Request_(const ContainerAllocator & _alloc, rosidl_runtime_cpp::MessageInitialization _init = rosidl_runtime_cpp::MessageInitialization::ALL)
-  : movement(_alloc),
-    robot_switch(_alloc)
+  : movement(_alloc)
   {
     if (rosidl_runtime_cpp::MessageInitialization::ALL == _init ||
       rosidl_runtime_cpp::MessageInitialization::ZERO == _init)
     {
       this->movement = "";
-      this->robot_switch = "";
       this->time_period = 0l;
       this->twist_dir = 0l;
+      this->bending_face = 0l;
+      this->bending_range = 0.0f;
     }
   }
 
@@ -66,27 +67,24 @@ struct Movement_Request_
   using _movement_type =
     std::basic_string<char, std::char_traits<char>, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<char>>;
   _movement_type movement;
-  using _robot_switch_type =
-    std::basic_string<char, std::char_traits<char>, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<char>>;
-  _robot_switch_type robot_switch;
   using _time_period_type =
     int32_t;
   _time_period_type time_period;
   using _twist_dir_type =
     int32_t;
   _twist_dir_type twist_dir;
+  using _bending_face_type =
+    int32_t;
+  _bending_face_type bending_face;
+  using _bending_range_type =
+    float;
+  _bending_range_type bending_range;
 
   // setters for named parameter idiom
   Type & set__movement(
     const std::basic_string<char, std::char_traits<char>, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<char>> & _arg)
   {
     this->movement = _arg;
-    return *this;
-  }
-  Type & set__robot_switch(
-    const std::basic_string<char, std::char_traits<char>, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<char>> & _arg)
-  {
-    this->robot_switch = _arg;
     return *this;
   }
   Type & set__time_period(
@@ -99,6 +97,18 @@ struct Movement_Request_
     const int32_t & _arg)
   {
     this->twist_dir = _arg;
+    return *this;
+  }
+  Type & set__bending_face(
+    const int32_t & _arg)
+  {
+    this->bending_face = _arg;
+    return *this;
+  }
+  Type & set__bending_range(
+    const float & _arg)
+  {
+    this->bending_range = _arg;
     return *this;
   }
 
@@ -147,13 +157,16 @@ struct Movement_Request_
     if (this->movement != other.movement) {
       return false;
     }
-    if (this->robot_switch != other.robot_switch) {
-      return false;
-    }
     if (this->time_period != other.time_period) {
       return false;
     }
     if (this->twist_dir != other.twist_dir) {
+      return false;
+    }
+    if (this->bending_face != other.bending_face) {
+      return false;
+    }
+    if (this->bending_range != other.bending_range) {
       return false;
     }
     return true;

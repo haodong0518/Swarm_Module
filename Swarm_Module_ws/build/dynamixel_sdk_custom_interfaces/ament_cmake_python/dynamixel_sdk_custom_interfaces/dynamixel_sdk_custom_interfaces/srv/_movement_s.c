@@ -68,21 +68,6 @@ bool dynamixel_sdk_custom_interfaces__srv__movement__request__convert_from_py(Py
     Py_DECREF(encoded_field);
     Py_DECREF(field);
   }
-  {  // robot_switch
-    PyObject * field = PyObject_GetAttrString(_pymsg, "robot_switch");
-    if (!field) {
-      return false;
-    }
-    assert(PyUnicode_Check(field));
-    PyObject * encoded_field = PyUnicode_AsUTF8String(field);
-    if (!encoded_field) {
-      Py_DECREF(field);
-      return false;
-    }
-    rosidl_runtime_c__String__assign(&ros_message->robot_switch, PyBytes_AS_STRING(encoded_field));
-    Py_DECREF(encoded_field);
-    Py_DECREF(field);
-  }
   {  // time_period
     PyObject * field = PyObject_GetAttrString(_pymsg, "time_period");
     if (!field) {
@@ -99,6 +84,24 @@ bool dynamixel_sdk_custom_interfaces__srv__movement__request__convert_from_py(Py
     }
     assert(PyLong_Check(field));
     ros_message->twist_dir = (int32_t)PyLong_AsLong(field);
+    Py_DECREF(field);
+  }
+  {  // bending_face
+    PyObject * field = PyObject_GetAttrString(_pymsg, "bending_face");
+    if (!field) {
+      return false;
+    }
+    assert(PyLong_Check(field));
+    ros_message->bending_face = (int32_t)PyLong_AsLong(field);
+    Py_DECREF(field);
+  }
+  {  // bending_range
+    PyObject * field = PyObject_GetAttrString(_pymsg, "bending_range");
+    if (!field) {
+      return false;
+    }
+    assert(PyFloat_Check(field));
+    ros_message->bending_range = (float)PyFloat_AS_DOUBLE(field);
     Py_DECREF(field);
   }
 
@@ -140,23 +143,6 @@ PyObject * dynamixel_sdk_custom_interfaces__srv__movement__request__convert_to_p
       }
     }
   }
-  {  // robot_switch
-    PyObject * field = NULL;
-    field = PyUnicode_DecodeUTF8(
-      ros_message->robot_switch.data,
-      strlen(ros_message->robot_switch.data),
-      "replace");
-    if (!field) {
-      return NULL;
-    }
-    {
-      int rc = PyObject_SetAttrString(_pymessage, "robot_switch", field);
-      Py_DECREF(field);
-      if (rc) {
-        return NULL;
-      }
-    }
-  }
   {  // time_period
     PyObject * field = NULL;
     field = PyLong_FromLong(ros_message->time_period);
@@ -173,6 +159,28 @@ PyObject * dynamixel_sdk_custom_interfaces__srv__movement__request__convert_to_p
     field = PyLong_FromLong(ros_message->twist_dir);
     {
       int rc = PyObject_SetAttrString(_pymessage, "twist_dir", field);
+      Py_DECREF(field);
+      if (rc) {
+        return NULL;
+      }
+    }
+  }
+  {  // bending_face
+    PyObject * field = NULL;
+    field = PyLong_FromLong(ros_message->bending_face);
+    {
+      int rc = PyObject_SetAttrString(_pymessage, "bending_face", field);
+      Py_DECREF(field);
+      if (rc) {
+        return NULL;
+      }
+    }
+  }
+  {  // bending_range
+    PyObject * field = NULL;
+    field = PyFloat_FromDouble(ros_message->bending_range);
+    {
+      int rc = PyObject_SetAttrString(_pymessage, "bending_range", field);
       Py_DECREF(field);
       if (rc) {
         return NULL;

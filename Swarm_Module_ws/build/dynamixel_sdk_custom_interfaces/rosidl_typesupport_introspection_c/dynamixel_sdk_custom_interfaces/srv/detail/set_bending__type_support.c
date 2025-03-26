@@ -33,7 +33,7 @@ void dynamixel_sdk_custom_interfaces__srv__SetBending_Request__rosidl_typesuppor
 
 static rosidl_typesupport_introspection_c__MessageMember dynamixel_sdk_custom_interfaces__srv__SetBending_Request__rosidl_typesupport_introspection_c__SetBending_Request_message_member_array[2] = {
   {
-    "bend_state",  // name
+    "bending_range",  // name
     rosidl_typesupport_introspection_c__ROS_TYPE_DOUBLE,  // type
     0,  // upper bound of string
     NULL,  // members of sub message
@@ -41,7 +41,7 @@ static rosidl_typesupport_introspection_c__MessageMember dynamixel_sdk_custom_in
     false,  // is array
     0,  // array size
     false,  // is upper bound
-    offsetof(dynamixel_sdk_custom_interfaces__srv__SetBending_Request, bend_state),  // bytes offset in struct
+    offsetof(dynamixel_sdk_custom_interfaces__srv__SetBending_Request, bending_range),  // bytes offset in struct
     NULL,  // default value
     NULL,  // size() function pointer
     NULL,  // get_const(index) function pointer
@@ -51,7 +51,7 @@ static rosidl_typesupport_introspection_c__MessageMember dynamixel_sdk_custom_in
     NULL  // resize(index) function pointer
   },
   {
-    "face",  // name
+    "bending_face",  // name
     rosidl_typesupport_introspection_c__ROS_TYPE_INT32,  // type
     0,  // upper bound of string
     NULL,  // members of sub message
@@ -59,7 +59,7 @@ static rosidl_typesupport_introspection_c__MessageMember dynamixel_sdk_custom_in
     false,  // is array
     0,  // array size
     false,  // is upper bound
-    offsetof(dynamixel_sdk_custom_interfaces__srv__SetBending_Request, face),  // bytes offset in struct
+    offsetof(dynamixel_sdk_custom_interfaces__srv__SetBending_Request, bending_face),  // bytes offset in struct
     NULL,  // default value
     NULL,  // size() function pointer
     NULL,  // get_const(index) function pointer

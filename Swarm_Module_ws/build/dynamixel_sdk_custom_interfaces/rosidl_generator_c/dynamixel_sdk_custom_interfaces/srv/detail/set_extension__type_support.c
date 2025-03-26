@@ -4,9 +4,9 @@
 
 #include <string.h>
 
-#include "dynamixel_sdk_custom_interfaces/srv/detail/set_extension__functions.h"
 #include "dynamixel_sdk_custom_interfaces/srv/detail/set_extension__struct.h"
 #include "dynamixel_sdk_custom_interfaces/srv/detail/set_extension__type_support.h"
+#include "dynamixel_sdk_custom_interfaces/srv/detail/set_extension__functions.h"
 #include "rosidl_typesupport_interface/macros.h"
 
 #ifdef __cplusplus

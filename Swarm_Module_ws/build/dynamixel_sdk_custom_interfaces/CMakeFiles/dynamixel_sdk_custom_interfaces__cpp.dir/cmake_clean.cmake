@@ -32,6 +32,10 @@ file(REMOVE_RECURSE
   "rosidl_generator_cpp/dynamixel_sdk_custom_interfaces/srv/detail/set_extension__struct.hpp"
   "rosidl_generator_cpp/dynamixel_sdk_custom_interfaces/srv/detail/set_extension__traits.hpp"
   "rosidl_generator_cpp/dynamixel_sdk_custom_interfaces/srv/detail/set_extension__type_support.hpp"
+  "rosidl_generator_cpp/dynamixel_sdk_custom_interfaces/srv/detail/set_twisting__builder.hpp"
+  "rosidl_generator_cpp/dynamixel_sdk_custom_interfaces/srv/detail/set_twisting__struct.hpp"
+  "rosidl_generator_cpp/dynamixel_sdk_custom_interfaces/srv/detail/set_twisting__traits.hpp"
+  "rosidl_generator_cpp/dynamixel_sdk_custom_interfaces/srv/detail/set_twisting__type_support.hpp"
   "rosidl_generator_cpp/dynamixel_sdk_custom_interfaces/srv/detail/set_velocity__builder.hpp"
   "rosidl_generator_cpp/dynamixel_sdk_custom_interfaces/srv/detail/set_velocity__struct.hpp"
   "rosidl_generator_cpp/dynamixel_sdk_custom_interfaces/srv/detail/set_velocity__traits.hpp"
@@ -40,6 +44,7 @@ file(REMOVE_RECURSE
   "rosidl_generator_cpp/dynamixel_sdk_custom_interfaces/srv/movement.hpp"
   "rosidl_generator_cpp/dynamixel_sdk_custom_interfaces/srv/set_bending.hpp"
   "rosidl_generator_cpp/dynamixel_sdk_custom_interfaces/srv/set_extension.hpp"
+  "rosidl_generator_cpp/dynamixel_sdk_custom_interfaces/srv/set_twisting.hpp"
   "rosidl_generator_cpp/dynamixel_sdk_custom_interfaces/srv/set_velocity.hpp"
 )
 

@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = -Ddynamixel_sdk_EXPORTS
 
-CXX_INCLUDES = -I/home/haodong/modular_ws/src/dynamixel_sdk/include/dynamixel_sdk
+CXX_INCLUDES = -I/home/haodong/Swarm_Module/Swarm_Module_ws/src/dynamixel_sdk/include/dynamixel_sdk
 
 CXX_FLAGS = -std=gnu++17 -fPIC -Wall -Wextra -Wpedantic -Wno-unused-but-set-variable -Wno-unused-parameter -Wno-unused-variable
 

@@ -13,6 +13,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/dynamixel_sdk_custom_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/dynamixel_sdk_custom_interfaces/srv/set_bending__type_support.cpp.o.d"
   "CMakeFiles/dynamixel_sdk_custom_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/dynamixel_sdk_custom_interfaces/srv/set_extension__type_support.cpp.o"
   "CMakeFiles/dynamixel_sdk_custom_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/dynamixel_sdk_custom_interfaces/srv/set_extension__type_support.cpp.o.d"
+  "CMakeFiles/dynamixel_sdk_custom_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/dynamixel_sdk_custom_interfaces/srv/set_twisting__type_support.cpp.o"
+  "CMakeFiles/dynamixel_sdk_custom_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/dynamixel_sdk_custom_interfaces/srv/set_twisting__type_support.cpp.o.d"
   "CMakeFiles/dynamixel_sdk_custom_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/dynamixel_sdk_custom_interfaces/srv/set_velocity__type_support.cpp.o"
   "CMakeFiles/dynamixel_sdk_custom_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/dynamixel_sdk_custom_interfaces/srv/set_velocity__type_support.cpp.o.d"
   "libdynamixel_sdk_custom_interfaces__rosidl_typesupport_cpp.pdb"
@@ -24,6 +26,7 @@ file(REMOVE_RECURSE
   "rosidl_typesupport_cpp/dynamixel_sdk_custom_interfaces/srv/movement__type_support.cpp"
   "rosidl_typesupport_cpp/dynamixel_sdk_custom_interfaces/srv/set_bending__type_support.cpp"
   "rosidl_typesupport_cpp/dynamixel_sdk_custom_interfaces/srv/set_extension__type_support.cpp"
+  "rosidl_typesupport_cpp/dynamixel_sdk_custom_interfaces/srv/set_twisting__type_support.cpp"
   "rosidl_typesupport_cpp/dynamixel_sdk_custom_interfaces/srv/set_velocity__type_support.cpp"
 )
 

@@ -7,6 +7,7 @@ file(REMOVE_RECURSE
   "rosidl_generator_type_description/dynamixel_sdk_custom_interfaces/srv/Movement.json"
   "rosidl_generator_type_description/dynamixel_sdk_custom_interfaces/srv/SetBending.json"
   "rosidl_generator_type_description/dynamixel_sdk_custom_interfaces/srv/SetExtension.json"
+  "rosidl_generator_type_description/dynamixel_sdk_custom_interfaces/srv/SetTwisting.json"
   "rosidl_generator_type_description/dynamixel_sdk_custom_interfaces/srv/SetVelocity.json"
 )
 

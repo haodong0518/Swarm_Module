@@ -1,7 +1,7 @@
 # Constants
 # Request
-float64 bend_state
-int32 face
+float64 bending_range
+int32 bending_face
 ---
 # Response
 bool success

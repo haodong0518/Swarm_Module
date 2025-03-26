@@ -110,16 +110,6 @@
             "default_value": ""
           },
           {
-            "name": "robot_switch",
-            "type": {
-              "type_id": 17,
-              "capacity": 0,
-              "string_capacity": 0,
-              "nested_type_name": ""
-            },
-            "default_value": ""
-          },
-          {
             "name": "time_period",
             "type": {
               "type_id": 6,
@@ -133,6 +123,26 @@
             "name": "twist_dir",
             "type": {
               "type_id": 6,
+              "capacity": 0,
+              "string_capacity": 0,
+              "nested_type_name": ""
+            },
+            "default_value": ""
+          },
+          {
+            "name": "bending_face",
+            "type": {
+              "type_id": 6,
+              "capacity": 0,
+              "string_capacity": 0,
+              "nested_type_name": ""
+            },
+            "default_value": ""
+          },
+          {
+            "name": "bending_range",
+            "type": {
+              "type_id": 10,
               "capacity": 0,
               "string_capacity": 0,
               "nested_type_name": ""
@@ -206,7 +216,7 @@
   "type_hashes": [
     {
       "type_name": "dynamixel_sdk_custom_interfaces/srv/Movement",
-      "hash_string": "RIHS01_542564dc17a5891fb2ac2f441b361c0c57df3514eecf4e0ca7f7c23c03818eb8"
+      "hash_string": "RIHS01_12804f3934241f9e09f9cf3687fd2928a13a2cf365d5032c360d73843a669801"
     },
     {
       "type_name": "builtin_interfaces/msg/Time",
@@ -214,11 +224,11 @@
     },
     {
       "type_name": "dynamixel_sdk_custom_interfaces/srv/Movement_Event",
-      "hash_string": "RIHS01_1bd6f4760aac5c9fbd5ec7f332b6a1a0f00e7d45b0ff37381cd7a83e178c6277"
+      "hash_string": "RIHS01_78d848290892b40e812dfa8176cc3e2558f070b4bf9bb4b21505a07c7e20e1c5"
     },
     {
       "type_name": "dynamixel_sdk_custom_interfaces/srv/Movement_Request",
-      "hash_string": "RIHS01_6bc0e7d01d9d0cbba053a5dbe3c560751ac99b94e01c5ea199aa13ff260c8954"
+      "hash_string": "RIHS01_3f997b6a11b08d60c887c9cf1851db8f5ed45fe84c4a79509455a19d3d6f6eea"
     },
     {
       "type_name": "dynamixel_sdk_custom_interfaces/srv/Movement_Response",

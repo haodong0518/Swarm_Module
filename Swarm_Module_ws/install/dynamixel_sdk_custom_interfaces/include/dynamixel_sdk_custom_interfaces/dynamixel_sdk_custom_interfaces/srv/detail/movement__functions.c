@@ -12,7 +12,6 @@
 
 // Include directives for member types
 // Member `movement`
-// Member `robot_switch`
 #include "rosidl_runtime_c/string_functions.h"
 
 bool
@@ -26,13 +25,10 @@ dynamixel_sdk_custom_interfaces__srv__Movement_Request__init(dynamixel_sdk_custo
     dynamixel_sdk_custom_interfaces__srv__Movement_Request__fini(msg);
     return false;
   }
-  // robot_switch
-  if (!rosidl_runtime_c__String__init(&msg->robot_switch)) {
-    dynamixel_sdk_custom_interfaces__srv__Movement_Request__fini(msg);
-    return false;
-  }
   // time_period
   // twist_dir
+  // bending_face
+  // bending_range
   return true;
 }
 
@@ -44,10 +40,10 @@ dynamixel_sdk_custom_interfaces__srv__Movement_Request__fini(dynamixel_sdk_custo
   }
   // movement
   rosidl_runtime_c__String__fini(&msg->movement);
-  // robot_switch
-  rosidl_runtime_c__String__fini(&msg->robot_switch);
   // time_period
   // twist_dir
+  // bending_face
+  // bending_range
 }
 
 bool
@@ -62,18 +58,20 @@ dynamixel_sdk_custom_interfaces__srv__Movement_Request__are_equal(const dynamixe
   {
     return false;
   }
-  // robot_switch
-  if (!rosidl_runtime_c__String__are_equal(
-      &(lhs->robot_switch), &(rhs->robot_switch)))
-  {
-    return false;
-  }
   // time_period
   if (lhs->time_period != rhs->time_period) {
     return false;
   }
   // twist_dir
   if (lhs->twist_dir != rhs->twist_dir) {
+    return false;
+  }
+  // bending_face
+  if (lhs->bending_face != rhs->bending_face) {
+    return false;
+  }
+  // bending_range
+  if (lhs->bending_range != rhs->bending_range) {
     return false;
   }
   return true;
@@ -93,16 +91,14 @@ dynamixel_sdk_custom_interfaces__srv__Movement_Request__copy(
   {
     return false;
   }
-  // robot_switch
-  if (!rosidl_runtime_c__String__copy(
-      &(input->robot_switch), &(output->robot_switch)))
-  {
-    return false;
-  }
   // time_period
   output->time_period = input->time_period;
   // twist_dir
   output->twist_dir = input->twist_dir;
+  // bending_face
+  output->bending_face = input->bending_face;
+  // bending_range
+  output->bending_range = input->bending_range;
   return true;
 }
 

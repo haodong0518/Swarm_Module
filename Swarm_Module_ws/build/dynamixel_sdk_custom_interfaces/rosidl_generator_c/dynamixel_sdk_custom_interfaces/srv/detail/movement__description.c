@@ -11,10 +11,10 @@ dynamixel_sdk_custom_interfaces__srv__Movement__get_type_hash(
 {
   (void)type_support;
   static rosidl_type_hash_t hash = {1, {
-      0x54, 0x25, 0x64, 0xdc, 0x17, 0xa5, 0x89, 0x1f,
-      0xb2, 0xac, 0x2f, 0x44, 0x1b, 0x36, 0x1c, 0x0c,
-      0x57, 0xdf, 0x35, 0x14, 0xee, 0xcf, 0x4e, 0x0c,
-      0xa7, 0xf7, 0xc2, 0x3c, 0x03, 0x81, 0x8e, 0xb8,
+      0x12, 0x80, 0x4f, 0x39, 0x34, 0x24, 0x1f, 0x9e,
+      0x09, 0xf9, 0xcf, 0x36, 0x87, 0xfd, 0x29, 0x28,
+      0xa1, 0x3a, 0x2c, 0xf3, 0x65, 0xd5, 0x03, 0x2c,
+      0x36, 0x0d, 0x73, 0x84, 0x3a, 0x66, 0x98, 0x01,
     }};
   return &hash;
 }
@@ -26,10 +26,10 @@ dynamixel_sdk_custom_interfaces__srv__Movement_Request__get_type_hash(
 {
   (void)type_support;
   static rosidl_type_hash_t hash = {1, {
-      0x6b, 0xc0, 0xe7, 0xd0, 0x1d, 0x9d, 0x0c, 0xbb,
-      0xa0, 0x53, 0xa5, 0xdb, 0xe3, 0xc5, 0x60, 0x75,
-      0x1a, 0xc9, 0x9b, 0x94, 0xe0, 0x1c, 0x5e, 0xa1,
-      0x99, 0xaa, 0x13, 0xff, 0x26, 0x0c, 0x89, 0x54,
+      0x3f, 0x99, 0x7b, 0x6a, 0x11, 0xb0, 0x8d, 0x60,
+      0xc8, 0x87, 0xc9, 0xcf, 0x18, 0x51, 0xdb, 0x8f,
+      0x5e, 0xd4, 0x5f, 0xe8, 0x4c, 0x4a, 0x79, 0x50,
+      0x94, 0x55, 0xa1, 0x9d, 0x3d, 0x6f, 0x6e, 0xea,
     }};
   return &hash;
 }
@@ -56,10 +56,10 @@ dynamixel_sdk_custom_interfaces__srv__Movement_Event__get_type_hash(
 {
   (void)type_support;
   static rosidl_type_hash_t hash = {1, {
-      0x1b, 0xd6, 0xf4, 0x76, 0x0a, 0xac, 0x5c, 0x9f,
-      0xbd, 0x5e, 0xc7, 0xf3, 0x32, 0xb6, 0xa1, 0xa0,
-      0xf0, 0x0e, 0x7d, 0x45, 0xb0, 0xff, 0x37, 0x38,
-      0x1c, 0xd7, 0xa8, 0x3e, 0x17, 0x8c, 0x62, 0x77,
+      0x78, 0xd8, 0x48, 0x29, 0x08, 0x92, 0xb4, 0x0e,
+      0x81, 0x2d, 0xfa, 0x81, 0x76, 0xcc, 0x3e, 0x25,
+      0x58, 0xf0, 0x70, 0xb4, 0xbf, 0x9b, 0xb4, 0xb2,
+      0x15, 0x05, 0xa0, 0x7c, 0x7e, 0x20, 0xe1, 0xc5,
     }};
   return &hash;
 }
@@ -68,8 +68,8 @@ dynamixel_sdk_custom_interfaces__srv__Movement_Event__get_type_hash(
 #include <string.h>
 
 // Include directives for referenced types
-#include "service_msgs/msg/detail/service_event_info__functions.h"
 #include "builtin_interfaces/msg/detail/time__functions.h"
+#include "service_msgs/msg/detail/service_event_info__functions.h"
 
 // Hashes for external referenced types
 #ifndef NDEBUG
@@ -182,23 +182,14 @@ dynamixel_sdk_custom_interfaces__srv__Movement__get_type_description(
 }
 // Define type names, field names, and default values
 static char dynamixel_sdk_custom_interfaces__srv__Movement_Request__FIELD_NAME__movement[] = "movement";
-static char dynamixel_sdk_custom_interfaces__srv__Movement_Request__FIELD_NAME__robot_switch[] = "robot_switch";
 static char dynamixel_sdk_custom_interfaces__srv__Movement_Request__FIELD_NAME__time_period[] = "time_period";
 static char dynamixel_sdk_custom_interfaces__srv__Movement_Request__FIELD_NAME__twist_dir[] = "twist_dir";
+static char dynamixel_sdk_custom_interfaces__srv__Movement_Request__FIELD_NAME__bending_face[] = "bending_face";
+static char dynamixel_sdk_custom_interfaces__srv__Movement_Request__FIELD_NAME__bending_range[] = "bending_range";
 
 static rosidl_runtime_c__type_description__Field dynamixel_sdk_custom_interfaces__srv__Movement_Request__FIELDS[] = {
   {
     {dynamixel_sdk_custom_interfaces__srv__Movement_Request__FIELD_NAME__movement, 8, 8},
-    {
-      rosidl_runtime_c__type_description__FieldType__FIELD_TYPE_STRING,
-      0,
-      0,
-      {NULL, 0, 0},
-    },
-    {NULL, 0, 0},
-  },
-  {
-    {dynamixel_sdk_custom_interfaces__srv__Movement_Request__FIELD_NAME__robot_switch, 12, 12},
     {
       rosidl_runtime_c__type_description__FieldType__FIELD_TYPE_STRING,
       0,
@@ -227,6 +218,26 @@ static rosidl_runtime_c__type_description__Field dynamixel_sdk_custom_interfaces
     },
     {NULL, 0, 0},
   },
+  {
+    {dynamixel_sdk_custom_interfaces__srv__Movement_Request__FIELD_NAME__bending_face, 12, 12},
+    {
+      rosidl_runtime_c__type_description__FieldType__FIELD_TYPE_INT32,
+      0,
+      0,
+      {NULL, 0, 0},
+    },
+    {NULL, 0, 0},
+  },
+  {
+    {dynamixel_sdk_custom_interfaces__srv__Movement_Request__FIELD_NAME__bending_range, 13, 13},
+    {
+      rosidl_runtime_c__type_description__FieldType__FIELD_TYPE_FLOAT,
+      0,
+      0,
+      {NULL, 0, 0},
+    },
+    {NULL, 0, 0},
+  },
 };
 
 const rosidl_runtime_c__type_description__TypeDescription *
@@ -238,7 +249,7 @@ dynamixel_sdk_custom_interfaces__srv__Movement_Request__get_type_description(
   static const rosidl_runtime_c__type_description__TypeDescription description = {
     {
       {dynamixel_sdk_custom_interfaces__srv__Movement_Request__TYPE_NAME, 52, 52},
-      {dynamixel_sdk_custom_interfaces__srv__Movement_Request__FIELDS, 4, 4},
+      {dynamixel_sdk_custom_interfaces__srv__Movement_Request__FIELDS, 5, 5},
     },
     {NULL, 0, 0},
   };
@@ -365,11 +376,12 @@ dynamixel_sdk_custom_interfaces__srv__Movement_Event__get_type_description(
 
 static char toplevel_type_raw_source[] =
   "# Constants\n"
-  "# Request \n"
+  "# Request\n"
   "string movement\n"
-  "string robot_switch\n"
   "int32 time_period\n"
   "int32 twist_dir\n"
+  "int32 bending_face\n"
+  "float32 bending_range\n"
   "---\n"
   "# Response\n"
   "bool success";
@@ -387,7 +399,7 @@ dynamixel_sdk_custom_interfaces__srv__Movement__get_individual_type_description_
   static const rosidl_runtime_c__type_description__TypeSource source = {
     {dynamixel_sdk_custom_interfaces__srv__Movement__TYPE_NAME, 44, 44},
     {srv_encoding, 3, 3},
-    {toplevel_type_raw_source, 120, 120},
+    {toplevel_type_raw_source, 140, 140},
   };
   return &source;
 }

@@ -36,8 +36,8 @@ extern "C"
 {
 #endif
 
-#include "rosidl_runtime_c/string.h"  // movement, robot_switch
-#include "rosidl_runtime_c/string_functions.h"  // movement, robot_switch
+#include "rosidl_runtime_c/string.h"  // movement
+#include "rosidl_runtime_c/string_functions.h"  // movement
 
 // forward declare type support functions
 
@@ -64,20 +64,6 @@ bool cdr_serialize_dynamixel_sdk_custom_interfaces__srv__Movement_Request(
     cdr << str->data;
   }
 
-  // Field name: robot_switch
-  {
-    const rosidl_runtime_c__String * str = &ros_message->robot_switch;
-    if (str->capacity == 0 || str->capacity <= str->size) {
-      fprintf(stderr, "string capacity not greater than size\n");
-      return false;
-    }
-    if (str->data[str->size] != '\0') {
-      fprintf(stderr, "string not null-terminated\n");
-      return false;
-    }
-    cdr << str->data;
-  }
-
   // Field name: time_period
   {
     cdr << ros_message->time_period;
@@ -86,6 +72,16 @@ bool cdr_serialize_dynamixel_sdk_custom_interfaces__srv__Movement_Request(
   // Field name: twist_dir
   {
     cdr << ros_message->twist_dir;
+  }
+
+  // Field name: bending_face
+  {
+    cdr << ros_message->bending_face;
+  }
+
+  // Field name: bending_range
+  {
+    cdr << ros_message->bending_range;
   }
 
   return true;
@@ -112,22 +108,6 @@ bool cdr_deserialize_dynamixel_sdk_custom_interfaces__srv__Movement_Request(
     }
   }
 
-  // Field name: robot_switch
-  {
-    std::string tmp;
-    cdr >> tmp;
-    if (!ros_message->robot_switch.data) {
-      rosidl_runtime_c__String__init(&ros_message->robot_switch);
-    }
-    bool succeeded = rosidl_runtime_c__String__assign(
-      &ros_message->robot_switch,
-      tmp.c_str());
-    if (!succeeded) {
-      fprintf(stderr, "failed to assign string into field 'robot_switch'\n");
-      return false;
-    }
-  }
-
   // Field name: time_period
   {
     cdr >> ros_message->time_period;
@@ -136,6 +116,16 @@ bool cdr_deserialize_dynamixel_sdk_custom_interfaces__srv__Movement_Request(
   // Field name: twist_dir
   {
     cdr >> ros_message->twist_dir;
+  }
+
+  // Field name: bending_face
+  {
+    cdr >> ros_message->bending_face;
+  }
+
+  // Field name: bending_range
+  {
+    cdr >> ros_message->bending_range;
   }
 
   return true;
@@ -161,11 +151,6 @@ size_t get_serialized_size_dynamixel_sdk_custom_interfaces__srv__Movement_Reques
     eprosima::fastcdr::Cdr::alignment(current_alignment, padding) +
     (ros_message->movement.size + 1);
 
-  // Field name: robot_switch
-  current_alignment += padding +
-    eprosima::fastcdr::Cdr::alignment(current_alignment, padding) +
-    (ros_message->robot_switch.size + 1);
-
   // Field name: time_period
   {
     size_t item_size = sizeof(ros_message->time_period);
@@ -176,6 +161,20 @@ size_t get_serialized_size_dynamixel_sdk_custom_interfaces__srv__Movement_Reques
   // Field name: twist_dir
   {
     size_t item_size = sizeof(ros_message->twist_dir);
+    current_alignment += item_size +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
+  }
+
+  // Field name: bending_face
+  {
+    size_t item_size = sizeof(ros_message->bending_face);
+    current_alignment += item_size +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
+  }
+
+  // Field name: bending_range
+  {
+    size_t item_size = sizeof(ros_message->bending_range);
     current_alignment += item_size +
       eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
   }
@@ -214,18 +213,6 @@ size_t max_serialized_size_dynamixel_sdk_custom_interfaces__srv__Movement_Reques
     }
   }
 
-  // Field name: robot_switch
-  {
-    size_t array_size = 1;
-    full_bounded = false;
-    is_plain = false;
-    for (size_t index = 0; index < array_size; ++index) {
-      current_alignment += padding +
-        eprosima::fastcdr::Cdr::alignment(current_alignment, padding) +
-        1;
-    }
-  }
-
   // Field name: time_period
   {
     size_t array_size = 1;
@@ -242,6 +229,22 @@ size_t max_serialized_size_dynamixel_sdk_custom_interfaces__srv__Movement_Reques
       eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
   }
 
+  // Field name: bending_face
+  {
+    size_t array_size = 1;
+    last_member_size = array_size * sizeof(uint32_t);
+    current_alignment += array_size * sizeof(uint32_t) +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
+  }
+
+  // Field name: bending_range
+  {
+    size_t array_size = 1;
+    last_member_size = array_size * sizeof(uint32_t);
+    current_alignment += array_size * sizeof(uint32_t) +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
+  }
+
 
   size_t ret_val = current_alignment - initial_alignment;
   if (is_plain) {
@@ -251,7 +254,7 @@ size_t max_serialized_size_dynamixel_sdk_custom_interfaces__srv__Movement_Reques
     using DataType = dynamixel_sdk_custom_interfaces__srv__Movement_Request;
     is_plain =
       (
-      offsetof(DataType, twist_dir) +
+      offsetof(DataType, bending_range) +
       last_member_size
       ) == ret_val;
   }
@@ -277,20 +280,6 @@ bool cdr_serialize_key_dynamixel_sdk_custom_interfaces__srv__Movement_Request(
     cdr << str->data;
   }
 
-  // Field name: robot_switch
-  {
-    const rosidl_runtime_c__String * str = &ros_message->robot_switch;
-    if (str->capacity == 0 || str->capacity <= str->size) {
-      fprintf(stderr, "string capacity not greater than size\n");
-      return false;
-    }
-    if (str->data[str->size] != '\0') {
-      fprintf(stderr, "string not null-terminated\n");
-      return false;
-    }
-    cdr << str->data;
-  }
-
   // Field name: time_period
   {
     cdr << ros_message->time_period;
@@ -299,6 +288,16 @@ bool cdr_serialize_key_dynamixel_sdk_custom_interfaces__srv__Movement_Request(
   // Field name: twist_dir
   {
     cdr << ros_message->twist_dir;
+  }
+
+  // Field name: bending_face
+  {
+    cdr << ros_message->bending_face;
+  }
+
+  // Field name: bending_range
+  {
+    cdr << ros_message->bending_range;
   }
 
   return true;
@@ -324,11 +323,6 @@ size_t get_serialized_size_key_dynamixel_sdk_custom_interfaces__srv__Movement_Re
     eprosima::fastcdr::Cdr::alignment(current_alignment, padding) +
     (ros_message->movement.size + 1);
 
-  // Field name: robot_switch
-  current_alignment += padding +
-    eprosima::fastcdr::Cdr::alignment(current_alignment, padding) +
-    (ros_message->robot_switch.size + 1);
-
   // Field name: time_period
   {
     size_t item_size = sizeof(ros_message->time_period);
@@ -339,6 +333,20 @@ size_t get_serialized_size_key_dynamixel_sdk_custom_interfaces__srv__Movement_Re
   // Field name: twist_dir
   {
     size_t item_size = sizeof(ros_message->twist_dir);
+    current_alignment += item_size +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
+  }
+
+  // Field name: bending_face
+  {
+    size_t item_size = sizeof(ros_message->bending_face);
+    current_alignment += item_size +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
+  }
+
+  // Field name: bending_range
+  {
+    size_t item_size = sizeof(ros_message->bending_range);
     current_alignment += item_size +
       eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
   }
@@ -375,18 +383,6 @@ size_t max_serialized_size_key_dynamixel_sdk_custom_interfaces__srv__Movement_Re
     }
   }
 
-  // Field name: robot_switch
-  {
-    size_t array_size = 1;
-    full_bounded = false;
-    is_plain = false;
-    for (size_t index = 0; index < array_size; ++index) {
-      current_alignment += padding +
-        eprosima::fastcdr::Cdr::alignment(current_alignment, padding) +
-        1;
-    }
-  }
-
   // Field name: time_period
   {
     size_t array_size = 1;
@@ -403,6 +399,22 @@ size_t max_serialized_size_key_dynamixel_sdk_custom_interfaces__srv__Movement_Re
       eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
   }
 
+  // Field name: bending_face
+  {
+    size_t array_size = 1;
+    last_member_size = array_size * sizeof(uint32_t);
+    current_alignment += array_size * sizeof(uint32_t) +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
+  }
+
+  // Field name: bending_range
+  {
+    size_t array_size = 1;
+    last_member_size = array_size * sizeof(uint32_t);
+    current_alignment += array_size * sizeof(uint32_t) +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
+  }
+
   size_t ret_val = current_alignment - initial_alignment;
   if (is_plain) {
     // All members are plain, and type is not empty.
@@ -411,7 +423,7 @@ size_t max_serialized_size_key_dynamixel_sdk_custom_interfaces__srv__Movement_Re
     using DataType = dynamixel_sdk_custom_interfaces__srv__Movement_Request;
     is_plain =
       (
-      offsetof(DataType, twist_dir) +
+      offsetof(DataType, bending_range) +
       last_member_size
       ) == ret_val;
   }

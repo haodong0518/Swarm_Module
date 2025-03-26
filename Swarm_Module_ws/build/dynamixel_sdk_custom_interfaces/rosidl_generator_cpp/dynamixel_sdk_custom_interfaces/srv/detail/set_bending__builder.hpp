@@ -24,15 +24,15 @@ namespace srv
 namespace builder
 {
 
-class Init_SetBending_Request_face
+class Init_SetBending_Request_bending_face
 {
 public:
-  explicit Init_SetBending_Request_face(::dynamixel_sdk_custom_interfaces::srv::SetBending_Request & msg)
+  explicit Init_SetBending_Request_bending_face(::dynamixel_sdk_custom_interfaces::srv::SetBending_Request & msg)
   : msg_(msg)
   {}
-  ::dynamixel_sdk_custom_interfaces::srv::SetBending_Request face(::dynamixel_sdk_custom_interfaces::srv::SetBending_Request::_face_type arg)
+  ::dynamixel_sdk_custom_interfaces::srv::SetBending_Request bending_face(::dynamixel_sdk_custom_interfaces::srv::SetBending_Request::_bending_face_type arg)
   {
-    msg_.face = std::move(arg);
+    msg_.bending_face = std::move(arg);
     return std::move(msg_);
   }
 
@@ -40,16 +40,16 @@ private:
   ::dynamixel_sdk_custom_interfaces::srv::SetBending_Request msg_;
 };
 
-class Init_SetBending_Request_bend_state
+class Init_SetBending_Request_bending_range
 {
 public:
-  Init_SetBending_Request_bend_state()
+  Init_SetBending_Request_bending_range()
   : msg_(::rosidl_runtime_cpp::MessageInitialization::SKIP)
   {}
-  Init_SetBending_Request_face bend_state(::dynamixel_sdk_custom_interfaces::srv::SetBending_Request::_bend_state_type arg)
+  Init_SetBending_Request_bending_face bending_range(::dynamixel_sdk_custom_interfaces::srv::SetBending_Request::_bending_range_type arg)
   {
-    msg_.bend_state = std::move(arg);
-    return Init_SetBending_Request_face(msg_);
+    msg_.bending_range = std::move(arg);
+    return Init_SetBending_Request_bending_face(msg_);
   }
 
 private:
@@ -67,7 +67,7 @@ template<>
 inline
 auto build<::dynamixel_sdk_custom_interfaces::srv::SetBending_Request>()
 {
-  return dynamixel_sdk_custom_interfaces::srv::builder::Init_SetBending_Request_bend_state();
+  return dynamixel_sdk_custom_interfaces::srv::builder::Init_SetBending_Request_bending_range();
 }
 
 }  // namespace dynamixel_sdk_custom_interfaces

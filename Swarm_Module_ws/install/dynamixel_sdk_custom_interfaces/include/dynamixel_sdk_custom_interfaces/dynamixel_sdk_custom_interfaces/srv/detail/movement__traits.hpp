@@ -35,13 +35,6 @@ inline void to_flow_style_yaml(
     out << ", ";
   }
 
-  // member: robot_switch
-  {
-    out << "robot_switch: ";
-    rosidl_generator_traits::value_to_yaml(msg.robot_switch, out);
-    out << ", ";
-  }
-
   // member: time_period
   {
     out << "time_period: ";
@@ -53,6 +46,20 @@ inline void to_flow_style_yaml(
   {
     out << "twist_dir: ";
     rosidl_generator_traits::value_to_yaml(msg.twist_dir, out);
+    out << ", ";
+  }
+
+  // member: bending_face
+  {
+    out << "bending_face: ";
+    rosidl_generator_traits::value_to_yaml(msg.bending_face, out);
+    out << ", ";
+  }
+
+  // member: bending_range
+  {
+    out << "bending_range: ";
+    rosidl_generator_traits::value_to_yaml(msg.bending_range, out);
   }
   out << "}";
 }  // NOLINT(readability/fn_size)
@@ -71,16 +78,6 @@ inline void to_block_style_yaml(
     out << "\n";
   }
 
-  // member: robot_switch
-  {
-    if (indentation > 0) {
-      out << std::string(indentation, ' ');
-    }
-    out << "robot_switch: ";
-    rosidl_generator_traits::value_to_yaml(msg.robot_switch, out);
-    out << "\n";
-  }
-
   // member: time_period
   {
     if (indentation > 0) {
@@ -98,6 +95,26 @@ inline void to_block_style_yaml(
     }
     out << "twist_dir: ";
     rosidl_generator_traits::value_to_yaml(msg.twist_dir, out);
+    out << "\n";
+  }
+
+  // member: bending_face
+  {
+    if (indentation > 0) {
+      out << std::string(indentation, ' ');
+    }
+    out << "bending_face: ";
+    rosidl_generator_traits::value_to_yaml(msg.bending_face, out);
+    out << "\n";
+  }
+
+  // member: bending_range
+  {
+    if (indentation > 0) {
+      out << std::string(indentation, ' ');
+    }
+    out << "bending_range: ";
+    rosidl_generator_traits::value_to_yaml(msg.bending_range, out);
     out << "\n";
   }
 }  // NOLINT(readability/fn_size)

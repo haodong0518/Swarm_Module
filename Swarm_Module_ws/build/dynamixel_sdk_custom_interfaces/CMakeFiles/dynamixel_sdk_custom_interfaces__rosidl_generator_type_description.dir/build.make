@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/haodong/modular_ws/src/dynamixel_sdk_custom_interfaces
+CMAKE_SOURCE_DIR = /home/haodong/Swarm_Module/Swarm_Module_ws/src/dynamixel_sdk_custom_interfaces
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/haodong/modular_ws/build/dynamixel_sdk_custom_interfaces
+CMAKE_BINARY_DIR = /home/haodong/Swarm_Module/Swarm_Module_ws/build/dynamixel_sdk_custom_interfaces
 
 # Utility rule file for dynamixel_sdk_custom_interfaces__rosidl_generator_type_description.
 
@@ -74,6 +74,7 @@ CMakeFiles/dynamixel_sdk_custom_interfaces__rosidl_generator_type_description: r
 CMakeFiles/dynamixel_sdk_custom_interfaces__rosidl_generator_type_description: rosidl_generator_type_description/dynamixel_sdk_custom_interfaces/srv/SetExtension.json
 CMakeFiles/dynamixel_sdk_custom_interfaces__rosidl_generator_type_description: rosidl_generator_type_description/dynamixel_sdk_custom_interfaces/srv/SetBending.json
 CMakeFiles/dynamixel_sdk_custom_interfaces__rosidl_generator_type_description: rosidl_generator_type_description/dynamixel_sdk_custom_interfaces/srv/Movement.json
+CMakeFiles/dynamixel_sdk_custom_interfaces__rosidl_generator_type_description: rosidl_generator_type_description/dynamixel_sdk_custom_interfaces/srv/SetTwisting.json
 
 rosidl_generator_type_description/dynamixel_sdk_custom_interfaces/msg/SetPosition.json: /opt/ros/jazzy/lib/rosidl_generator_type_description/rosidl_generator_type_description
 rosidl_generator_type_description/dynamixel_sdk_custom_interfaces/msg/SetPosition.json: /opt/ros/jazzy/lib/python3.12/site-packages/rosidl_generator_type_description/__init__.py
@@ -85,8 +86,9 @@ rosidl_generator_type_description/dynamixel_sdk_custom_interfaces/msg/SetPositio
 rosidl_generator_type_description/dynamixel_sdk_custom_interfaces/msg/SetPosition.json: rosidl_adapter/dynamixel_sdk_custom_interfaces/srv/SetExtension.idl
 rosidl_generator_type_description/dynamixel_sdk_custom_interfaces/msg/SetPosition.json: rosidl_adapter/dynamixel_sdk_custom_interfaces/srv/SetBending.idl
 rosidl_generator_type_description/dynamixel_sdk_custom_interfaces/msg/SetPosition.json: rosidl_adapter/dynamixel_sdk_custom_interfaces/srv/Movement.idl
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/haodong/modular_ws/build/dynamixel_sdk_custom_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating type hashes for ROS interfaces"
-	/usr/bin/python3 /opt/ros/jazzy/lib/rosidl_generator_type_description/rosidl_generator_type_description --generator-arguments-file /home/haodong/modular_ws/build/dynamixel_sdk_custom_interfaces/rosidl_generator_type_description__arguments.json
+rosidl_generator_type_description/dynamixel_sdk_custom_interfaces/msg/SetPosition.json: rosidl_adapter/dynamixel_sdk_custom_interfaces/srv/SetTwisting.idl
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/haodong/Swarm_Module/Swarm_Module_ws/build/dynamixel_sdk_custom_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating type hashes for ROS interfaces"
+	/usr/bin/python3 /opt/ros/jazzy/lib/rosidl_generator_type_description/rosidl_generator_type_description --generator-arguments-file /home/haodong/Swarm_Module/Swarm_Module_ws/build/dynamixel_sdk_custom_interfaces/rosidl_generator_type_description__arguments.json
 
 rosidl_generator_type_description/dynamixel_sdk_custom_interfaces/msg/Rolling.json: rosidl_generator_type_description/dynamixel_sdk_custom_interfaces/msg/SetPosition.json
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_type_description/dynamixel_sdk_custom_interfaces/msg/Rolling.json
@@ -109,6 +111,9 @@ rosidl_generator_type_description/dynamixel_sdk_custom_interfaces/srv/SetBending
 rosidl_generator_type_description/dynamixel_sdk_custom_interfaces/srv/Movement.json: rosidl_generator_type_description/dynamixel_sdk_custom_interfaces/msg/SetPosition.json
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_type_description/dynamixel_sdk_custom_interfaces/srv/Movement.json
 
+rosidl_generator_type_description/dynamixel_sdk_custom_interfaces/srv/SetTwisting.json: rosidl_generator_type_description/dynamixel_sdk_custom_interfaces/msg/SetPosition.json
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_type_description/dynamixel_sdk_custom_interfaces/srv/SetTwisting.json
+
 dynamixel_sdk_custom_interfaces__rosidl_generator_type_description: CMakeFiles/dynamixel_sdk_custom_interfaces__rosidl_generator_type_description
 dynamixel_sdk_custom_interfaces__rosidl_generator_type_description: rosidl_generator_type_description/dynamixel_sdk_custom_interfaces/msg/Rolling.json
 dynamixel_sdk_custom_interfaces__rosidl_generator_type_description: rosidl_generator_type_description/dynamixel_sdk_custom_interfaces/msg/SetMode.json
@@ -117,6 +122,7 @@ dynamixel_sdk_custom_interfaces__rosidl_generator_type_description: rosidl_gener
 dynamixel_sdk_custom_interfaces__rosidl_generator_type_description: rosidl_generator_type_description/dynamixel_sdk_custom_interfaces/srv/Movement.json
 dynamixel_sdk_custom_interfaces__rosidl_generator_type_description: rosidl_generator_type_description/dynamixel_sdk_custom_interfaces/srv/SetBending.json
 dynamixel_sdk_custom_interfaces__rosidl_generator_type_description: rosidl_generator_type_description/dynamixel_sdk_custom_interfaces/srv/SetExtension.json
+dynamixel_sdk_custom_interfaces__rosidl_generator_type_description: rosidl_generator_type_description/dynamixel_sdk_custom_interfaces/srv/SetTwisting.json
 dynamixel_sdk_custom_interfaces__rosidl_generator_type_description: rosidl_generator_type_description/dynamixel_sdk_custom_interfaces/srv/SetVelocity.json
 dynamixel_sdk_custom_interfaces__rosidl_generator_type_description: CMakeFiles/dynamixel_sdk_custom_interfaces__rosidl_generator_type_description.dir/build.make
 .PHONY : dynamixel_sdk_custom_interfaces__rosidl_generator_type_description
@@ -130,6 +136,6 @@ CMakeFiles/dynamixel_sdk_custom_interfaces__rosidl_generator_type_description.di
 .PHONY : CMakeFiles/dynamixel_sdk_custom_interfaces__rosidl_generator_type_description.dir/clean
 
 CMakeFiles/dynamixel_sdk_custom_interfaces__rosidl_generator_type_description.dir/depend:
-	cd /home/haodong/modular_ws/build/dynamixel_sdk_custom_interfaces && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/haodong/modular_ws/src/dynamixel_sdk_custom_interfaces /home/haodong/modular_ws/src/dynamixel_sdk_custom_interfaces /home/haodong/modular_ws/build/dynamixel_sdk_custom_interfaces /home/haodong/modular_ws/build/dynamixel_sdk_custom_interfaces /home/haodong/modular_ws/build/dynamixel_sdk_custom_interfaces/CMakeFiles/dynamixel_sdk_custom_interfaces__rosidl_generator_type_description.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/haodong/Swarm_Module/Swarm_Module_ws/build/dynamixel_sdk_custom_interfaces && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/haodong/Swarm_Module/Swarm_Module_ws/src/dynamixel_sdk_custom_interfaces /home/haodong/Swarm_Module/Swarm_Module_ws/src/dynamixel_sdk_custom_interfaces /home/haodong/Swarm_Module/Swarm_Module_ws/build/dynamixel_sdk_custom_interfaces /home/haodong/Swarm_Module/Swarm_Module_ws/build/dynamixel_sdk_custom_interfaces /home/haodong/Swarm_Module/Swarm_Module_ws/build/dynamixel_sdk_custom_interfaces/CMakeFiles/dynamixel_sdk_custom_interfaces__rosidl_generator_type_description.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/dynamixel_sdk_custom_interfaces__rosidl_generator_type_description.dir/depend
 

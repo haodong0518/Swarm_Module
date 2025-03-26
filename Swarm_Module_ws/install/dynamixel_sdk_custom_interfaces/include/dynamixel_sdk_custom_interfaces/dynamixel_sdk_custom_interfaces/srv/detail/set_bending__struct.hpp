@@ -41,8 +41,8 @@ struct SetBending_Request_
     if (rosidl_runtime_cpp::MessageInitialization::ALL == _init ||
       rosidl_runtime_cpp::MessageInitialization::ZERO == _init)
     {
-      this->bend_state = 0.0;
-      this->face = 0l;
+      this->bending_range = 0.0;
+      this->bending_face = 0l;
     }
   }
 
@@ -52,30 +52,30 @@ struct SetBending_Request_
     if (rosidl_runtime_cpp::MessageInitialization::ALL == _init ||
       rosidl_runtime_cpp::MessageInitialization::ZERO == _init)
     {
-      this->bend_state = 0.0;
-      this->face = 0l;
+      this->bending_range = 0.0;
+      this->bending_face = 0l;
     }
   }
 
   // field types and members
-  using _bend_state_type =
+  using _bending_range_type =
     double;
-  _bend_state_type bend_state;
-  using _face_type =
+  _bending_range_type bending_range;
+  using _bending_face_type =
     int32_t;
-  _face_type face;
+  _bending_face_type bending_face;
 
   // setters for named parameter idiom
-  Type & set__bend_state(
+  Type & set__bending_range(
     const double & _arg)
   {
-    this->bend_state = _arg;
+    this->bending_range = _arg;
     return *this;
   }
-  Type & set__face(
+  Type & set__bending_face(
     const int32_t & _arg)
   {
-    this->face = _arg;
+    this->bending_face = _arg;
     return *this;
   }
 
@@ -121,10 +121,10 @@ struct SetBending_Request_
   // comparison operators
   bool operator==(const SetBending_Request_ & other) const
   {
-    if (this->bend_state != other.bend_state) {
+    if (this->bending_range != other.bending_range) {
       return false;
     }
-    if (this->face != other.face) {
+    if (this->bending_face != other.bending_face) {
       return false;
     }
     return true;

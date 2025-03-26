@@ -48,14 +48,14 @@ bool cdr_serialize_dynamixel_sdk_custom_interfaces__srv__SetBending_Request(
   const dynamixel_sdk_custom_interfaces__srv__SetBending_Request * ros_message,
   eprosima::fastcdr::Cdr & cdr)
 {
-  // Field name: bend_state
+  // Field name: bending_range
   {
-    cdr << ros_message->bend_state;
+    cdr << ros_message->bending_range;
   }
 
-  // Field name: face
+  // Field name: bending_face
   {
-    cdr << ros_message->face;
+    cdr << ros_message->bending_face;
   }
 
   return true;
@@ -66,14 +66,14 @@ bool cdr_deserialize_dynamixel_sdk_custom_interfaces__srv__SetBending_Request(
   eprosima::fastcdr::Cdr & cdr,
   dynamixel_sdk_custom_interfaces__srv__SetBending_Request * ros_message)
 {
-  // Field name: bend_state
+  // Field name: bending_range
   {
-    cdr >> ros_message->bend_state;
+    cdr >> ros_message->bending_range;
   }
 
-  // Field name: face
+  // Field name: bending_face
   {
-    cdr >> ros_message->face;
+    cdr >> ros_message->bending_face;
   }
 
   return true;
@@ -94,16 +94,16 @@ size_t get_serialized_size_dynamixel_sdk_custom_interfaces__srv__SetBending_Requ
   (void)padding;
   (void)wchar_size;
 
-  // Field name: bend_state
+  // Field name: bending_range
   {
-    size_t item_size = sizeof(ros_message->bend_state);
+    size_t item_size = sizeof(ros_message->bending_range);
     current_alignment += item_size +
       eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
   }
 
-  // Field name: face
+  // Field name: bending_face
   {
-    size_t item_size = sizeof(ros_message->face);
+    size_t item_size = sizeof(ros_message->bending_face);
     current_alignment += item_size +
       eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
   }
@@ -130,7 +130,7 @@ size_t max_serialized_size_dynamixel_sdk_custom_interfaces__srv__SetBending_Requ
   full_bounded = true;
   is_plain = true;
 
-  // Field name: bend_state
+  // Field name: bending_range
   {
     size_t array_size = 1;
     last_member_size = array_size * sizeof(uint64_t);
@@ -138,7 +138,7 @@ size_t max_serialized_size_dynamixel_sdk_custom_interfaces__srv__SetBending_Requ
       eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint64_t));
   }
 
-  // Field name: face
+  // Field name: bending_face
   {
     size_t array_size = 1;
     last_member_size = array_size * sizeof(uint32_t);
@@ -155,7 +155,7 @@ size_t max_serialized_size_dynamixel_sdk_custom_interfaces__srv__SetBending_Requ
     using DataType = dynamixel_sdk_custom_interfaces__srv__SetBending_Request;
     is_plain =
       (
-      offsetof(DataType, face) +
+      offsetof(DataType, bending_face) +
       last_member_size
       ) == ret_val;
   }
@@ -167,14 +167,14 @@ bool cdr_serialize_key_dynamixel_sdk_custom_interfaces__srv__SetBending_Request(
   const dynamixel_sdk_custom_interfaces__srv__SetBending_Request * ros_message,
   eprosima::fastcdr::Cdr & cdr)
 {
-  // Field name: bend_state
+  // Field name: bending_range
   {
-    cdr << ros_message->bend_state;
+    cdr << ros_message->bending_range;
   }
 
-  // Field name: face
+  // Field name: bending_face
   {
-    cdr << ros_message->face;
+    cdr << ros_message->bending_face;
   }
 
   return true;
@@ -195,16 +195,16 @@ size_t get_serialized_size_key_dynamixel_sdk_custom_interfaces__srv__SetBending_
   (void)padding;
   (void)wchar_size;
 
-  // Field name: bend_state
+  // Field name: bending_range
   {
-    size_t item_size = sizeof(ros_message->bend_state);
+    size_t item_size = sizeof(ros_message->bending_range);
     current_alignment += item_size +
       eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
   }
 
-  // Field name: face
+  // Field name: bending_face
   {
-    size_t item_size = sizeof(ros_message->face);
+    size_t item_size = sizeof(ros_message->bending_face);
     current_alignment += item_size +
       eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
   }
@@ -229,7 +229,7 @@ size_t max_serialized_size_key_dynamixel_sdk_custom_interfaces__srv__SetBending_
 
   full_bounded = true;
   is_plain = true;
-  // Field name: bend_state
+  // Field name: bending_range
   {
     size_t array_size = 1;
     last_member_size = array_size * sizeof(uint64_t);
@@ -237,7 +237,7 @@ size_t max_serialized_size_key_dynamixel_sdk_custom_interfaces__srv__SetBending_
       eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint64_t));
   }
 
-  // Field name: face
+  // Field name: bending_face
   {
     size_t array_size = 1;
     last_member_size = array_size * sizeof(uint32_t);
@@ -253,7 +253,7 @@ size_t max_serialized_size_key_dynamixel_sdk_custom_interfaces__srv__SetBending_
     using DataType = dynamixel_sdk_custom_interfaces__srv__SetBending_Request;
     is_plain =
       (
-      offsetof(DataType, face) +
+      offsetof(DataType, bending_face) +
       last_member_size
       ) == ret_val;
   }

@@ -23,8 +23,8 @@ extern "C"
 /// Struct defined in srv/SetBending in the package dynamixel_sdk_custom_interfaces.
 typedef struct dynamixel_sdk_custom_interfaces__srv__SetBending_Request
 {
-  double bend_state;
-  int32_t face;
+  double bending_range;
+  int32_t bending_face;
 } dynamixel_sdk_custom_interfaces__srv__SetBending_Request;
 
 // Struct for a sequence of dynamixel_sdk_custom_interfaces__srv__SetBending_Request.

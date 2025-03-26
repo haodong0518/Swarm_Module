@@ -24,6 +24,9 @@ CMakeFiles/dynamixel_sdk_custom_interfaces_s__rosidl_typesupport_c.dir/rosidl_ge
   rosidl_generator_c/dynamixel_sdk_custom_interfaces/srv/detail/set_extension__functions.h \
   rosidl_generator_c/dynamixel_sdk_custom_interfaces/srv/detail/set_extension__struct.h \
   rosidl_generator_c/dynamixel_sdk_custom_interfaces/srv/detail/set_extension__type_support.h \
+  rosidl_generator_c/dynamixel_sdk_custom_interfaces/srv/detail/set_twisting__functions.h \
+  rosidl_generator_c/dynamixel_sdk_custom_interfaces/srv/detail/set_twisting__struct.h \
+  rosidl_generator_c/dynamixel_sdk_custom_interfaces/srv/detail/set_twisting__type_support.h \
   rosidl_generator_c/dynamixel_sdk_custom_interfaces/srv/detail/set_velocity__functions.h \
   rosidl_generator_c/dynamixel_sdk_custom_interfaces/srv/detail/set_velocity__struct.h \
   rosidl_generator_c/dynamixel_sdk_custom_interfaces/srv/detail/set_velocity__type_support.h \
@@ -339,7 +342,7 @@ CMakeFiles/dynamixel_sdk_custom_interfaces_s__rosidl_typesupport_c.dir/rosidl_ge
 
 /usr/include/x86_64-linux-gnu/bits/types/mbstate_t.h:
 
-/usr/include/python3.12/bytesobject.h:
+/usr/include/x86_64-linux-gnu/bits/types/error_t.h:
 
 /usr/include/python3.12/cpython/pymem.h:
 
@@ -409,6 +412,8 @@ rosidl_generator_py/dynamixel_sdk_custom_interfaces/_dynamixel_sdk_custom_interf
 
 /usr/include/x86_64-linux-gnu/bits/long-double.h:
 
+/usr/include/python3.12/bytesobject.h:
+
 /usr/include/python3.12/cpython/sysmodule.h:
 
 /usr/include/python3.12/cpython/compile.h:
@@ -443,19 +448,15 @@ rosidl_generator_py/dynamixel_sdk_custom_interfaces/_dynamixel_sdk_custom_interf
 
 /usr/include/python3.12/unicodeobject.h:
 
-/usr/include/python3.12/cpython/pydebug.h:
+/usr/include/features-time64.h:
 
-/usr/include/x86_64-linux-gnu/bits/types/__locale_t.h:
+rosidl_generator_c/dynamixel_sdk_custom_interfaces/srv/detail/set_bending__struct.h:
 
-/opt/ros/jazzy/include/rcutils/rcutils/macros.h:
+rosidl_generator_c/dynamixel_sdk_custom_interfaces/msg/rosidl_generator_c__visibility_control.h:
 
-/usr/include/python3.12/cpython/code.h:
+/usr/include/python3.12/iterobject.h:
 
-/usr/include/python3.12/cpython/abstract.h:
-
-/usr/include/python3.12/bltinmodule.h:
-
-/usr/include/python3.12/weakrefobject.h:
+/usr/include/errno.h:
 
 /usr/include/python3.12/cpython/context.h:
 
@@ -463,21 +464,37 @@ rosidl_generator_c/dynamixel_sdk_custom_interfaces/msg/detail/rolling__struct.h:
 
 rosidl_generator_c/dynamixel_sdk_custom_interfaces/srv/detail/set_extension__struct.h:
 
+/usr/include/python3.12/weakrefobject.h:
+
+rosidl_generator_c/dynamixel_sdk_custom_interfaces/srv/detail/set_twisting__type_support.h:
+
+/usr/include/x86_64-linux-gnu/bits/waitflags.h:
+
+/usr/include/python3.12/cpython/objimpl.h:
+
 /usr/include/linux/types.h:
 
 /usr/include/linux/stat.h:
 
 /usr/include/python3.12/pyframe.h:
 
+/usr/include/python3.12/cpython/listobject.h:
+
+/usr/include/stdint.h:
+
+/usr/include/endian.h:
+
+rosidl_generator_c/dynamixel_sdk_custom_interfaces/msg/detail/set_position__functions.h:
+
 rosidl_generator_c/dynamixel_sdk_custom_interfaces/srv/detail/set_velocity__functions.h:
 
 /opt/ros/jazzy/include/rcutils/rcutils/sha256.h:
 
-/usr/include/x86_64-linux-gnu/bits/waitflags.h:
-
-/usr/include/python3.12/cpython/objimpl.h:
-
 rosidl_generator_c/dynamixel_sdk_custom_interfaces/srv/detail/set_bending__functions.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/cookie_io_functions_t.h:
+
+rosidl_generator_c/dynamixel_sdk_custom_interfaces/srv/detail/get_position__type_support.h:
 
 /usr/include/python3.12/cpython/import.h:
 
@@ -495,18 +512,6 @@ rosidl_generator_c/dynamixel_sdk_custom_interfaces/srv/detail/movement__function
 
 rosidl_generator_c/dynamixel_sdk_custom_interfaces/srv/detail/get_position__struct.h:
 
-/usr/include/python3.12/cpython/warnings.h:
-
-/usr/include/python3.12/objimpl.h:
-
-/usr/include/features-time64.h:
-
-rosidl_generator_c/dynamixel_sdk_custom_interfaces/srv/detail/set_bending__struct.h:
-
-rosidl_generator_c/dynamixel_sdk_custom_interfaces/msg/rosidl_generator_c__visibility_control.h:
-
-/usr/include/python3.12/iterobject.h:
-
 /usr/include/python3.12/cpython/pylifecycle.h:
 
 /usr/include/python3.12/cpython/pytime.h:
@@ -520,6 +525,10 @@ rosidl_generator_c/dynamixel_sdk_custom_interfaces/srv/detail/set_extension__fun
 /usr/include/python3.12/complexobject.h:
 
 /usr/include/python3.12/cpython/picklebufobject.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/locale_t.h:
+
+rosidl_generator_c/dynamixel_sdk_custom_interfaces/srv/detail/set_bending__type_support.h:
 
 rosidl_generator_c/dynamixel_sdk_custom_interfaces/srv/detail/set_extension__type_support.h:
 
@@ -535,17 +544,9 @@ rosidl_generator_c/dynamixel_sdk_custom_interfaces/srv/detail/movement__type_sup
 
 /usr/include/python3.12/genericaliasobject.h:
 
-/usr/include/x86_64-linux-gnu/bits/errno.h:
-
-/usr/include/python3.12/pymath.h:
-
 /opt/ros/jazzy/include/rosidl_runtime_c/rosidl_runtime_c/type_description/individual_type_description__struct.h:
 
 /opt/ros/jazzy/include/rosidl_runtime_c/rosidl_runtime_c/visibility_control.h:
-
-/usr/include/python3.12/cpython/fileobject.h:
-
-/usr/include/x86_64-linux-gnu/bits/math-vector.h:
 
 /usr/include/x86_64-linux-gnu/bits/statx-generic.h:
 
@@ -580,6 +581,30 @@ rosidl_generator_c/dynamixel_sdk_custom_interfaces/msg/detail/set_position__type
 /usr/include/x86_64-linux-gnu/bits/types/struct_FILE.h:
 
 /usr/include/x86_64-linux-gnu/bits/libm-simd-decl-stubs.h:
+
+/usr/include/python3.12/cpython/fileobject.h:
+
+/usr/include/x86_64-linux-gnu/bits/math-vector.h:
+
+/usr/include/python3.12/cpython/pydebug.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/__locale_t.h:
+
+rosidl_generator_c/dynamixel_sdk_custom_interfaces/srv/detail/set_twisting__struct.h:
+
+/usr/include/x86_64-linux-gnu/asm/posix_types.h:
+
+/opt/ros/jazzy/include/rcutils/rcutils/macros.h:
+
+/usr/include/python3.12/cpython/code.h:
+
+/usr/include/python3.12/cpython/abstract.h:
+
+/usr/include/python3.12/bltinmodule.h:
+
+/usr/include/python3.12/pymath.h:
+
+/usr/include/x86_64-linux-gnu/bits/errno.h:
 
 /opt/ros/jazzy/include/rosidl_runtime_c/rosidl_runtime_c/service_type_support_struct.h:
 
@@ -645,15 +670,9 @@ rosidl_generator_c/dynamixel_sdk_custom_interfaces/msg/detail/set_position__type
 
 /usr/include/ctype.h:
 
-/usr/include/errno.h:
+/usr/include/python3.12/cpython/warnings.h:
 
-rosidl_generator_c/dynamixel_sdk_custom_interfaces/msg/detail/set_position__functions.h:
-
-/usr/include/python3.12/cpython/listobject.h:
-
-/usr/include/stdint.h:
-
-/usr/include/endian.h:
+/usr/include/python3.12/objimpl.h:
 
 /usr/include/python3.12/cpython/weakrefobject.h:
 
@@ -664,10 +683,6 @@ rosidl_generator_c/dynamixel_sdk_custom_interfaces/msg/detail/set_position__func
 /usr/include/python3.12/cpython/traceback.h:
 
 /usr/include/x86_64-linux-gnu/bits/local_lim.h:
-
-rosidl_generator_c/dynamixel_sdk_custom_interfaces/srv/detail/get_position__type_support.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/cookie_io_functions_t.h:
 
 /usr/include/python3.12/floatobject.h:
 
@@ -805,8 +820,6 @@ rosidl_generator_c/dynamixel_sdk_custom_interfaces/srv/detail/set_velocity__stru
 
 /usr/include/x86_64-linux-gnu/bits/pthreadtypes-arch.h:
 
-/usr/include/x86_64-linux-gnu/asm/posix_types.h:
-
 /usr/include/x86_64-linux-gnu/asm/types.h:
 
 /usr/include/x86_64-linux-gnu/bits/confname.h:
@@ -832,8 +845,6 @@ rosidl_generator_c/dynamixel_sdk_custom_interfaces/srv/detail/set_velocity__stru
 /usr/include/x86_64-linux-gnu/bits/getopt_posix.h:
 
 /usr/include/x86_64-linux-gnu/bits/mathcalls-helper-functions.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/error_t.h:
 
 /usr/include/python3.12/pyconfig.h:
 
@@ -863,6 +874,8 @@ rosidl_generator_c/dynamixel_sdk_custom_interfaces/msg/detail/set_mode__type_sup
 
 /usr/include/x86_64-linux-gnu/bits/stdlib-float.h:
 
+rosidl_generator_c/dynamixel_sdk_custom_interfaces/srv/detail/set_twisting__functions.h:
+
 /usr/include/python3.12/typeslots.h:
 
 /usr/include/x86_64-linux-gnu/bits/select.h:
@@ -880,7 +893,3 @@ rosidl_generator_c/dynamixel_sdk_custom_interfaces/srv/detail/set_velocity__type
 /usr/include/x86_64-linux-gnu/bits/types/struct___jmp_buf_tag.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/clockid_t.h:
-
-rosidl_generator_c/dynamixel_sdk_custom_interfaces/srv/detail/set_bending__type_support.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/locale_t.h:

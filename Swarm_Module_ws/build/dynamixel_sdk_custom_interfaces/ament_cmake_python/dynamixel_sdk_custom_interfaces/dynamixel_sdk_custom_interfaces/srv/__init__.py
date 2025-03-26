@@ -14,6 +14,10 @@ from dynamixel_sdk_custom_interfaces.srv._set_extension import SetExtension  # n
 from dynamixel_sdk_custom_interfaces.srv._set_extension import SetExtension_Event  # noqa: F401
 from dynamixel_sdk_custom_interfaces.srv._set_extension import SetExtension_Request  # noqa: F401
 from dynamixel_sdk_custom_interfaces.srv._set_extension import SetExtension_Response  # noqa: F401
+from dynamixel_sdk_custom_interfaces.srv._set_twisting import SetTwisting  # noqa: F401
+from dynamixel_sdk_custom_interfaces.srv._set_twisting import SetTwisting_Event  # noqa: F401
+from dynamixel_sdk_custom_interfaces.srv._set_twisting import SetTwisting_Request  # noqa: F401
+from dynamixel_sdk_custom_interfaces.srv._set_twisting import SetTwisting_Response  # noqa: F401
 from dynamixel_sdk_custom_interfaces.srv._set_velocity import SetVelocity  # noqa: F401
 from dynamixel_sdk_custom_interfaces.srv._set_velocity import SetVelocity_Event  # noqa: F401
 from dynamixel_sdk_custom_interfaces.srv._set_velocity import SetVelocity_Request  # noqa: F401

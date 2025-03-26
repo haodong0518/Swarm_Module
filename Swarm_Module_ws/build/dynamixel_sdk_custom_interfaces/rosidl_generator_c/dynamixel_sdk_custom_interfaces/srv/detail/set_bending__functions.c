@@ -16,8 +16,8 @@ dynamixel_sdk_custom_interfaces__srv__SetBending_Request__init(dynamixel_sdk_cus
   if (!msg) {
     return false;
   }
-  // bend_state
-  // face
+  // bending_range
+  // bending_face
   return true;
 }
 
@@ -27,8 +27,8 @@ dynamixel_sdk_custom_interfaces__srv__SetBending_Request__fini(dynamixel_sdk_cus
   if (!msg) {
     return;
   }
-  // bend_state
-  // face
+  // bending_range
+  // bending_face
 }
 
 bool
@@ -37,12 +37,12 @@ dynamixel_sdk_custom_interfaces__srv__SetBending_Request__are_equal(const dynami
   if (!lhs || !rhs) {
     return false;
   }
-  // bend_state
-  if (lhs->bend_state != rhs->bend_state) {
+  // bending_range
+  if (lhs->bending_range != rhs->bending_range) {
     return false;
   }
-  // face
-  if (lhs->face != rhs->face) {
+  // bending_face
+  if (lhs->bending_face != rhs->bending_face) {
     return false;
   }
   return true;
@@ -56,10 +56,10 @@ dynamixel_sdk_custom_interfaces__srv__SetBending_Request__copy(
   if (!input || !output) {
     return false;
   }
-  // bend_state
-  output->bend_state = input->bend_state;
-  // face
-  output->face = input->face;
+  // bending_range
+  output->bending_range = input->bending_range;
+  // bending_face
+  output->bending_face = input->bending_face;
   return true;
 }
 

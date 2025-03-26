@@ -50,22 +50,22 @@ bool dynamixel_sdk_custom_interfaces__srv__set_bending__request__convert_from_py
     assert(strncmp("dynamixel_sdk_custom_interfaces.srv._set_bending.SetBending_Request", full_classname_dest, 67) == 0);
   }
   dynamixel_sdk_custom_interfaces__srv__SetBending_Request * ros_message = _ros_message;
-  {  // bend_state
-    PyObject * field = PyObject_GetAttrString(_pymsg, "bend_state");
+  {  // bending_range
+    PyObject * field = PyObject_GetAttrString(_pymsg, "bending_range");
     if (!field) {
       return false;
     }
     assert(PyFloat_Check(field));
-    ros_message->bend_state = PyFloat_AS_DOUBLE(field);
+    ros_message->bending_range = PyFloat_AS_DOUBLE(field);
     Py_DECREF(field);
   }
-  {  // face
-    PyObject * field = PyObject_GetAttrString(_pymsg, "face");
+  {  // bending_face
+    PyObject * field = PyObject_GetAttrString(_pymsg, "bending_face");
     if (!field) {
       return false;
     }
     assert(PyLong_Check(field));
-    ros_message->face = (int32_t)PyLong_AsLong(field);
+    ros_message->bending_face = (int32_t)PyLong_AsLong(field);
     Py_DECREF(field);
   }
 
@@ -90,22 +90,22 @@ PyObject * dynamixel_sdk_custom_interfaces__srv__set_bending__request__convert_t
     }
   }
   dynamixel_sdk_custom_interfaces__srv__SetBending_Request * ros_message = (dynamixel_sdk_custom_interfaces__srv__SetBending_Request *)raw_ros_message;
-  {  // bend_state
+  {  // bending_range
     PyObject * field = NULL;
-    field = PyFloat_FromDouble(ros_message->bend_state);
+    field = PyFloat_FromDouble(ros_message->bending_range);
     {
-      int rc = PyObject_SetAttrString(_pymessage, "bend_state", field);
+      int rc = PyObject_SetAttrString(_pymessage, "bending_range", field);
       Py_DECREF(field);
       if (rc) {
         return NULL;
       }
     }
   }
-  {  // face
+  {  // bending_face
     PyObject * field = NULL;
-    field = PyLong_FromLong(ros_message->face);
+    field = PyLong_FromLong(ros_message->bending_face);
     {
-      int rc = PyObject_SetAttrString(_pymessage, "face", field);
+      int rc = PyObject_SetAttrString(_pymessage, "bending_face", field);
       Py_DECREF(field);
       if (rc) {
         return NULL;

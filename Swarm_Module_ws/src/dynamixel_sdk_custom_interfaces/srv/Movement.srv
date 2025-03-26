@@ -1,9 +1,10 @@
 # Constants
-# Request 
+# Request
 string movement
-string robot_switch
 int32 time_period
 int32 twist_dir
+int32 bending_face
+float32 bending_range
 ---
 # Response
 bool success

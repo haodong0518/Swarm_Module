@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/haodong/modular_ws/src/dynamixel_sdk_custom_interfaces
+CMAKE_SOURCE_DIR = /home/haodong/Swarm_Module/Swarm_Module_ws/src/dynamixel_sdk_custom_interfaces
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/haodong/modular_ws/build/dynamixel_sdk_custom_interfaces
+CMAKE_BINARY_DIR = /home/haodong/Swarm_Module/Swarm_Module_ws/build/dynamixel_sdk_custom_interfaces
 
 # Utility rule file for dynamixel_sdk_custom_interfaces__cpp.
 
@@ -106,6 +106,11 @@ CMakeFiles/dynamixel_sdk_custom_interfaces__cpp: rosidl_generator_cpp/dynamixel_
 CMakeFiles/dynamixel_sdk_custom_interfaces__cpp: rosidl_generator_cpp/dynamixel_sdk_custom_interfaces/srv/detail/movement__struct.hpp
 CMakeFiles/dynamixel_sdk_custom_interfaces__cpp: rosidl_generator_cpp/dynamixel_sdk_custom_interfaces/srv/detail/movement__traits.hpp
 CMakeFiles/dynamixel_sdk_custom_interfaces__cpp: rosidl_generator_cpp/dynamixel_sdk_custom_interfaces/srv/detail/movement__type_support.hpp
+CMakeFiles/dynamixel_sdk_custom_interfaces__cpp: rosidl_generator_cpp/dynamixel_sdk_custom_interfaces/srv/set_twisting.hpp
+CMakeFiles/dynamixel_sdk_custom_interfaces__cpp: rosidl_generator_cpp/dynamixel_sdk_custom_interfaces/srv/detail/set_twisting__builder.hpp
+CMakeFiles/dynamixel_sdk_custom_interfaces__cpp: rosidl_generator_cpp/dynamixel_sdk_custom_interfaces/srv/detail/set_twisting__struct.hpp
+CMakeFiles/dynamixel_sdk_custom_interfaces__cpp: rosidl_generator_cpp/dynamixel_sdk_custom_interfaces/srv/detail/set_twisting__traits.hpp
+CMakeFiles/dynamixel_sdk_custom_interfaces__cpp: rosidl_generator_cpp/dynamixel_sdk_custom_interfaces/srv/detail/set_twisting__type_support.hpp
 CMakeFiles/dynamixel_sdk_custom_interfaces__cpp: rosidl_generator_cpp/dynamixel_sdk_custom_interfaces/msg/rosidl_generator_cpp__visibility_control.hpp
 
 rosidl_generator_cpp/dynamixel_sdk_custom_interfaces/msg/set_position.hpp: /opt/ros/jazzy/lib/rosidl_generator_cpp/rosidl_generator_cpp
@@ -135,11 +140,12 @@ rosidl_generator_cpp/dynamixel_sdk_custom_interfaces/msg/set_position.hpp: rosid
 rosidl_generator_cpp/dynamixel_sdk_custom_interfaces/msg/set_position.hpp: rosidl_adapter/dynamixel_sdk_custom_interfaces/srv/SetExtension.idl
 rosidl_generator_cpp/dynamixel_sdk_custom_interfaces/msg/set_position.hpp: rosidl_adapter/dynamixel_sdk_custom_interfaces/srv/SetBending.idl
 rosidl_generator_cpp/dynamixel_sdk_custom_interfaces/msg/set_position.hpp: rosidl_adapter/dynamixel_sdk_custom_interfaces/srv/Movement.idl
+rosidl_generator_cpp/dynamixel_sdk_custom_interfaces/msg/set_position.hpp: rosidl_adapter/dynamixel_sdk_custom_interfaces/srv/SetTwisting.idl
 rosidl_generator_cpp/dynamixel_sdk_custom_interfaces/msg/set_position.hpp: /opt/ros/jazzy/share/builtin_interfaces/msg/Duration.idl
 rosidl_generator_cpp/dynamixel_sdk_custom_interfaces/msg/set_position.hpp: /opt/ros/jazzy/share/builtin_interfaces/msg/Time.idl
 rosidl_generator_cpp/dynamixel_sdk_custom_interfaces/msg/set_position.hpp: /opt/ros/jazzy/share/service_msgs/msg/ServiceEventInfo.idl
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/haodong/modular_ws/build/dynamixel_sdk_custom_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating C++ code for ROS interfaces"
-	/usr/bin/python3 /opt/ros/jazzy/share/rosidl_generator_cpp/cmake/../../../lib/rosidl_generator_cpp/rosidl_generator_cpp --generator-arguments-file /home/haodong/modular_ws/build/dynamixel_sdk_custom_interfaces/rosidl_generator_cpp__arguments.json
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/haodong/Swarm_Module/Swarm_Module_ws/build/dynamixel_sdk_custom_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating C++ code for ROS interfaces"
+	/usr/bin/python3 /opt/ros/jazzy/share/rosidl_generator_cpp/cmake/../../../lib/rosidl_generator_cpp/rosidl_generator_cpp --generator-arguments-file /home/haodong/Swarm_Module/Swarm_Module_ws/build/dynamixel_sdk_custom_interfaces/rosidl_generator_cpp__arguments.json
 
 rosidl_generator_cpp/dynamixel_sdk_custom_interfaces/msg/detail/set_position__builder.hpp: rosidl_generator_cpp/dynamixel_sdk_custom_interfaces/msg/set_position.hpp
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/dynamixel_sdk_custom_interfaces/msg/detail/set_position__builder.hpp
@@ -258,6 +264,21 @@ rosidl_generator_cpp/dynamixel_sdk_custom_interfaces/srv/detail/movement__traits
 rosidl_generator_cpp/dynamixel_sdk_custom_interfaces/srv/detail/movement__type_support.hpp: rosidl_generator_cpp/dynamixel_sdk_custom_interfaces/msg/set_position.hpp
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/dynamixel_sdk_custom_interfaces/srv/detail/movement__type_support.hpp
 
+rosidl_generator_cpp/dynamixel_sdk_custom_interfaces/srv/set_twisting.hpp: rosidl_generator_cpp/dynamixel_sdk_custom_interfaces/msg/set_position.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/dynamixel_sdk_custom_interfaces/srv/set_twisting.hpp
+
+rosidl_generator_cpp/dynamixel_sdk_custom_interfaces/srv/detail/set_twisting__builder.hpp: rosidl_generator_cpp/dynamixel_sdk_custom_interfaces/msg/set_position.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/dynamixel_sdk_custom_interfaces/srv/detail/set_twisting__builder.hpp
+
+rosidl_generator_cpp/dynamixel_sdk_custom_interfaces/srv/detail/set_twisting__struct.hpp: rosidl_generator_cpp/dynamixel_sdk_custom_interfaces/msg/set_position.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/dynamixel_sdk_custom_interfaces/srv/detail/set_twisting__struct.hpp
+
+rosidl_generator_cpp/dynamixel_sdk_custom_interfaces/srv/detail/set_twisting__traits.hpp: rosidl_generator_cpp/dynamixel_sdk_custom_interfaces/msg/set_position.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/dynamixel_sdk_custom_interfaces/srv/detail/set_twisting__traits.hpp
+
+rosidl_generator_cpp/dynamixel_sdk_custom_interfaces/srv/detail/set_twisting__type_support.hpp: rosidl_generator_cpp/dynamixel_sdk_custom_interfaces/msg/set_position.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/dynamixel_sdk_custom_interfaces/srv/detail/set_twisting__type_support.hpp
+
 rosidl_generator_cpp/dynamixel_sdk_custom_interfaces/msg/rosidl_generator_cpp__visibility_control.hpp: rosidl_generator_cpp/dynamixel_sdk_custom_interfaces/msg/set_position.hpp
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/dynamixel_sdk_custom_interfaces/msg/rosidl_generator_cpp__visibility_control.hpp
 
@@ -294,6 +315,10 @@ dynamixel_sdk_custom_interfaces__cpp: rosidl_generator_cpp/dynamixel_sdk_custom_
 dynamixel_sdk_custom_interfaces__cpp: rosidl_generator_cpp/dynamixel_sdk_custom_interfaces/srv/detail/set_extension__struct.hpp
 dynamixel_sdk_custom_interfaces__cpp: rosidl_generator_cpp/dynamixel_sdk_custom_interfaces/srv/detail/set_extension__traits.hpp
 dynamixel_sdk_custom_interfaces__cpp: rosidl_generator_cpp/dynamixel_sdk_custom_interfaces/srv/detail/set_extension__type_support.hpp
+dynamixel_sdk_custom_interfaces__cpp: rosidl_generator_cpp/dynamixel_sdk_custom_interfaces/srv/detail/set_twisting__builder.hpp
+dynamixel_sdk_custom_interfaces__cpp: rosidl_generator_cpp/dynamixel_sdk_custom_interfaces/srv/detail/set_twisting__struct.hpp
+dynamixel_sdk_custom_interfaces__cpp: rosidl_generator_cpp/dynamixel_sdk_custom_interfaces/srv/detail/set_twisting__traits.hpp
+dynamixel_sdk_custom_interfaces__cpp: rosidl_generator_cpp/dynamixel_sdk_custom_interfaces/srv/detail/set_twisting__type_support.hpp
 dynamixel_sdk_custom_interfaces__cpp: rosidl_generator_cpp/dynamixel_sdk_custom_interfaces/srv/detail/set_velocity__builder.hpp
 dynamixel_sdk_custom_interfaces__cpp: rosidl_generator_cpp/dynamixel_sdk_custom_interfaces/srv/detail/set_velocity__struct.hpp
 dynamixel_sdk_custom_interfaces__cpp: rosidl_generator_cpp/dynamixel_sdk_custom_interfaces/srv/detail/set_velocity__traits.hpp
@@ -302,6 +327,7 @@ dynamixel_sdk_custom_interfaces__cpp: rosidl_generator_cpp/dynamixel_sdk_custom_
 dynamixel_sdk_custom_interfaces__cpp: rosidl_generator_cpp/dynamixel_sdk_custom_interfaces/srv/movement.hpp
 dynamixel_sdk_custom_interfaces__cpp: rosidl_generator_cpp/dynamixel_sdk_custom_interfaces/srv/set_bending.hpp
 dynamixel_sdk_custom_interfaces__cpp: rosidl_generator_cpp/dynamixel_sdk_custom_interfaces/srv/set_extension.hpp
+dynamixel_sdk_custom_interfaces__cpp: rosidl_generator_cpp/dynamixel_sdk_custom_interfaces/srv/set_twisting.hpp
 dynamixel_sdk_custom_interfaces__cpp: rosidl_generator_cpp/dynamixel_sdk_custom_interfaces/srv/set_velocity.hpp
 dynamixel_sdk_custom_interfaces__cpp: CMakeFiles/dynamixel_sdk_custom_interfaces__cpp.dir/build.make
 .PHONY : dynamixel_sdk_custom_interfaces__cpp
@@ -315,6 +341,6 @@ CMakeFiles/dynamixel_sdk_custom_interfaces__cpp.dir/clean:
 .PHONY : CMakeFiles/dynamixel_sdk_custom_interfaces__cpp.dir/clean
 
 CMakeFiles/dynamixel_sdk_custom_interfaces__cpp.dir/depend:
-	cd /home/haodong/modular_ws/build/dynamixel_sdk_custom_interfaces && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/haodong/modular_ws/src/dynamixel_sdk_custom_interfaces /home/haodong/modular_ws/src/dynamixel_sdk_custom_interfaces /home/haodong/modular_ws/build/dynamixel_sdk_custom_interfaces /home/haodong/modular_ws/build/dynamixel_sdk_custom_interfaces /home/haodong/modular_ws/build/dynamixel_sdk_custom_interfaces/CMakeFiles/dynamixel_sdk_custom_interfaces__cpp.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/haodong/Swarm_Module/Swarm_Module_ws/build/dynamixel_sdk_custom_interfaces && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/haodong/Swarm_Module/Swarm_Module_ws/src/dynamixel_sdk_custom_interfaces /home/haodong/Swarm_Module/Swarm_Module_ws/src/dynamixel_sdk_custom_interfaces /home/haodong/Swarm_Module/Swarm_Module_ws/build/dynamixel_sdk_custom_interfaces /home/haodong/Swarm_Module/Swarm_Module_ws/build/dynamixel_sdk_custom_interfaces /home/haodong/Swarm_Module/Swarm_Module_ws/build/dynamixel_sdk_custom_interfaces/CMakeFiles/dynamixel_sdk_custom_interfaces__cpp.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/dynamixel_sdk_custom_interfaces__cpp.dir/depend
 

@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/haodong/modular_ws/src/dynamixel_sdk_custom_interfaces
+CMAKE_SOURCE_DIR = /home/haodong/Swarm_Module/Swarm_Module_ws/src/dynamixel_sdk_custom_interfaces
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/haodong/modular_ws/build/dynamixel_sdk_custom_interfaces
+CMAKE_BINARY_DIR = /home/haodong/Swarm_Module/Swarm_Module_ws/build/dynamixel_sdk_custom_interfaces
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -142,9 +142,9 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/haodong/modular_ws/build/dynamixel_sdk_custom_interfaces/CMakeFiles /home/haodong/modular_ws/build/dynamixel_sdk_custom_interfaces//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/haodong/Swarm_Module/Swarm_Module_ws/build/dynamixel_sdk_custom_interfaces/CMakeFiles /home/haodong/Swarm_Module/Swarm_Module_ws/build/dynamixel_sdk_custom_interfaces//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/haodong/modular_ws/build/dynamixel_sdk_custom_interfaces/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/haodong/Swarm_Module/Swarm_Module_ws/build/dynamixel_sdk_custom_interfaces/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -415,7 +415,7 @@ dynamixel_sdk_custom_interfaces__py: cmake_check_build_system
 
 # fast build rule for target.
 dynamixel_sdk_custom_interfaces__py/fast:
-	$(MAKE) $(MAKESILENT) -f /home/haodong/modular_ws/build/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces__py/CMakeFiles/dynamixel_sdk_custom_interfaces__py.dir/build.make /home/haodong/modular_ws/build/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces__py/CMakeFiles/dynamixel_sdk_custom_interfaces__py.dir/build
+	$(MAKE) $(MAKESILENT) -f /home/haodong/Swarm_Module/Swarm_Module_ws/build/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces__py/CMakeFiles/dynamixel_sdk_custom_interfaces__py.dir/build.make /home/haodong/Swarm_Module/Swarm_Module_ws/build/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces__py/CMakeFiles/dynamixel_sdk_custom_interfaces__py.dir/build
 .PHONY : dynamixel_sdk_custom_interfaces__py/fast
 
 rosidl_generator_c/dynamixel_sdk_custom_interfaces/msg/detail/rolling__description.o: rosidl_generator_c/dynamixel_sdk_custom_interfaces/msg/detail/rolling__description.c.o
@@ -922,6 +922,78 @@ rosidl_generator_c/dynamixel_sdk_custom_interfaces/srv/detail/set_extension__typ
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/dynamixel_sdk_custom_interfaces__rosidl_generator_c.dir/build.make CMakeFiles/dynamixel_sdk_custom_interfaces__rosidl_generator_c.dir/rosidl_generator_c/dynamixel_sdk_custom_interfaces/srv/detail/set_extension__type_support.c.s
 .PHONY : rosidl_generator_c/dynamixel_sdk_custom_interfaces/srv/detail/set_extension__type_support.c.s
 
+rosidl_generator_c/dynamixel_sdk_custom_interfaces/srv/detail/set_twisting__description.o: rosidl_generator_c/dynamixel_sdk_custom_interfaces/srv/detail/set_twisting__description.c.o
+.PHONY : rosidl_generator_c/dynamixel_sdk_custom_interfaces/srv/detail/set_twisting__description.o
+
+# target to build an object file
+rosidl_generator_c/dynamixel_sdk_custom_interfaces/srv/detail/set_twisting__description.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dynamixel_sdk_custom_interfaces__rosidl_generator_c.dir/build.make CMakeFiles/dynamixel_sdk_custom_interfaces__rosidl_generator_c.dir/rosidl_generator_c/dynamixel_sdk_custom_interfaces/srv/detail/set_twisting__description.c.o
+.PHONY : rosidl_generator_c/dynamixel_sdk_custom_interfaces/srv/detail/set_twisting__description.c.o
+
+rosidl_generator_c/dynamixel_sdk_custom_interfaces/srv/detail/set_twisting__description.i: rosidl_generator_c/dynamixel_sdk_custom_interfaces/srv/detail/set_twisting__description.c.i
+.PHONY : rosidl_generator_c/dynamixel_sdk_custom_interfaces/srv/detail/set_twisting__description.i
+
+# target to preprocess a source file
+rosidl_generator_c/dynamixel_sdk_custom_interfaces/srv/detail/set_twisting__description.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dynamixel_sdk_custom_interfaces__rosidl_generator_c.dir/build.make CMakeFiles/dynamixel_sdk_custom_interfaces__rosidl_generator_c.dir/rosidl_generator_c/dynamixel_sdk_custom_interfaces/srv/detail/set_twisting__description.c.i
+.PHONY : rosidl_generator_c/dynamixel_sdk_custom_interfaces/srv/detail/set_twisting__description.c.i
+
+rosidl_generator_c/dynamixel_sdk_custom_interfaces/srv/detail/set_twisting__description.s: rosidl_generator_c/dynamixel_sdk_custom_interfaces/srv/detail/set_twisting__description.c.s
+.PHONY : rosidl_generator_c/dynamixel_sdk_custom_interfaces/srv/detail/set_twisting__description.s
+
+# target to generate assembly for a file
+rosidl_generator_c/dynamixel_sdk_custom_interfaces/srv/detail/set_twisting__description.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dynamixel_sdk_custom_interfaces__rosidl_generator_c.dir/build.make CMakeFiles/dynamixel_sdk_custom_interfaces__rosidl_generator_c.dir/rosidl_generator_c/dynamixel_sdk_custom_interfaces/srv/detail/set_twisting__description.c.s
+.PHONY : rosidl_generator_c/dynamixel_sdk_custom_interfaces/srv/detail/set_twisting__description.c.s
+
+rosidl_generator_c/dynamixel_sdk_custom_interfaces/srv/detail/set_twisting__functions.o: rosidl_generator_c/dynamixel_sdk_custom_interfaces/srv/detail/set_twisting__functions.c.o
+.PHONY : rosidl_generator_c/dynamixel_sdk_custom_interfaces/srv/detail/set_twisting__functions.o
+
+# target to build an object file
+rosidl_generator_c/dynamixel_sdk_custom_interfaces/srv/detail/set_twisting__functions.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dynamixel_sdk_custom_interfaces__rosidl_generator_c.dir/build.make CMakeFiles/dynamixel_sdk_custom_interfaces__rosidl_generator_c.dir/rosidl_generator_c/dynamixel_sdk_custom_interfaces/srv/detail/set_twisting__functions.c.o
+.PHONY : rosidl_generator_c/dynamixel_sdk_custom_interfaces/srv/detail/set_twisting__functions.c.o
+
+rosidl_generator_c/dynamixel_sdk_custom_interfaces/srv/detail/set_twisting__functions.i: rosidl_generator_c/dynamixel_sdk_custom_interfaces/srv/detail/set_twisting__functions.c.i
+.PHONY : rosidl_generator_c/dynamixel_sdk_custom_interfaces/srv/detail/set_twisting__functions.i
+
+# target to preprocess a source file
+rosidl_generator_c/dynamixel_sdk_custom_interfaces/srv/detail/set_twisting__functions.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dynamixel_sdk_custom_interfaces__rosidl_generator_c.dir/build.make CMakeFiles/dynamixel_sdk_custom_interfaces__rosidl_generator_c.dir/rosidl_generator_c/dynamixel_sdk_custom_interfaces/srv/detail/set_twisting__functions.c.i
+.PHONY : rosidl_generator_c/dynamixel_sdk_custom_interfaces/srv/detail/set_twisting__functions.c.i
+
+rosidl_generator_c/dynamixel_sdk_custom_interfaces/srv/detail/set_twisting__functions.s: rosidl_generator_c/dynamixel_sdk_custom_interfaces/srv/detail/set_twisting__functions.c.s
+.PHONY : rosidl_generator_c/dynamixel_sdk_custom_interfaces/srv/detail/set_twisting__functions.s
+
+# target to generate assembly for a file
+rosidl_generator_c/dynamixel_sdk_custom_interfaces/srv/detail/set_twisting__functions.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dynamixel_sdk_custom_interfaces__rosidl_generator_c.dir/build.make CMakeFiles/dynamixel_sdk_custom_interfaces__rosidl_generator_c.dir/rosidl_generator_c/dynamixel_sdk_custom_interfaces/srv/detail/set_twisting__functions.c.s
+.PHONY : rosidl_generator_c/dynamixel_sdk_custom_interfaces/srv/detail/set_twisting__functions.c.s
+
+rosidl_generator_c/dynamixel_sdk_custom_interfaces/srv/detail/set_twisting__type_support.o: rosidl_generator_c/dynamixel_sdk_custom_interfaces/srv/detail/set_twisting__type_support.c.o
+.PHONY : rosidl_generator_c/dynamixel_sdk_custom_interfaces/srv/detail/set_twisting__type_support.o
+
+# target to build an object file
+rosidl_generator_c/dynamixel_sdk_custom_interfaces/srv/detail/set_twisting__type_support.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dynamixel_sdk_custom_interfaces__rosidl_generator_c.dir/build.make CMakeFiles/dynamixel_sdk_custom_interfaces__rosidl_generator_c.dir/rosidl_generator_c/dynamixel_sdk_custom_interfaces/srv/detail/set_twisting__type_support.c.o
+.PHONY : rosidl_generator_c/dynamixel_sdk_custom_interfaces/srv/detail/set_twisting__type_support.c.o
+
+rosidl_generator_c/dynamixel_sdk_custom_interfaces/srv/detail/set_twisting__type_support.i: rosidl_generator_c/dynamixel_sdk_custom_interfaces/srv/detail/set_twisting__type_support.c.i
+.PHONY : rosidl_generator_c/dynamixel_sdk_custom_interfaces/srv/detail/set_twisting__type_support.i
+
+# target to preprocess a source file
+rosidl_generator_c/dynamixel_sdk_custom_interfaces/srv/detail/set_twisting__type_support.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dynamixel_sdk_custom_interfaces__rosidl_generator_c.dir/build.make CMakeFiles/dynamixel_sdk_custom_interfaces__rosidl_generator_c.dir/rosidl_generator_c/dynamixel_sdk_custom_interfaces/srv/detail/set_twisting__type_support.c.i
+.PHONY : rosidl_generator_c/dynamixel_sdk_custom_interfaces/srv/detail/set_twisting__type_support.c.i
+
+rosidl_generator_c/dynamixel_sdk_custom_interfaces/srv/detail/set_twisting__type_support.s: rosidl_generator_c/dynamixel_sdk_custom_interfaces/srv/detail/set_twisting__type_support.c.s
+.PHONY : rosidl_generator_c/dynamixel_sdk_custom_interfaces/srv/detail/set_twisting__type_support.s
+
+# target to generate assembly for a file
+rosidl_generator_c/dynamixel_sdk_custom_interfaces/srv/detail/set_twisting__type_support.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dynamixel_sdk_custom_interfaces__rosidl_generator_c.dir/build.make CMakeFiles/dynamixel_sdk_custom_interfaces__rosidl_generator_c.dir/rosidl_generator_c/dynamixel_sdk_custom_interfaces/srv/detail/set_twisting__type_support.c.s
+.PHONY : rosidl_generator_c/dynamixel_sdk_custom_interfaces/srv/detail/set_twisting__type_support.c.s
+
 rosidl_generator_c/dynamixel_sdk_custom_interfaces/srv/detail/set_velocity__description.o: rosidl_generator_c/dynamixel_sdk_custom_interfaces/srv/detail/set_velocity__description.c.o
 .PHONY : rosidl_generator_c/dynamixel_sdk_custom_interfaces/srv/detail/set_velocity__description.o
 
@@ -1234,6 +1306,30 @@ rosidl_generator_py/dynamixel_sdk_custom_interfaces/srv/_set_extension_s.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/dynamixel_sdk_custom_interfaces__rosidl_generator_py.dir/build.make CMakeFiles/dynamixel_sdk_custom_interfaces__rosidl_generator_py.dir/rosidl_generator_py/dynamixel_sdk_custom_interfaces/srv/_set_extension_s.c.s
 .PHONY : rosidl_generator_py/dynamixel_sdk_custom_interfaces/srv/_set_extension_s.c.s
 
+rosidl_generator_py/dynamixel_sdk_custom_interfaces/srv/_set_twisting_s.o: rosidl_generator_py/dynamixel_sdk_custom_interfaces/srv/_set_twisting_s.c.o
+.PHONY : rosidl_generator_py/dynamixel_sdk_custom_interfaces/srv/_set_twisting_s.o
+
+# target to build an object file
+rosidl_generator_py/dynamixel_sdk_custom_interfaces/srv/_set_twisting_s.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dynamixel_sdk_custom_interfaces__rosidl_generator_py.dir/build.make CMakeFiles/dynamixel_sdk_custom_interfaces__rosidl_generator_py.dir/rosidl_generator_py/dynamixel_sdk_custom_interfaces/srv/_set_twisting_s.c.o
+.PHONY : rosidl_generator_py/dynamixel_sdk_custom_interfaces/srv/_set_twisting_s.c.o
+
+rosidl_generator_py/dynamixel_sdk_custom_interfaces/srv/_set_twisting_s.i: rosidl_generator_py/dynamixel_sdk_custom_interfaces/srv/_set_twisting_s.c.i
+.PHONY : rosidl_generator_py/dynamixel_sdk_custom_interfaces/srv/_set_twisting_s.i
+
+# target to preprocess a source file
+rosidl_generator_py/dynamixel_sdk_custom_interfaces/srv/_set_twisting_s.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dynamixel_sdk_custom_interfaces__rosidl_generator_py.dir/build.make CMakeFiles/dynamixel_sdk_custom_interfaces__rosidl_generator_py.dir/rosidl_generator_py/dynamixel_sdk_custom_interfaces/srv/_set_twisting_s.c.i
+.PHONY : rosidl_generator_py/dynamixel_sdk_custom_interfaces/srv/_set_twisting_s.c.i
+
+rosidl_generator_py/dynamixel_sdk_custom_interfaces/srv/_set_twisting_s.s: rosidl_generator_py/dynamixel_sdk_custom_interfaces/srv/_set_twisting_s.c.s
+.PHONY : rosidl_generator_py/dynamixel_sdk_custom_interfaces/srv/_set_twisting_s.s
+
+# target to generate assembly for a file
+rosidl_generator_py/dynamixel_sdk_custom_interfaces/srv/_set_twisting_s.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dynamixel_sdk_custom_interfaces__rosidl_generator_py.dir/build.make CMakeFiles/dynamixel_sdk_custom_interfaces__rosidl_generator_py.dir/rosidl_generator_py/dynamixel_sdk_custom_interfaces/srv/_set_twisting_s.c.s
+.PHONY : rosidl_generator_py/dynamixel_sdk_custom_interfaces/srv/_set_twisting_s.c.s
+
 rosidl_generator_py/dynamixel_sdk_custom_interfaces/srv/_set_velocity_s.o: rosidl_generator_py/dynamixel_sdk_custom_interfaces/srv/_set_velocity_s.c.o
 .PHONY : rosidl_generator_py/dynamixel_sdk_custom_interfaces/srv/_set_velocity_s.o
 
@@ -1425,6 +1521,30 @@ rosidl_typesupport_c/dynamixel_sdk_custom_interfaces/srv/set_extension__type_sup
 rosidl_typesupport_c/dynamixel_sdk_custom_interfaces/srv/set_extension__type_support.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/dynamixel_sdk_custom_interfaces__rosidl_typesupport_c.dir/build.make CMakeFiles/dynamixel_sdk_custom_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/dynamixel_sdk_custom_interfaces/srv/set_extension__type_support.cpp.s
 .PHONY : rosidl_typesupport_c/dynamixel_sdk_custom_interfaces/srv/set_extension__type_support.cpp.s
+
+rosidl_typesupport_c/dynamixel_sdk_custom_interfaces/srv/set_twisting__type_support.o: rosidl_typesupport_c/dynamixel_sdk_custom_interfaces/srv/set_twisting__type_support.cpp.o
+.PHONY : rosidl_typesupport_c/dynamixel_sdk_custom_interfaces/srv/set_twisting__type_support.o
+
+# target to build an object file
+rosidl_typesupport_c/dynamixel_sdk_custom_interfaces/srv/set_twisting__type_support.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dynamixel_sdk_custom_interfaces__rosidl_typesupport_c.dir/build.make CMakeFiles/dynamixel_sdk_custom_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/dynamixel_sdk_custom_interfaces/srv/set_twisting__type_support.cpp.o
+.PHONY : rosidl_typesupport_c/dynamixel_sdk_custom_interfaces/srv/set_twisting__type_support.cpp.o
+
+rosidl_typesupport_c/dynamixel_sdk_custom_interfaces/srv/set_twisting__type_support.i: rosidl_typesupport_c/dynamixel_sdk_custom_interfaces/srv/set_twisting__type_support.cpp.i
+.PHONY : rosidl_typesupport_c/dynamixel_sdk_custom_interfaces/srv/set_twisting__type_support.i
+
+# target to preprocess a source file
+rosidl_typesupport_c/dynamixel_sdk_custom_interfaces/srv/set_twisting__type_support.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dynamixel_sdk_custom_interfaces__rosidl_typesupport_c.dir/build.make CMakeFiles/dynamixel_sdk_custom_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/dynamixel_sdk_custom_interfaces/srv/set_twisting__type_support.cpp.i
+.PHONY : rosidl_typesupport_c/dynamixel_sdk_custom_interfaces/srv/set_twisting__type_support.cpp.i
+
+rosidl_typesupport_c/dynamixel_sdk_custom_interfaces/srv/set_twisting__type_support.s: rosidl_typesupport_c/dynamixel_sdk_custom_interfaces/srv/set_twisting__type_support.cpp.s
+.PHONY : rosidl_typesupport_c/dynamixel_sdk_custom_interfaces/srv/set_twisting__type_support.s
+
+# target to generate assembly for a file
+rosidl_typesupport_c/dynamixel_sdk_custom_interfaces/srv/set_twisting__type_support.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dynamixel_sdk_custom_interfaces__rosidl_typesupport_c.dir/build.make CMakeFiles/dynamixel_sdk_custom_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/dynamixel_sdk_custom_interfaces/srv/set_twisting__type_support.cpp.s
+.PHONY : rosidl_typesupport_c/dynamixel_sdk_custom_interfaces/srv/set_twisting__type_support.cpp.s
 
 rosidl_typesupport_c/dynamixel_sdk_custom_interfaces/srv/set_velocity__type_support.o: rosidl_typesupport_c/dynamixel_sdk_custom_interfaces/srv/set_velocity__type_support.cpp.o
 .PHONY : rosidl_typesupport_c/dynamixel_sdk_custom_interfaces/srv/set_velocity__type_support.o
@@ -1618,6 +1738,30 @@ rosidl_typesupport_cpp/dynamixel_sdk_custom_interfaces/srv/set_extension__type_s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/dynamixel_sdk_custom_interfaces__rosidl_typesupport_cpp.dir/build.make CMakeFiles/dynamixel_sdk_custom_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/dynamixel_sdk_custom_interfaces/srv/set_extension__type_support.cpp.s
 .PHONY : rosidl_typesupport_cpp/dynamixel_sdk_custom_interfaces/srv/set_extension__type_support.cpp.s
 
+rosidl_typesupport_cpp/dynamixel_sdk_custom_interfaces/srv/set_twisting__type_support.o: rosidl_typesupport_cpp/dynamixel_sdk_custom_interfaces/srv/set_twisting__type_support.cpp.o
+.PHONY : rosidl_typesupport_cpp/dynamixel_sdk_custom_interfaces/srv/set_twisting__type_support.o
+
+# target to build an object file
+rosidl_typesupport_cpp/dynamixel_sdk_custom_interfaces/srv/set_twisting__type_support.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dynamixel_sdk_custom_interfaces__rosidl_typesupport_cpp.dir/build.make CMakeFiles/dynamixel_sdk_custom_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/dynamixel_sdk_custom_interfaces/srv/set_twisting__type_support.cpp.o
+.PHONY : rosidl_typesupport_cpp/dynamixel_sdk_custom_interfaces/srv/set_twisting__type_support.cpp.o
+
+rosidl_typesupport_cpp/dynamixel_sdk_custom_interfaces/srv/set_twisting__type_support.i: rosidl_typesupport_cpp/dynamixel_sdk_custom_interfaces/srv/set_twisting__type_support.cpp.i
+.PHONY : rosidl_typesupport_cpp/dynamixel_sdk_custom_interfaces/srv/set_twisting__type_support.i
+
+# target to preprocess a source file
+rosidl_typesupport_cpp/dynamixel_sdk_custom_interfaces/srv/set_twisting__type_support.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dynamixel_sdk_custom_interfaces__rosidl_typesupport_cpp.dir/build.make CMakeFiles/dynamixel_sdk_custom_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/dynamixel_sdk_custom_interfaces/srv/set_twisting__type_support.cpp.i
+.PHONY : rosidl_typesupport_cpp/dynamixel_sdk_custom_interfaces/srv/set_twisting__type_support.cpp.i
+
+rosidl_typesupport_cpp/dynamixel_sdk_custom_interfaces/srv/set_twisting__type_support.s: rosidl_typesupport_cpp/dynamixel_sdk_custom_interfaces/srv/set_twisting__type_support.cpp.s
+.PHONY : rosidl_typesupport_cpp/dynamixel_sdk_custom_interfaces/srv/set_twisting__type_support.s
+
+# target to generate assembly for a file
+rosidl_typesupport_cpp/dynamixel_sdk_custom_interfaces/srv/set_twisting__type_support.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dynamixel_sdk_custom_interfaces__rosidl_typesupport_cpp.dir/build.make CMakeFiles/dynamixel_sdk_custom_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/dynamixel_sdk_custom_interfaces/srv/set_twisting__type_support.cpp.s
+.PHONY : rosidl_typesupport_cpp/dynamixel_sdk_custom_interfaces/srv/set_twisting__type_support.cpp.s
+
 rosidl_typesupport_cpp/dynamixel_sdk_custom_interfaces/srv/set_velocity__type_support.o: rosidl_typesupport_cpp/dynamixel_sdk_custom_interfaces/srv/set_velocity__type_support.cpp.o
 .PHONY : rosidl_typesupport_cpp/dynamixel_sdk_custom_interfaces/srv/set_velocity__type_support.o
 
@@ -1809,6 +1953,30 @@ rosidl_typesupport_fastrtps_c/dynamixel_sdk_custom_interfaces/srv/detail/set_ext
 rosidl_typesupport_fastrtps_c/dynamixel_sdk_custom_interfaces/srv/detail/set_extension__type_support_c.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/dynamixel_sdk_custom_interfaces__rosidl_typesupport_fastrtps_c.dir/build.make CMakeFiles/dynamixel_sdk_custom_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/dynamixel_sdk_custom_interfaces/srv/detail/set_extension__type_support_c.cpp.s
 .PHONY : rosidl_typesupport_fastrtps_c/dynamixel_sdk_custom_interfaces/srv/detail/set_extension__type_support_c.cpp.s
+
+rosidl_typesupport_fastrtps_c/dynamixel_sdk_custom_interfaces/srv/detail/set_twisting__type_support_c.o: rosidl_typesupport_fastrtps_c/dynamixel_sdk_custom_interfaces/srv/detail/set_twisting__type_support_c.cpp.o
+.PHONY : rosidl_typesupport_fastrtps_c/dynamixel_sdk_custom_interfaces/srv/detail/set_twisting__type_support_c.o
+
+# target to build an object file
+rosidl_typesupport_fastrtps_c/dynamixel_sdk_custom_interfaces/srv/detail/set_twisting__type_support_c.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dynamixel_sdk_custom_interfaces__rosidl_typesupport_fastrtps_c.dir/build.make CMakeFiles/dynamixel_sdk_custom_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/dynamixel_sdk_custom_interfaces/srv/detail/set_twisting__type_support_c.cpp.o
+.PHONY : rosidl_typesupport_fastrtps_c/dynamixel_sdk_custom_interfaces/srv/detail/set_twisting__type_support_c.cpp.o
+
+rosidl_typesupport_fastrtps_c/dynamixel_sdk_custom_interfaces/srv/detail/set_twisting__type_support_c.i: rosidl_typesupport_fastrtps_c/dynamixel_sdk_custom_interfaces/srv/detail/set_twisting__type_support_c.cpp.i
+.PHONY : rosidl_typesupport_fastrtps_c/dynamixel_sdk_custom_interfaces/srv/detail/set_twisting__type_support_c.i
+
+# target to preprocess a source file
+rosidl_typesupport_fastrtps_c/dynamixel_sdk_custom_interfaces/srv/detail/set_twisting__type_support_c.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dynamixel_sdk_custom_interfaces__rosidl_typesupport_fastrtps_c.dir/build.make CMakeFiles/dynamixel_sdk_custom_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/dynamixel_sdk_custom_interfaces/srv/detail/set_twisting__type_support_c.cpp.i
+.PHONY : rosidl_typesupport_fastrtps_c/dynamixel_sdk_custom_interfaces/srv/detail/set_twisting__type_support_c.cpp.i
+
+rosidl_typesupport_fastrtps_c/dynamixel_sdk_custom_interfaces/srv/detail/set_twisting__type_support_c.s: rosidl_typesupport_fastrtps_c/dynamixel_sdk_custom_interfaces/srv/detail/set_twisting__type_support_c.cpp.s
+.PHONY : rosidl_typesupport_fastrtps_c/dynamixel_sdk_custom_interfaces/srv/detail/set_twisting__type_support_c.s
+
+# target to generate assembly for a file
+rosidl_typesupport_fastrtps_c/dynamixel_sdk_custom_interfaces/srv/detail/set_twisting__type_support_c.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dynamixel_sdk_custom_interfaces__rosidl_typesupport_fastrtps_c.dir/build.make CMakeFiles/dynamixel_sdk_custom_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/dynamixel_sdk_custom_interfaces/srv/detail/set_twisting__type_support_c.cpp.s
+.PHONY : rosidl_typesupport_fastrtps_c/dynamixel_sdk_custom_interfaces/srv/detail/set_twisting__type_support_c.cpp.s
 
 rosidl_typesupport_fastrtps_c/dynamixel_sdk_custom_interfaces/srv/detail/set_velocity__type_support_c.o: rosidl_typesupport_fastrtps_c/dynamixel_sdk_custom_interfaces/srv/detail/set_velocity__type_support_c.cpp.o
 .PHONY : rosidl_typesupport_fastrtps_c/dynamixel_sdk_custom_interfaces/srv/detail/set_velocity__type_support_c.o
@@ -2002,6 +2170,30 @@ rosidl_typesupport_fastrtps_cpp/dynamixel_sdk_custom_interfaces/srv/detail/dds_f
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/dynamixel_sdk_custom_interfaces__rosidl_typesupport_fastrtps_cpp.dir/build.make CMakeFiles/dynamixel_sdk_custom_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/dynamixel_sdk_custom_interfaces/srv/detail/dds_fastrtps/set_extension__type_support.cpp.s
 .PHONY : rosidl_typesupport_fastrtps_cpp/dynamixel_sdk_custom_interfaces/srv/detail/dds_fastrtps/set_extension__type_support.cpp.s
 
+rosidl_typesupport_fastrtps_cpp/dynamixel_sdk_custom_interfaces/srv/detail/dds_fastrtps/set_twisting__type_support.o: rosidl_typesupport_fastrtps_cpp/dynamixel_sdk_custom_interfaces/srv/detail/dds_fastrtps/set_twisting__type_support.cpp.o
+.PHONY : rosidl_typesupport_fastrtps_cpp/dynamixel_sdk_custom_interfaces/srv/detail/dds_fastrtps/set_twisting__type_support.o
+
+# target to build an object file
+rosidl_typesupport_fastrtps_cpp/dynamixel_sdk_custom_interfaces/srv/detail/dds_fastrtps/set_twisting__type_support.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dynamixel_sdk_custom_interfaces__rosidl_typesupport_fastrtps_cpp.dir/build.make CMakeFiles/dynamixel_sdk_custom_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/dynamixel_sdk_custom_interfaces/srv/detail/dds_fastrtps/set_twisting__type_support.cpp.o
+.PHONY : rosidl_typesupport_fastrtps_cpp/dynamixel_sdk_custom_interfaces/srv/detail/dds_fastrtps/set_twisting__type_support.cpp.o
+
+rosidl_typesupport_fastrtps_cpp/dynamixel_sdk_custom_interfaces/srv/detail/dds_fastrtps/set_twisting__type_support.i: rosidl_typesupport_fastrtps_cpp/dynamixel_sdk_custom_interfaces/srv/detail/dds_fastrtps/set_twisting__type_support.cpp.i
+.PHONY : rosidl_typesupport_fastrtps_cpp/dynamixel_sdk_custom_interfaces/srv/detail/dds_fastrtps/set_twisting__type_support.i
+
+# target to preprocess a source file
+rosidl_typesupport_fastrtps_cpp/dynamixel_sdk_custom_interfaces/srv/detail/dds_fastrtps/set_twisting__type_support.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dynamixel_sdk_custom_interfaces__rosidl_typesupport_fastrtps_cpp.dir/build.make CMakeFiles/dynamixel_sdk_custom_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/dynamixel_sdk_custom_interfaces/srv/detail/dds_fastrtps/set_twisting__type_support.cpp.i
+.PHONY : rosidl_typesupport_fastrtps_cpp/dynamixel_sdk_custom_interfaces/srv/detail/dds_fastrtps/set_twisting__type_support.cpp.i
+
+rosidl_typesupport_fastrtps_cpp/dynamixel_sdk_custom_interfaces/srv/detail/dds_fastrtps/set_twisting__type_support.s: rosidl_typesupport_fastrtps_cpp/dynamixel_sdk_custom_interfaces/srv/detail/dds_fastrtps/set_twisting__type_support.cpp.s
+.PHONY : rosidl_typesupport_fastrtps_cpp/dynamixel_sdk_custom_interfaces/srv/detail/dds_fastrtps/set_twisting__type_support.s
+
+# target to generate assembly for a file
+rosidl_typesupport_fastrtps_cpp/dynamixel_sdk_custom_interfaces/srv/detail/dds_fastrtps/set_twisting__type_support.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dynamixel_sdk_custom_interfaces__rosidl_typesupport_fastrtps_cpp.dir/build.make CMakeFiles/dynamixel_sdk_custom_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/dynamixel_sdk_custom_interfaces/srv/detail/dds_fastrtps/set_twisting__type_support.cpp.s
+.PHONY : rosidl_typesupport_fastrtps_cpp/dynamixel_sdk_custom_interfaces/srv/detail/dds_fastrtps/set_twisting__type_support.cpp.s
+
 rosidl_typesupport_fastrtps_cpp/dynamixel_sdk_custom_interfaces/srv/detail/dds_fastrtps/set_velocity__type_support.o: rosidl_typesupport_fastrtps_cpp/dynamixel_sdk_custom_interfaces/srv/detail/dds_fastrtps/set_velocity__type_support.cpp.o
 .PHONY : rosidl_typesupport_fastrtps_cpp/dynamixel_sdk_custom_interfaces/srv/detail/dds_fastrtps/set_velocity__type_support.o
 
@@ -2193,6 +2385,30 @@ rosidl_typesupport_introspection_c/dynamixel_sdk_custom_interfaces/srv/detail/se
 rosidl_typesupport_introspection_c/dynamixel_sdk_custom_interfaces/srv/detail/set_extension__type_support.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/dynamixel_sdk_custom_interfaces__rosidl_typesupport_introspection_c.dir/build.make CMakeFiles/dynamixel_sdk_custom_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/dynamixel_sdk_custom_interfaces/srv/detail/set_extension__type_support.c.s
 .PHONY : rosidl_typesupport_introspection_c/dynamixel_sdk_custom_interfaces/srv/detail/set_extension__type_support.c.s
+
+rosidl_typesupport_introspection_c/dynamixel_sdk_custom_interfaces/srv/detail/set_twisting__type_support.o: rosidl_typesupport_introspection_c/dynamixel_sdk_custom_interfaces/srv/detail/set_twisting__type_support.c.o
+.PHONY : rosidl_typesupport_introspection_c/dynamixel_sdk_custom_interfaces/srv/detail/set_twisting__type_support.o
+
+# target to build an object file
+rosidl_typesupport_introspection_c/dynamixel_sdk_custom_interfaces/srv/detail/set_twisting__type_support.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dynamixel_sdk_custom_interfaces__rosidl_typesupport_introspection_c.dir/build.make CMakeFiles/dynamixel_sdk_custom_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/dynamixel_sdk_custom_interfaces/srv/detail/set_twisting__type_support.c.o
+.PHONY : rosidl_typesupport_introspection_c/dynamixel_sdk_custom_interfaces/srv/detail/set_twisting__type_support.c.o
+
+rosidl_typesupport_introspection_c/dynamixel_sdk_custom_interfaces/srv/detail/set_twisting__type_support.i: rosidl_typesupport_introspection_c/dynamixel_sdk_custom_interfaces/srv/detail/set_twisting__type_support.c.i
+.PHONY : rosidl_typesupport_introspection_c/dynamixel_sdk_custom_interfaces/srv/detail/set_twisting__type_support.i
+
+# target to preprocess a source file
+rosidl_typesupport_introspection_c/dynamixel_sdk_custom_interfaces/srv/detail/set_twisting__type_support.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dynamixel_sdk_custom_interfaces__rosidl_typesupport_introspection_c.dir/build.make CMakeFiles/dynamixel_sdk_custom_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/dynamixel_sdk_custom_interfaces/srv/detail/set_twisting__type_support.c.i
+.PHONY : rosidl_typesupport_introspection_c/dynamixel_sdk_custom_interfaces/srv/detail/set_twisting__type_support.c.i
+
+rosidl_typesupport_introspection_c/dynamixel_sdk_custom_interfaces/srv/detail/set_twisting__type_support.s: rosidl_typesupport_introspection_c/dynamixel_sdk_custom_interfaces/srv/detail/set_twisting__type_support.c.s
+.PHONY : rosidl_typesupport_introspection_c/dynamixel_sdk_custom_interfaces/srv/detail/set_twisting__type_support.s
+
+# target to generate assembly for a file
+rosidl_typesupport_introspection_c/dynamixel_sdk_custom_interfaces/srv/detail/set_twisting__type_support.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dynamixel_sdk_custom_interfaces__rosidl_typesupport_introspection_c.dir/build.make CMakeFiles/dynamixel_sdk_custom_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/dynamixel_sdk_custom_interfaces/srv/detail/set_twisting__type_support.c.s
+.PHONY : rosidl_typesupport_introspection_c/dynamixel_sdk_custom_interfaces/srv/detail/set_twisting__type_support.c.s
 
 rosidl_typesupport_introspection_c/dynamixel_sdk_custom_interfaces/srv/detail/set_velocity__type_support.o: rosidl_typesupport_introspection_c/dynamixel_sdk_custom_interfaces/srv/detail/set_velocity__type_support.c.o
 .PHONY : rosidl_typesupport_introspection_c/dynamixel_sdk_custom_interfaces/srv/detail/set_velocity__type_support.o
@@ -2386,6 +2602,30 @@ rosidl_typesupport_introspection_cpp/dynamixel_sdk_custom_interfaces/srv/detail/
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/dynamixel_sdk_custom_interfaces__rosidl_typesupport_introspection_cpp.dir/build.make CMakeFiles/dynamixel_sdk_custom_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/dynamixel_sdk_custom_interfaces/srv/detail/set_extension__type_support.cpp.s
 .PHONY : rosidl_typesupport_introspection_cpp/dynamixel_sdk_custom_interfaces/srv/detail/set_extension__type_support.cpp.s
 
+rosidl_typesupport_introspection_cpp/dynamixel_sdk_custom_interfaces/srv/detail/set_twisting__type_support.o: rosidl_typesupport_introspection_cpp/dynamixel_sdk_custom_interfaces/srv/detail/set_twisting__type_support.cpp.o
+.PHONY : rosidl_typesupport_introspection_cpp/dynamixel_sdk_custom_interfaces/srv/detail/set_twisting__type_support.o
+
+# target to build an object file
+rosidl_typesupport_introspection_cpp/dynamixel_sdk_custom_interfaces/srv/detail/set_twisting__type_support.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dynamixel_sdk_custom_interfaces__rosidl_typesupport_introspection_cpp.dir/build.make CMakeFiles/dynamixel_sdk_custom_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/dynamixel_sdk_custom_interfaces/srv/detail/set_twisting__type_support.cpp.o
+.PHONY : rosidl_typesupport_introspection_cpp/dynamixel_sdk_custom_interfaces/srv/detail/set_twisting__type_support.cpp.o
+
+rosidl_typesupport_introspection_cpp/dynamixel_sdk_custom_interfaces/srv/detail/set_twisting__type_support.i: rosidl_typesupport_introspection_cpp/dynamixel_sdk_custom_interfaces/srv/detail/set_twisting__type_support.cpp.i
+.PHONY : rosidl_typesupport_introspection_cpp/dynamixel_sdk_custom_interfaces/srv/detail/set_twisting__type_support.i
+
+# target to preprocess a source file
+rosidl_typesupport_introspection_cpp/dynamixel_sdk_custom_interfaces/srv/detail/set_twisting__type_support.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dynamixel_sdk_custom_interfaces__rosidl_typesupport_introspection_cpp.dir/build.make CMakeFiles/dynamixel_sdk_custom_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/dynamixel_sdk_custom_interfaces/srv/detail/set_twisting__type_support.cpp.i
+.PHONY : rosidl_typesupport_introspection_cpp/dynamixel_sdk_custom_interfaces/srv/detail/set_twisting__type_support.cpp.i
+
+rosidl_typesupport_introspection_cpp/dynamixel_sdk_custom_interfaces/srv/detail/set_twisting__type_support.s: rosidl_typesupport_introspection_cpp/dynamixel_sdk_custom_interfaces/srv/detail/set_twisting__type_support.cpp.s
+.PHONY : rosidl_typesupport_introspection_cpp/dynamixel_sdk_custom_interfaces/srv/detail/set_twisting__type_support.s
+
+# target to generate assembly for a file
+rosidl_typesupport_introspection_cpp/dynamixel_sdk_custom_interfaces/srv/detail/set_twisting__type_support.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dynamixel_sdk_custom_interfaces__rosidl_typesupport_introspection_cpp.dir/build.make CMakeFiles/dynamixel_sdk_custom_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/dynamixel_sdk_custom_interfaces/srv/detail/set_twisting__type_support.cpp.s
+.PHONY : rosidl_typesupport_introspection_cpp/dynamixel_sdk_custom_interfaces/srv/detail/set_twisting__type_support.cpp.s
+
 rosidl_typesupport_introspection_cpp/dynamixel_sdk_custom_interfaces/srv/detail/set_velocity__type_support.o: rosidl_typesupport_introspection_cpp/dynamixel_sdk_custom_interfaces/srv/detail/set_velocity__type_support.cpp.o
 .PHONY : rosidl_typesupport_introspection_cpp/dynamixel_sdk_custom_interfaces/srv/detail/set_velocity__type_support.o
 
@@ -2505,6 +2745,15 @@ help:
 	@echo "... rosidl_generator_c/dynamixel_sdk_custom_interfaces/srv/detail/set_extension__type_support.o"
 	@echo "... rosidl_generator_c/dynamixel_sdk_custom_interfaces/srv/detail/set_extension__type_support.i"
 	@echo "... rosidl_generator_c/dynamixel_sdk_custom_interfaces/srv/detail/set_extension__type_support.s"
+	@echo "... rosidl_generator_c/dynamixel_sdk_custom_interfaces/srv/detail/set_twisting__description.o"
+	@echo "... rosidl_generator_c/dynamixel_sdk_custom_interfaces/srv/detail/set_twisting__description.i"
+	@echo "... rosidl_generator_c/dynamixel_sdk_custom_interfaces/srv/detail/set_twisting__description.s"
+	@echo "... rosidl_generator_c/dynamixel_sdk_custom_interfaces/srv/detail/set_twisting__functions.o"
+	@echo "... rosidl_generator_c/dynamixel_sdk_custom_interfaces/srv/detail/set_twisting__functions.i"
+	@echo "... rosidl_generator_c/dynamixel_sdk_custom_interfaces/srv/detail/set_twisting__functions.s"
+	@echo "... rosidl_generator_c/dynamixel_sdk_custom_interfaces/srv/detail/set_twisting__type_support.o"
+	@echo "... rosidl_generator_c/dynamixel_sdk_custom_interfaces/srv/detail/set_twisting__type_support.i"
+	@echo "... rosidl_generator_c/dynamixel_sdk_custom_interfaces/srv/detail/set_twisting__type_support.s"
 	@echo "... rosidl_generator_c/dynamixel_sdk_custom_interfaces/srv/detail/set_velocity__description.o"
 	@echo "... rosidl_generator_c/dynamixel_sdk_custom_interfaces/srv/detail/set_velocity__description.i"
 	@echo "... rosidl_generator_c/dynamixel_sdk_custom_interfaces/srv/detail/set_velocity__description.s"
@@ -2544,6 +2793,9 @@ help:
 	@echo "... rosidl_generator_py/dynamixel_sdk_custom_interfaces/srv/_set_extension_s.o"
 	@echo "... rosidl_generator_py/dynamixel_sdk_custom_interfaces/srv/_set_extension_s.i"
 	@echo "... rosidl_generator_py/dynamixel_sdk_custom_interfaces/srv/_set_extension_s.s"
+	@echo "... rosidl_generator_py/dynamixel_sdk_custom_interfaces/srv/_set_twisting_s.o"
+	@echo "... rosidl_generator_py/dynamixel_sdk_custom_interfaces/srv/_set_twisting_s.i"
+	@echo "... rosidl_generator_py/dynamixel_sdk_custom_interfaces/srv/_set_twisting_s.s"
 	@echo "... rosidl_generator_py/dynamixel_sdk_custom_interfaces/srv/_set_velocity_s.o"
 	@echo "... rosidl_generator_py/dynamixel_sdk_custom_interfaces/srv/_set_velocity_s.i"
 	@echo "... rosidl_generator_py/dynamixel_sdk_custom_interfaces/srv/_set_velocity_s.s"
@@ -2568,6 +2820,9 @@ help:
 	@echo "... rosidl_typesupport_c/dynamixel_sdk_custom_interfaces/srv/set_extension__type_support.o"
 	@echo "... rosidl_typesupport_c/dynamixel_sdk_custom_interfaces/srv/set_extension__type_support.i"
 	@echo "... rosidl_typesupport_c/dynamixel_sdk_custom_interfaces/srv/set_extension__type_support.s"
+	@echo "... rosidl_typesupport_c/dynamixel_sdk_custom_interfaces/srv/set_twisting__type_support.o"
+	@echo "... rosidl_typesupport_c/dynamixel_sdk_custom_interfaces/srv/set_twisting__type_support.i"
+	@echo "... rosidl_typesupport_c/dynamixel_sdk_custom_interfaces/srv/set_twisting__type_support.s"
 	@echo "... rosidl_typesupport_c/dynamixel_sdk_custom_interfaces/srv/set_velocity__type_support.o"
 	@echo "... rosidl_typesupport_c/dynamixel_sdk_custom_interfaces/srv/set_velocity__type_support.i"
 	@echo "... rosidl_typesupport_c/dynamixel_sdk_custom_interfaces/srv/set_velocity__type_support.s"
@@ -2592,6 +2847,9 @@ help:
 	@echo "... rosidl_typesupport_cpp/dynamixel_sdk_custom_interfaces/srv/set_extension__type_support.o"
 	@echo "... rosidl_typesupport_cpp/dynamixel_sdk_custom_interfaces/srv/set_extension__type_support.i"
 	@echo "... rosidl_typesupport_cpp/dynamixel_sdk_custom_interfaces/srv/set_extension__type_support.s"
+	@echo "... rosidl_typesupport_cpp/dynamixel_sdk_custom_interfaces/srv/set_twisting__type_support.o"
+	@echo "... rosidl_typesupport_cpp/dynamixel_sdk_custom_interfaces/srv/set_twisting__type_support.i"
+	@echo "... rosidl_typesupport_cpp/dynamixel_sdk_custom_interfaces/srv/set_twisting__type_support.s"
 	@echo "... rosidl_typesupport_cpp/dynamixel_sdk_custom_interfaces/srv/set_velocity__type_support.o"
 	@echo "... rosidl_typesupport_cpp/dynamixel_sdk_custom_interfaces/srv/set_velocity__type_support.i"
 	@echo "... rosidl_typesupport_cpp/dynamixel_sdk_custom_interfaces/srv/set_velocity__type_support.s"
@@ -2616,6 +2874,9 @@ help:
 	@echo "... rosidl_typesupport_fastrtps_c/dynamixel_sdk_custom_interfaces/srv/detail/set_extension__type_support_c.o"
 	@echo "... rosidl_typesupport_fastrtps_c/dynamixel_sdk_custom_interfaces/srv/detail/set_extension__type_support_c.i"
 	@echo "... rosidl_typesupport_fastrtps_c/dynamixel_sdk_custom_interfaces/srv/detail/set_extension__type_support_c.s"
+	@echo "... rosidl_typesupport_fastrtps_c/dynamixel_sdk_custom_interfaces/srv/detail/set_twisting__type_support_c.o"
+	@echo "... rosidl_typesupport_fastrtps_c/dynamixel_sdk_custom_interfaces/srv/detail/set_twisting__type_support_c.i"
+	@echo "... rosidl_typesupport_fastrtps_c/dynamixel_sdk_custom_interfaces/srv/detail/set_twisting__type_support_c.s"
 	@echo "... rosidl_typesupport_fastrtps_c/dynamixel_sdk_custom_interfaces/srv/detail/set_velocity__type_support_c.o"
 	@echo "... rosidl_typesupport_fastrtps_c/dynamixel_sdk_custom_interfaces/srv/detail/set_velocity__type_support_c.i"
 	@echo "... rosidl_typesupport_fastrtps_c/dynamixel_sdk_custom_interfaces/srv/detail/set_velocity__type_support_c.s"
@@ -2640,6 +2901,9 @@ help:
 	@echo "... rosidl_typesupport_fastrtps_cpp/dynamixel_sdk_custom_interfaces/srv/detail/dds_fastrtps/set_extension__type_support.o"
 	@echo "... rosidl_typesupport_fastrtps_cpp/dynamixel_sdk_custom_interfaces/srv/detail/dds_fastrtps/set_extension__type_support.i"
 	@echo "... rosidl_typesupport_fastrtps_cpp/dynamixel_sdk_custom_interfaces/srv/detail/dds_fastrtps/set_extension__type_support.s"
+	@echo "... rosidl_typesupport_fastrtps_cpp/dynamixel_sdk_custom_interfaces/srv/detail/dds_fastrtps/set_twisting__type_support.o"
+	@echo "... rosidl_typesupport_fastrtps_cpp/dynamixel_sdk_custom_interfaces/srv/detail/dds_fastrtps/set_twisting__type_support.i"
+	@echo "... rosidl_typesupport_fastrtps_cpp/dynamixel_sdk_custom_interfaces/srv/detail/dds_fastrtps/set_twisting__type_support.s"
 	@echo "... rosidl_typesupport_fastrtps_cpp/dynamixel_sdk_custom_interfaces/srv/detail/dds_fastrtps/set_velocity__type_support.o"
 	@echo "... rosidl_typesupport_fastrtps_cpp/dynamixel_sdk_custom_interfaces/srv/detail/dds_fastrtps/set_velocity__type_support.i"
 	@echo "... rosidl_typesupport_fastrtps_cpp/dynamixel_sdk_custom_interfaces/srv/detail/dds_fastrtps/set_velocity__type_support.s"
@@ -2664,6 +2928,9 @@ help:
 	@echo "... rosidl_typesupport_introspection_c/dynamixel_sdk_custom_interfaces/srv/detail/set_extension__type_support.o"
 	@echo "... rosidl_typesupport_introspection_c/dynamixel_sdk_custom_interfaces/srv/detail/set_extension__type_support.i"
 	@echo "... rosidl_typesupport_introspection_c/dynamixel_sdk_custom_interfaces/srv/detail/set_extension__type_support.s"
+	@echo "... rosidl_typesupport_introspection_c/dynamixel_sdk_custom_interfaces/srv/detail/set_twisting__type_support.o"
+	@echo "... rosidl_typesupport_introspection_c/dynamixel_sdk_custom_interfaces/srv/detail/set_twisting__type_support.i"
+	@echo "... rosidl_typesupport_introspection_c/dynamixel_sdk_custom_interfaces/srv/detail/set_twisting__type_support.s"
 	@echo "... rosidl_typesupport_introspection_c/dynamixel_sdk_custom_interfaces/srv/detail/set_velocity__type_support.o"
 	@echo "... rosidl_typesupport_introspection_c/dynamixel_sdk_custom_interfaces/srv/detail/set_velocity__type_support.i"
 	@echo "... rosidl_typesupport_introspection_c/dynamixel_sdk_custom_interfaces/srv/detail/set_velocity__type_support.s"
@@ -2688,6 +2955,9 @@ help:
 	@echo "... rosidl_typesupport_introspection_cpp/dynamixel_sdk_custom_interfaces/srv/detail/set_extension__type_support.o"
 	@echo "... rosidl_typesupport_introspection_cpp/dynamixel_sdk_custom_interfaces/srv/detail/set_extension__type_support.i"
 	@echo "... rosidl_typesupport_introspection_cpp/dynamixel_sdk_custom_interfaces/srv/detail/set_extension__type_support.s"
+	@echo "... rosidl_typesupport_introspection_cpp/dynamixel_sdk_custom_interfaces/srv/detail/set_twisting__type_support.o"
+	@echo "... rosidl_typesupport_introspection_cpp/dynamixel_sdk_custom_interfaces/srv/detail/set_twisting__type_support.i"
+	@echo "... rosidl_typesupport_introspection_cpp/dynamixel_sdk_custom_interfaces/srv/detail/set_twisting__type_support.s"
 	@echo "... rosidl_typesupport_introspection_cpp/dynamixel_sdk_custom_interfaces/srv/detail/set_velocity__type_support.o"
 	@echo "... rosidl_typesupport_introspection_cpp/dynamixel_sdk_custom_interfaces/srv/detail/set_velocity__type_support.i"
 	@echo "... rosidl_typesupport_introspection_cpp/dynamixel_sdk_custom_interfaces/srv/detail/set_velocity__type_support.s"

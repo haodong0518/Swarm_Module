@@ -24,16 +24,48 @@ namespace srv
 namespace builder
 {
 
+class Init_Movement_Request_bending_range
+{
+public:
+  explicit Init_Movement_Request_bending_range(::dynamixel_sdk_custom_interfaces::srv::Movement_Request & msg)
+  : msg_(msg)
+  {}
+  ::dynamixel_sdk_custom_interfaces::srv::Movement_Request bending_range(::dynamixel_sdk_custom_interfaces::srv::Movement_Request::_bending_range_type arg)
+  {
+    msg_.bending_range = std::move(arg);
+    return std::move(msg_);
+  }
+
+private:
+  ::dynamixel_sdk_custom_interfaces::srv::Movement_Request msg_;
+};
+
+class Init_Movement_Request_bending_face
+{
+public:
+  explicit Init_Movement_Request_bending_face(::dynamixel_sdk_custom_interfaces::srv::Movement_Request & msg)
+  : msg_(msg)
+  {}
+  Init_Movement_Request_bending_range bending_face(::dynamixel_sdk_custom_interfaces::srv::Movement_Request::_bending_face_type arg)
+  {
+    msg_.bending_face = std::move(arg);
+    return Init_Movement_Request_bending_range(msg_);
+  }
+
+private:
+  ::dynamixel_sdk_custom_interfaces::srv::Movement_Request msg_;
+};
+
 class Init_Movement_Request_twist_dir
 {
 public:
   explicit Init_Movement_Request_twist_dir(::dynamixel_sdk_custom_interfaces::srv::Movement_Request & msg)
   : msg_(msg)
   {}
-  ::dynamixel_sdk_custom_interfaces::srv::Movement_Request twist_dir(::dynamixel_sdk_custom_interfaces::srv::Movement_Request::_twist_dir_type arg)
+  Init_Movement_Request_bending_face twist_dir(::dynamixel_sdk_custom_interfaces::srv::Movement_Request::_twist_dir_type arg)
   {
     msg_.twist_dir = std::move(arg);
-    return std::move(msg_);
+    return Init_Movement_Request_bending_face(msg_);
   }
 
 private:
@@ -56,32 +88,16 @@ private:
   ::dynamixel_sdk_custom_interfaces::srv::Movement_Request msg_;
 };
 
-class Init_Movement_Request_robot_switch
-{
-public:
-  explicit Init_Movement_Request_robot_switch(::dynamixel_sdk_custom_interfaces::srv::Movement_Request & msg)
-  : msg_(msg)
-  {}
-  Init_Movement_Request_time_period robot_switch(::dynamixel_sdk_custom_interfaces::srv::Movement_Request::_robot_switch_type arg)
-  {
-    msg_.robot_switch = std::move(arg);
-    return Init_Movement_Request_time_period(msg_);
-  }
-
-private:
-  ::dynamixel_sdk_custom_interfaces::srv::Movement_Request msg_;
-};
-
 class Init_Movement_Request_movement
 {
 public:
   Init_Movement_Request_movement()
   : msg_(::rosidl_runtime_cpp::MessageInitialization::SKIP)
   {}
-  Init_Movement_Request_robot_switch movement(::dynamixel_sdk_custom_interfaces::srv::Movement_Request::_movement_type arg)
+  Init_Movement_Request_time_period movement(::dynamixel_sdk_custom_interfaces::srv::Movement_Request::_movement_type arg)
   {
     msg_.movement = std::move(arg);
-    return Init_Movement_Request_robot_switch(msg_);
+    return Init_Movement_Request_time_period(msg_);
   }
 
 private:

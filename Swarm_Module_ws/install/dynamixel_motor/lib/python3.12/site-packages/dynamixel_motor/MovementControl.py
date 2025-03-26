@@ -2,14 +2,12 @@ import rclpy
 from rclpy.node import Node
 from rclpy.qos import QoSProfile
 from rclpy.qos import QoSDurabilityPolicy
-from dynamixel_sdk_custom_interfaces.msg import SetPosition, Rolling, SetMode
-from dynamixel_sdk_custom_interfaces.srv import GetPosition, SetVelocity, SetExtension, SetBending, Movement
-from std_srvs.srv import Empty
+from dynamixel_sdk_custom_interfaces.msg import SetPosition, SetMode
+from dynamixel_sdk_custom_interfaces.srv import GetPosition, SetVelocity, SetExtension, SetBending, Movement, SetTwisting
+from std_srvs.srv import Empty as SrvEmpty
 import time
 from rclpy.callback_groups import MutuallyExclusiveCallbackGroup, ReentrantCallbackGroup
 
-# max speed 440 
-# STATE MACHINE !!!
 class MovementControl(Node):
     def __init__(self):
         super().__init__('movement_control')
@@ -19,19 +17,20 @@ class MovementControl(Node):
             durability=QoSDurabilityPolicy.VOLATILE,  # Can also be TRANSIENT_LOCAL
             )
         self.service_group = MutuallyExclusiveCallbackGroup()
+        self.client_group = ReentrantCallbackGroup()
         self.drive_srv = self.create_service(SetVelocity, '/robot_1/drive', self.drive_srv_callback)
         self.extension_srv = self.create_service(SetExtension,'/robot_1/extension',self.extension_srv_callback, callback_group=self.service_group)        
-        self.update_init_srv = self.create_service(Empty, '/robot_1/update_init', self.update_init_srv_callback)
-        self.bending_srv = self.create_service(SetBending,'/robot_1/bending',self.bending_srv_callback)
+        self.update_init_srv = self.create_service(SrvEmpty, '/robot_1/update_init', self.update_init_srv_callback)
+        self.bending_srv = self.create_service(SetBending,'/robot_1/bending',self.bending_srv_callback, callback_group=self.client_group)
         self.pub_pos = self.create_publisher(SetPosition, '/robot_1/set_position', qos_profile)
-        self.init_srv = self.create_service(Empty, '/robot_1/init', self.init_srv_callback)
-        
-        self.pudding_srv = self.create_service(Empty, '/robot_1/puddling', self.puddling_srv_callback)
-        self.pudding_srv4 = self.create_service(Empty, '/robot_1/puddling4', self.pudding_srv4_callback)
+        self.twist_srv = self.create_service(SetTwisting, '/robot_1/twist', self.twist_srv_callback)
+
+        self.pudding_srv = self.create_service(SrvEmpty, '/robot_1/puddling', self.puddling_srv_callback)
+        self.pudding_srv4 = self.create_service(SrvEmpty, '/robot_1/puddling4', self.pudding_srv4_callback)
 
         # continuous movement
         self.movement_srv = self.create_service(Movement, '/robot_1/set_movement', self.movement_srv_callback)
-        self.turn_srv = self.create_service(Empty, '/robot_1/turn', self.turn_srv_callback)
+        self.turn_srv = self.create_service(SrvEmpty, '/robot_1/turn', self.turn_srv_callback)
 
         # create the timer
         self.timer_period = 2.0
@@ -39,21 +38,24 @@ class MovementControl(Node):
 
         # set the movemnet mode 1 - velocity mode, 4 - position mode
         self.mode_pub = self.create_publisher(SetMode, '/robot_1/set_mode', 10)
-        self.client_group = ReentrantCallbackGroup()
-
-
 
         self.position_cli = self.create_client(GetPosition, '/robot_1/get_position', callback_group=self.client_group)
         self.extension_cli = self.create_client(SetExtension, '/robot_1/extension', callback_group=self.client_group)
+        self.bending_cli = self.create_client(SetBending, '/robot_1/bending', callback_group=self.client_group)
         while not self.position_cli.wait_for_service(timeout_sec=1.0):
             self.get_logger().info('robot_1/get_position service not available, waiting again...')
         while not self.extension_cli.wait_for_service(timeout_sec=1.0):
             self.get_logger().info('robot_1/set_extension service not available, waiting again...')
+        while not self.bending_cli.wait_for_service(timeout_sec=1.0):
+            self.get_logger().info('robot_1/set_bending service not available, waiting again...')
 
-        self.robot_switch = 'FALSE'
         self.state = 'INIT'
         self.movement = 'SLEEP'
         self.twist_dir = 0
+        self.bending_face = 0
+        self.bending_range = 0
+        self.move_range = 0
+        self.extend_side = None
         
         self.msg0 = SetPosition()
         self.msg1 = SetPosition()
@@ -105,35 +107,73 @@ class MovementControl(Node):
         self.get_logger().info('Update init position')
         return response
     
-    def timer_callback(self):
+    async def timer_callback(self):
+        self.get_logger().info('Timer callback')
         if self.movement == 'craw':
-            if self.robot_switch == 'ON':
-                if self.state  == 'INIT':
-                    self.extension_cli.call_async(SetExtension.Request(extend_state=1.0, side='pi'))
-                    self.state = 'EXTEND'
-                elif self.state == 'EXTEND':
-                    self.extension_cli.call_async(SetExtension.Request(extend_state=0.0, side='pi'))
-                    self.state = 'INIT'
-            
-            elif self.robot_switch == 'OFF':
-                self.extension_cli.call_async(SetExtension.Request(extend_state=0.0, side='pi'))
+            if self.state  == 'INIT':
+                await self.extension_cli.call_async(SetExtension.Request(extend_state=1.0, side='pi'))
+                self.state = 'EXTEND'
+                self.get_logger().info(f'under INIT if condition,self.state: {self.state}')
+            elif self.state == 'EXTEND':
+                await self.extension_cli.call_async(SetExtension.Request(extend_state=0.0, side='pi'))
+                self.state = 'INIT'
+                self.get_logger().info(f'under EXTEND if condition,self.state: {self.state}')
+            else:
+                pass
+
         elif self.movement == 'twist':
-            if self.robot_switch == 'ON':
-                if self.twist_dir == 0:
-                    self.msg0.position = self.curr_p0.position + 5000
-                    self.msg2.position = self.curr_p2.position + 5000
-                    self.pub_pos.publish(self.msg0)
-                    self.pub_pos.publish(self.msg2)
-                elif self.twist_dir == 1: 
-                    self.msg1.position = self.curr_p1.position - 5000
-                    self.msg5.position = self.curr_p5.position - 5000
-                    self.pub_pos.publish(self.msg1)
-                    self.pub_pos.publish(self.msg5)            
-            elif self.robot_switch == 'OFF':
-                self.extension_cli.call_async(SetExtension.Request(extend_state=0.0, side='pi'))
-        else:
+            if self.twist_dir == 0 and self.state != 'TWIST':
+                self.state = 'TWIST'
+                self.msg0.position = self.curr_p0.position + 4600
+                self.msg2.position = self.curr_p2.position + 4600
+                self.pub_pos.publish(self.msg0)
+                self.pub_pos.publish(self.msg2)
+
+            elif self.twist_dir == 0 and self.state == 'TWIST':
+                self.state = 'INIT'
+                await self.extension_cli.call_async(SetExtension.Request(extend_state=0.0, side='pi'))
+                
+            elif self.twist_dir == 1 and self.state != 'TWIST': 
+                self.state = 'TWIST'
+                self.msg1.position = self.curr_p1.position - 4600
+                self.msg5.position = self.curr_p5.position - 4600
+                self.pub_pos.publish(self.msg1)
+                self.pub_pos.publish(self.msg5)
+
+            elif self.twist_dir == 1 and self.state == 'TWIST': 
+                self.state = 'INIT'
+                await self.extension_cli.call_async(SetExtension.Request(extend_state=0.0, side='pi'))
+        elif self.movement == 'bending':
+            if self.state == 'INIT':
+                self.get_logger().info(f'under bending,self.state: {self.state}')
+                await self.bending_cli.call_async(SetBending.Request(bending_range = self.bending_range, bending_face= self.bending_face))
+                self.state = 'BEND'
+            elif self.state == 'BEND':
+                await self.bending_cli.call_async(SetBending.Request(bending_range = 0.0, bending_face = self.bending_face))
+                self.state = 'INIT'
+
+        elif self.movement == 'sleep':
+            await self.extension_cli.call_async(SetExtension.Request(extend_state=0.0, side='pi'))
+            self.state = 'INIT'
+        
+        else: 
             pass
-            
+
+    def twist_srv_callback(self,request,response):
+        if request.twist_dir == 0:
+            self.msg0.position = self.curr_p0.position + 5200
+            self.msg2.position = self.curr_p2.position + 5200
+            self.pub_pos.publish(self.msg0)
+            self.pub_pos.publish(self.msg2)
+                    
+        elif request.twist_dir == 1: 
+            self.msg1.position = self.curr_p1.position - 5200
+            self.msg5.position = self.curr_p5.position - 5200
+            self.pub_pos.publish(self.msg1)
+            self.pub_pos.publish(self.msg5)       
+        response.success = True
+        return response
+
     # 0 - 1 to describe how much velocity to drive, 1 means max speed
     def drive_srv_callback(self,request, response):
         
@@ -166,7 +206,6 @@ class MovementControl(Node):
         self.get_logger().info('Set velocity to 440')
 
         response.success = True
-
         return response 
     
     # from 0 - 1 to describe how much extend,
@@ -200,17 +239,21 @@ class MovementControl(Node):
             self.pub_pos.publish(self.msg4)
             self.pub_pos.publish(self.msg6)
 
-
         self.get_logger().info('Set extension successfully')
         response.success = True
         return response
 
     async def movement_srv_callback(self, request, response):
-        self.movement = request.movement
-        self.robot_switch = request.robot_switch
+        # optional
+        self.bending_face = request.bending_face
+        self.bending_range = request.bending_range
         self.timer_period = request.time_period
         self.twist_dir = request.twist_dir
-        self.get_logger().info('Received crawling service request')
+        # required 
+        self.timer.timer_period_ns = int(self.timer_period * 1e9)
+        self.movement = request.movement
+        
+        self.get_logger().info('Received movement service request')
         mode_msg = SetMode()
         mode_msg.mode = 4
         self.mode_pub.publish(mode_msg)
@@ -219,54 +262,36 @@ class MovementControl(Node):
         return response
 
     # bending motion
-    # !!! move two motors seems more reasonable because the position is not accurate
     def bending_srv_callback(self,request, response):
         self.get_logger().info('Received bending service request')
-        bend_pos = int(round(request.bend_state * 2000))
+        bend_pos = int(round(request.bending_range * 4000))
         mode_msg = SetMode()
         mode_msg.mode = 4
         self.mode_pub.publish(mode_msg)
         self.get_logger().info('Set mode to position mode')
-        if request.face == 1:
+        if request.bending_face == 1:
             self.msg2.position = self.curr_p2.position + bend_pos
             self.msg1.position = self.curr_p1.position - bend_pos
-            self.msg3.position = self.curr_p3.position - bend_pos
-            self.msg6.position = self.curr_p6.position + bend_pos
             self.pub_pos.publish(self.msg2)
             self.pub_pos.publish(self.msg1) 
-            self.pub_pos.publish(self.msg3)
-            self.pub_pos.publish(self.msg6)
-        elif request.face == 2:
+        elif request.bending_face == 2:
             self.msg2.position = self.curr_p2.position + bend_pos
             self.msg5.position = self.curr_p5.position - bend_pos
-            self.msg7.position = self.curr_p7.position - bend_pos
-            self.msg6.position = self.curr_p6.position + bend_pos
             self.pub_pos.publish(self.msg2)
             self.pub_pos.publish(self.msg5) 
-            self.pub_pos.publish(self.msg6)
-            self.pub_pos.publish(self.msg7)
-        elif request.face == 3:
+        elif request.bending_face == 3:
             self.msg0.position = self.curr_p0.position + bend_pos
-            self.msg7.position = self.curr_p7.position - bend_pos
             self.msg5.position = self.curr_p5.position - bend_pos
-            self.msg4.position = self.curr_p4.position + bend_pos
             self.pub_pos.publish(self.msg0)
-            self.pub_pos.publish(self.msg7) 
             self.pub_pos.publish(self.msg5)
-            self.pub_pos.publish(self.msg4)
-        elif request.face == 4:
+        elif request.bending_face == 4:
             self.msg0.position = self.curr_p0.position + bend_pos
             self.msg1.position = self.curr_p1.position - bend_pos
-            self.msg3.position = self.curr_p3.position - bend_pos
-            self.msg4.position = self.curr_p4.position + bend_pos
             self.pub_pos.publish(self.msg0)
             self.pub_pos.publish(self.msg1) 
-            self.pub_pos.publish(self.msg3)
-            self.pub_pos.publish(self.msg4)
 
         response.success = True
         return response
-
 
     # before design flip movement, 
     # 1. can not flip if there is no enough power from battery
@@ -274,7 +299,6 @@ class MovementControl(Node):
     # 3. the module only can twist two directions. 
     # !! Why same movement, some face work, when difference faces up, it didn't? It relates to the order of HSA movement, when from extension
     # to twist, once a HSA contract, the box will tend to lean to some directions. 
-
 
     async def pudding_srv4_callback(self,request,response):
         self.get_logger().info('Received puddling service request')
@@ -511,30 +535,7 @@ class MovementControl(Node):
         self.msg2.position = resp2.position
         self.pub_pos.publish(self.msg2)
 
-        return response
-
-
-    def init_srv_callback(self, request, response):
-        self.get_logger().info('Received service request')
-        self.msg0.position = 0
-        self.msg1.position = 0
-        self.msg2.position = 0
-        self.msg3.position = 0
-        self.msg4.position = 0
-        self.msg5.position = 0
-        self.msg6.position = 0
-        self.msg7.position = 0
-
-        self.pub_pos.publish(self.msg0)
-        self.pub_pos.publish(self.msg1)
-        self.pub_pos.publish(self.msg2)
-        self.pub_pos.publish(self.msg3)
-        self.pub_pos.publish(self.msg4)
-        self.pub_pos.publish(self.msg5)
-        self.pub_pos.publish(self.msg6)
-        self.pub_pos.publish(self.msg7)
-        return response
-    
+        return response    
 
 def main(args=None):
     rclpy.init(args=args)

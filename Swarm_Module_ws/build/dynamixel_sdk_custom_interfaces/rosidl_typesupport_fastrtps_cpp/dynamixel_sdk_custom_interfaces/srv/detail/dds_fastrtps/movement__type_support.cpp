@@ -39,14 +39,17 @@ cdr_serialize(
   // Member: movement
   cdr << ros_message.movement;
 
-  // Member: robot_switch
-  cdr << ros_message.robot_switch;
-
   // Member: time_period
   cdr << ros_message.time_period;
 
   // Member: twist_dir
   cdr << ros_message.twist_dir;
+
+  // Member: bending_face
+  cdr << ros_message.bending_face;
+
+  // Member: bending_range
+  cdr << ros_message.bending_range;
 
   return true;
 }
@@ -60,14 +63,17 @@ cdr_deserialize(
   // Member: movement
   cdr >> ros_message.movement;
 
-  // Member: robot_switch
-  cdr >> ros_message.robot_switch;
-
   // Member: time_period
   cdr >> ros_message.time_period;
 
   // Member: twist_dir
   cdr >> ros_message.twist_dir;
+
+  // Member: bending_face
+  cdr >> ros_message.bending_face;
+
+  // Member: bending_range
+  cdr >> ros_message.bending_range;
 
   return true;
 }
@@ -91,11 +97,6 @@ get_serialized_size(
     eprosima::fastcdr::Cdr::alignment(current_alignment, padding) +
     (ros_message.movement.size() + 1);
 
-  // Member: robot_switch
-  current_alignment += padding +
-    eprosima::fastcdr::Cdr::alignment(current_alignment, padding) +
-    (ros_message.robot_switch.size() + 1);
-
   // Member: time_period
   {
     size_t item_size = sizeof(ros_message.time_period);
@@ -106,6 +107,20 @@ get_serialized_size(
   // Member: twist_dir
   {
     size_t item_size = sizeof(ros_message.twist_dir);
+    current_alignment += item_size +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
+  }
+
+  // Member: bending_face
+  {
+    size_t item_size = sizeof(ros_message.bending_face);
+    current_alignment += item_size +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
+  }
+
+  // Member: bending_range
+  {
+    size_t item_size = sizeof(ros_message.bending_range);
     current_alignment += item_size +
       eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
   }
@@ -144,17 +159,6 @@ max_serialized_size_Movement_Request(
         1;
     }
   }
-  // Member: robot_switch
-  {
-    size_t array_size = 1;
-    full_bounded = false;
-    is_plain = false;
-    for (size_t index = 0; index < array_size; ++index) {
-      current_alignment += padding +
-        eprosima::fastcdr::Cdr::alignment(current_alignment, padding) +
-        1;
-    }
-  }
   // Member: time_period
   {
     size_t array_size = 1;
@@ -163,6 +167,20 @@ max_serialized_size_Movement_Request(
       eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
   }
   // Member: twist_dir
+  {
+    size_t array_size = 1;
+    last_member_size = array_size * sizeof(uint32_t);
+    current_alignment += array_size * sizeof(uint32_t) +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
+  }
+  // Member: bending_face
+  {
+    size_t array_size = 1;
+    last_member_size = array_size * sizeof(uint32_t);
+    current_alignment += array_size * sizeof(uint32_t) +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
+  }
+  // Member: bending_range
   {
     size_t array_size = 1;
     last_member_size = array_size * sizeof(uint32_t);
@@ -178,7 +196,7 @@ max_serialized_size_Movement_Request(
     using DataType = dynamixel_sdk_custom_interfaces::srv::Movement_Request;
     is_plain =
       (
-      offsetof(DataType, twist_dir) +
+      offsetof(DataType, bending_range) +
       last_member_size
       ) == ret_val;
   }
@@ -195,14 +213,17 @@ cdr_serialize_key(
   // Member: movement
   cdr << ros_message.movement;
 
-  // Member: robot_switch
-  cdr << ros_message.robot_switch;
-
   // Member: time_period
   cdr << ros_message.time_period;
 
   // Member: twist_dir
   cdr << ros_message.twist_dir;
+
+  // Member: bending_face
+  cdr << ros_message.bending_face;
+
+  // Member: bending_range
+  cdr << ros_message.bending_range;
 
   return true;
 }
@@ -225,11 +246,6 @@ get_serialized_size_key(
     eprosima::fastcdr::Cdr::alignment(current_alignment, padding) +
     (ros_message.movement.size() + 1);
 
-  // Member: robot_switch
-  current_alignment += padding +
-    eprosima::fastcdr::Cdr::alignment(current_alignment, padding) +
-    (ros_message.robot_switch.size() + 1);
-
   // Member: time_period
   {
     size_t item_size = sizeof(ros_message.time_period);
@@ -240,6 +256,20 @@ get_serialized_size_key(
   // Member: twist_dir
   {
     size_t item_size = sizeof(ros_message.twist_dir);
+    current_alignment += item_size +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
+  }
+
+  // Member: bending_face
+  {
+    size_t item_size = sizeof(ros_message.bending_face);
+    current_alignment += item_size +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
+  }
+
+  // Member: bending_range
+  {
+    size_t item_size = sizeof(ros_message.bending_range);
     current_alignment += item_size +
       eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
   }
@@ -278,18 +308,6 @@ max_serialized_size_key_Movement_Request(
     }
   }
 
-  // Member: robot_switch
-  {
-    size_t array_size = 1;
-    full_bounded = false;
-    is_plain = false;
-    for (size_t index = 0; index < array_size; ++index) {
-      current_alignment += padding +
-        eprosima::fastcdr::Cdr::alignment(current_alignment, padding) +
-        1;
-    }
-  }
-
   // Member: time_period
   {
     size_t array_size = 1;
@@ -306,6 +324,22 @@ max_serialized_size_key_Movement_Request(
       eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
   }
 
+  // Member: bending_face
+  {
+    size_t array_size = 1;
+    last_member_size = array_size * sizeof(uint32_t);
+    current_alignment += array_size * sizeof(uint32_t) +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
+  }
+
+  // Member: bending_range
+  {
+    size_t array_size = 1;
+    last_member_size = array_size * sizeof(uint32_t);
+    current_alignment += array_size * sizeof(uint32_t) +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
+  }
+
   size_t ret_val = current_alignment - initial_alignment;
   if (is_plain) {
     // All members are plain, and type is not empty.
@@ -314,7 +348,7 @@ max_serialized_size_key_Movement_Request(
     using DataType = dynamixel_sdk_custom_interfaces::srv::Movement_Request;
     is_plain =
       (
-      offsetof(DataType, twist_dir) +
+      offsetof(DataType, bending_range) +
       last_member_size
       ) == ret_val;
   }

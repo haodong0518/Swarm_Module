@@ -4,9 +4,9 @@
 
 #include <string.h>
 
-#include "dynamixel_sdk_custom_interfaces/msg/detail/rolling__struct.h"
-#include "dynamixel_sdk_custom_interfaces/msg/detail/rolling__type_support.h"
 #include "dynamixel_sdk_custom_interfaces/msg/detail/rolling__functions.h"
+#include "dynamixel_sdk_custom_interfaces/msg/detail/rolling__type_support.h"
+#include "dynamixel_sdk_custom_interfaces/msg/detail/rolling__struct.h"
 #include "rosidl_typesupport_interface/macros.h"
 
 #ifdef __cplusplus

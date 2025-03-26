@@ -4,8 +4,8 @@
 
 #include <string.h>
 
-#include "dynamixel_sdk_custom_interfaces/msg/detail/set_mode__struct.h"
 #include "dynamixel_sdk_custom_interfaces/msg/detail/set_mode__functions.h"
+#include "dynamixel_sdk_custom_interfaces/msg/detail/set_mode__struct.h"
 #include "dynamixel_sdk_custom_interfaces/msg/detail/set_mode__type_support.h"
 #include "rosidl_typesupport_interface/macros.h"
 

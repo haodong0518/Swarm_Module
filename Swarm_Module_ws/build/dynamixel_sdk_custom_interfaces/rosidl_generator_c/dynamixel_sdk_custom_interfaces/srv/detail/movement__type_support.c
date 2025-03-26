@@ -4,9 +4,9 @@
 
 #include <string.h>
 
-#include "dynamixel_sdk_custom_interfaces/srv/detail/movement__functions.h"
-#include "dynamixel_sdk_custom_interfaces/srv/detail/movement__type_support.h"
 #include "dynamixel_sdk_custom_interfaces/srv/detail/movement__struct.h"
+#include "dynamixel_sdk_custom_interfaces/srv/detail/movement__type_support.h"
+#include "dynamixel_sdk_custom_interfaces/srv/detail/movement__functions.h"
 #include "rosidl_typesupport_interface/macros.h"
 
 #ifdef __cplusplus

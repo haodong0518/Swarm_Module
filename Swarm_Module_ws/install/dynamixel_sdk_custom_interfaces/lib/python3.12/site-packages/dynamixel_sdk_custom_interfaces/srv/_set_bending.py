@@ -64,14 +64,14 @@ class SetBending_Request(metaclass=Metaclass_SetBending_Request):
     """Message class 'SetBending_Request'."""
 
     __slots__ = [
-        '_bend_state',
-        '_face',
+        '_bending_range',
+        '_bending_face',
         '_check_fields',
     ]
 
     _fields_and_field_types = {
-        'bend_state': 'double',
-        'face': 'int32',
+        'bending_range': 'double',
+        'bending_face': 'int32',
     }
 
     # This attribute is used to store an rosidl_parser.definition variable
@@ -90,8 +90,8 @@ class SetBending_Request(metaclass=Metaclass_SetBending_Request):
             assert all('_' + key in self.__slots__ for key in kwargs.keys()), \
                 'Invalid arguments passed to constructor: %s' % \
                 ', '.join(sorted(k for k in kwargs.keys() if '_' + k not in self.__slots__))
-        self.bend_state = kwargs.get('bend_state', float())
-        self.face = kwargs.get('face', int())
+        self.bending_range = kwargs.get('bending_range', float())
+        self.bending_face = kwargs.get('bending_face', int())
 
     def __repr__(self):
         typename = self.__class__.__module__.split('.')
@@ -123,9 +123,9 @@ class SetBending_Request(metaclass=Metaclass_SetBending_Request):
     def __eq__(self, other):
         if not isinstance(other, self.__class__):
             return False
-        if self.bend_state != other.bend_state:
+        if self.bending_range != other.bending_range:
             return False
-        if self.face != other.face:
+        if self.bending_face != other.bending_face:
             return False
         return True
 
@@ -135,34 +135,34 @@ class SetBending_Request(metaclass=Metaclass_SetBending_Request):
         return copy(cls._fields_and_field_types)
 
     @builtins.property
-    def bend_state(self):
-        """Message field 'bend_state'."""
-        return self._bend_state
+    def bending_range(self):
+        """Message field 'bending_range'."""
+        return self._bending_range
 
-    @bend_state.setter
-    def bend_state(self, value):
+    @bending_range.setter
+    def bending_range(self, value):
         if self._check_fields:
             assert \
                 isinstance(value, float), \
-                "The 'bend_state' field must be of type 'float'"
+                "The 'bending_range' field must be of type 'float'"
             assert not (value < -1.7976931348623157e+308 or value > 1.7976931348623157e+308) or math.isinf(value), \
-                "The 'bend_state' field must be a double in [-1.7976931348623157e+308, 1.7976931348623157e+308]"
-        self._bend_state = value
+                "The 'bending_range' field must be a double in [-1.7976931348623157e+308, 1.7976931348623157e+308]"
+        self._bending_range = value
 
     @builtins.property
-    def face(self):
-        """Message field 'face'."""
-        return self._face
+    def bending_face(self):
+        """Message field 'bending_face'."""
+        return self._bending_face
 
-    @face.setter
-    def face(self, value):
+    @bending_face.setter
+    def bending_face(self, value):
         if self._check_fields:
             assert \
                 isinstance(value, int), \
-                "The 'face' field must be of type 'int'"
+                "The 'bending_face' field must be of type 'int'"
             assert value >= -2147483648 and value < 2147483648, \
-                "The 'face' field must be an integer in [-2147483648, 2147483647]"
-        self._face = value
+                "The 'bending_face' field must be an integer in [-2147483648, 2147483647]"
+        self._bending_face = value
 
 
 # Import statements for member types

@@ -12,6 +12,6 @@ dynamixel_sdk_custom_interfaces/srv/__init__.py
 dynamixel_sdk_custom_interfaces/srv/_get_position.py
 dynamixel_sdk_custom_interfaces/srv/_movement.py
 dynamixel_sdk_custom_interfaces/srv/_set_bending.py
-dynamixel_sdk_custom_interfaces/srv/_set_crawling.py
 dynamixel_sdk_custom_interfaces/srv/_set_extension.py
+dynamixel_sdk_custom_interfaces/srv/_set_twisting.py
 dynamixel_sdk_custom_interfaces/srv/_set_velocity.py

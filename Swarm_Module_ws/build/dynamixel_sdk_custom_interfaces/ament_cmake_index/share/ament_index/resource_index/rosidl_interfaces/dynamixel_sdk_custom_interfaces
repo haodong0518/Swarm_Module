@@ -12,5 +12,7 @@ srv/SetBending.idl
 srv/SetBending.srv
 srv/SetExtension.idl
 srv/SetExtension.srv
+srv/SetTwisting.idl
+srv/SetTwisting.srv
 srv/SetVelocity.idl
 srv/SetVelocity.srv

@@ -27,6 +27,7 @@ set(srv_files
   "srv/SetExtension.srv"
   "srv/SetBending.srv"
   "srv/Movement.srv"
+  "srv/SetTwisting.srv"
 )
 
 rosidl_generate_interfaces(${PROJECT_NAME}

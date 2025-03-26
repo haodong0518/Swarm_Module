@@ -22,16 +22,16 @@ extern "C"
 
 // Include directives for member types
 // Member 'movement'
-// Member 'robot_switch'
 #include "rosidl_runtime_c/string.h"
 
 /// Struct defined in srv/Movement in the package dynamixel_sdk_custom_interfaces.
 typedef struct dynamixel_sdk_custom_interfaces__srv__Movement_Request
 {
   rosidl_runtime_c__String movement;
-  rosidl_runtime_c__String robot_switch;
   int32_t time_period;
   int32_t twist_dir;
+  int32_t bending_face;
+  float bending_range;
 } dynamixel_sdk_custom_interfaces__srv__Movement_Request;
 
 // Struct for a sequence of dynamixel_sdk_custom_interfaces__srv__Movement_Request.
