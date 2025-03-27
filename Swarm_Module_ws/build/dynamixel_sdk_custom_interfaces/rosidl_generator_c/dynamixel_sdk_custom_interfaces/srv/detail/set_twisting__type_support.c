@@ -5,9 +5,9 @@
 #include <string.h>
 
 #include "dynamixel_sdk_custom_interfaces/srv/detail/set_twisting__functions.h"
-#include "dynamixel_sdk_custom_interfaces/srv/detail/set_twisting__struct.h"
 #include "dynamixel_sdk_custom_interfaces/srv/detail/set_twisting__type_support.h"
 #include "rosidl_typesupport_interface/macros.h"
+#include "dynamixel_sdk_custom_interfaces/srv/detail/set_twisting__struct.h"
 
 #ifdef __cplusplus
 extern "C"

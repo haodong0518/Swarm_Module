@@ -4,10 +4,10 @@
 
 #include <string.h>
 
-#include "dynamixel_sdk_custom_interfaces/srv/detail/set_velocity__functions.h"
-#include "dynamixel_sdk_custom_interfaces/srv/detail/set_velocity__type_support.h"
 #include "dynamixel_sdk_custom_interfaces/srv/detail/set_velocity__struct.h"
 #include "rosidl_typesupport_interface/macros.h"
+#include "dynamixel_sdk_custom_interfaces/srv/detail/set_velocity__functions.h"
+#include "dynamixel_sdk_custom_interfaces/srv/detail/set_velocity__type_support.h"
 
 #ifdef __cplusplus
 extern "C"

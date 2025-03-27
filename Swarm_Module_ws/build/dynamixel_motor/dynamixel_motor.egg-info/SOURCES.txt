@@ -11,6 +11,7 @@ setup.py
 ../../build/dynamixel_motor/dynamixel_motor.egg-info/zip-safe
 dynamixel_motor/MovementControl.py
 dynamixel_motor/__init__.py
+launch/run_module.launch.xml
 resource/dynamixel_motor
 test/test_copyright.py
 test/test_flake8.py
