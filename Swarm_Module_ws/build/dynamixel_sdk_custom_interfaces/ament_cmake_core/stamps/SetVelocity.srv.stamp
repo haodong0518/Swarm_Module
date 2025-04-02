@@ -1,6 +1,0 @@
-# Constants
-# Request
-float64 vel
----
-# Response
-bool success

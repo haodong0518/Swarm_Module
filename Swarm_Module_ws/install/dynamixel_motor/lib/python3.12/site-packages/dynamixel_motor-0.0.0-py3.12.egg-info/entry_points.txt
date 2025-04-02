@@ -1,2 +1,0 @@
-[console_scripts]
-MovementControl = dynamixel_motor.MovementControl:main

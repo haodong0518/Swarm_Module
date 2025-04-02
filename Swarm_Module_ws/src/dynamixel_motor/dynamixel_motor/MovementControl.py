@@ -16,38 +16,39 @@ class MovementControl(Node):
             depth=10,
             durability=QoSDurabilityPolicy.VOLATILE,  # Can also be TRANSIENT_LOCAL
             )
+        self.id = 'robot_2'
         self.service_group = MutuallyExclusiveCallbackGroup()
         self.client_group = ReentrantCallbackGroup()
-        self.drive_srv = self.create_service(SetVelocity, '/robot_1/drive', self.drive_srv_callback)
-        self.extension_srv = self.create_service(SetExtension,'/robot_1/extension',self.extension_srv_callback, callback_group=self.service_group)        
-        self.update_init_srv = self.create_service(SrvEmpty, '/robot_1/update_init', self.update_init_srv_callback)
-        self.bending_srv = self.create_service(SetBending,'/robot_1/bending',self.bending_srv_callback, callback_group=self.client_group)
-        self.pub_pos = self.create_publisher(SetPosition, '/robot_1/set_position', qos_profile)
-        self.twist_srv = self.create_service(SetTwisting, '/robot_1/twist', self.twist_srv_callback)
+        self.drive_srv = self.create_service(SetVelocity, f'/{self.id}/drive', self.drive_srv_callback)
+        self.extension_srv = self.create_service(SetExtension,f'/{self.id}/extension',self.extension_srv_callback, callback_group=self.service_group)        
+        self.update_init_srv = self.create_service(SrvEmpty, f'/{self.id}/update_init', self.update_init_srv_callback)
+        self.bending_srv = self.create_service(SetBending,f'/{self.id}/bending',self.bending_srv_callback, callback_group=self.client_group)
+        self.pub_pos = self.create_publisher(SetPosition, f'/{self.id}/set_position', qos_profile)
+        self.twist_srv = self.create_service(SetTwisting, f'/{self.id}/twist', self.twist_srv_callback)
 
-        self.pudding_srv = self.create_service(SrvEmpty, '/robot_1/puddling', self.puddling_srv_callback)
-        self.pudding_srv4 = self.create_service(SrvEmpty, '/robot_1/puddling4', self.pudding_srv4_callback)
+        self.pudding_srv = self.create_service(SrvEmpty, f'/{self.id}/puddling', self.puddling_srv_callback)
+        self.pudding_srv4 = self.create_service(SrvEmpty, f'/{self.id}/puddling4', self.pudding_srv4_callback)
 
         # continuous movement
-        self.movement_srv = self.create_service(Movement, '/robot_1/set_movement', self.movement_srv_callback)
-        self.turn_srv = self.create_service(SrvEmpty, '/robot_1/turn', self.turn_srv_callback)
+        self.movement_srv = self.create_service(Movement, f'/{self.id}/set_movement', self.movement_srv_callback)
+        self.turn_srv = self.create_service(SrvEmpty, f'/{self.id}/turn', self.turn_srv_callback)
 
         # create the timer
         self.timer_period = 2.0
         self.timer = self.create_timer(self.timer_period, self.timer_callback)
 
         # set the movemnet mode 1 - velocity mode, 4 - position mode
-        self.mode_pub = self.create_publisher(SetMode, '/robot_1/set_mode', 10)
+        self.mode_pub = self.create_publisher(SetMode, f'/{self.id}/set_mode', 10)
 
-        self.position_cli = self.create_client(GetPosition, '/robot_1/get_position', callback_group=self.client_group)
-        self.extension_cli = self.create_client(SetExtension, '/robot_1/extension', callback_group=self.client_group)
-        self.bending_cli = self.create_client(SetBending, '/robot_1/bending', callback_group=self.client_group)
+        self.position_cli = self.create_client(GetPosition, f'/{self.id}/get_position', callback_group=self.client_group)
+        self.extension_cli = self.create_client(SetExtension, f'/{self.id}/extension', callback_group=self.client_group)
+        self.bending_cli = self.create_client(SetBending, f'/{self.id}/bending', callback_group=self.client_group)
         while not self.position_cli.wait_for_service(timeout_sec=1.0):
-            self.get_logger().info('robot_1/get_position service not available, waiting again...')
+            self.get_logger().info(f'{self.id}/get_position service not available, waiting again...')
         while not self.extension_cli.wait_for_service(timeout_sec=1.0):
-            self.get_logger().info('robot_1/set_extension service not available, waiting again...')
+            self.get_logger().info(f'{self.id}/set_extension service not available, waiting again...')
         while not self.bending_cli.wait_for_service(timeout_sec=1.0):
-            self.get_logger().info('robot_1/set_bending service not available, waiting again...')
+            self.get_logger().info(f'{self.id}/set_bending service not available, waiting again...')
 
         self.state = 'INIT'
         self.movement = 'SLEEP'

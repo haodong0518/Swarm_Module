@@ -51,7 +51,7 @@ ReadWriteNode::ReadWriteNode()
   
   set_position_subscriber_ =
     this->create_subscription<SetPosition>(
-    "/robot_1/set_position",
+    "/robot_2/set_position",
     QOS_RKL10V,
     [this](const SetPosition::SharedPtr msg) -> void
     {
@@ -87,7 +87,7 @@ ReadWriteNode::ReadWriteNode()
   // if mode = 1, velocity mode, set the present and goal velocity addr
   set_mode_subscriber_ =
    this->create_subscription<SetMode>(
-    "/robot_1/set_mode",
+    "/robot_2/set_mode",
     QOS_RKL10V,
     [this](const SetMode::SharedPtr msg) -> void
     {
@@ -175,7 +175,7 @@ ReadWriteNode::ReadWriteNode()
       response->position = present_position;
     };
 
-  get_position_server_ = create_service<GetPosition>("/robot_1/get_position", get_present_position);
+  get_position_server_ = create_service<GetPosition>("/robot_2/get_position", get_present_position);
 }
 
 ReadWriteNode::~ReadWriteNode() 
