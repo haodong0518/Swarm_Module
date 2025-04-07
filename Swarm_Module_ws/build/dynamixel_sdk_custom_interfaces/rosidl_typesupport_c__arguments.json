@@ -1,0 +1,41 @@
+{
+  "package_name": "dynamixel_sdk_custom_interfaces",
+  "output_dir": "/home/haodong/Swarm_Module/Swarm_Module_ws/build/dynamixel_sdk_custom_interfaces/rosidl_typesupport_c/dynamixel_sdk_custom_interfaces",
+  "template_dir": "/opt/ros/jazzy/share/rosidl_typesupport_c/resource",
+  "idl_tuples": [
+    "/home/haodong/Swarm_Module/Swarm_Module_ws/build/dynamixel_sdk_custom_interfaces/rosidl_adapter/dynamixel_sdk_custom_interfaces:msg/SetPosition.idl",
+    "/home/haodong/Swarm_Module/Swarm_Module_ws/build/dynamixel_sdk_custom_interfaces/rosidl_adapter/dynamixel_sdk_custom_interfaces:msg/Rolling.idl",
+    "/home/haodong/Swarm_Module/Swarm_Module_ws/build/dynamixel_sdk_custom_interfaces/rosidl_adapter/dynamixel_sdk_custom_interfaces:msg/SetMode.idl",
+    "/home/haodong/Swarm_Module/Swarm_Module_ws/build/dynamixel_sdk_custom_interfaces/rosidl_adapter/dynamixel_sdk_custom_interfaces:srv/GetPosition.idl",
+    "/home/haodong/Swarm_Module/Swarm_Module_ws/build/dynamixel_sdk_custom_interfaces/rosidl_adapter/dynamixel_sdk_custom_interfaces:srv/SetVelocity.idl",
+    "/home/haodong/Swarm_Module/Swarm_Module_ws/build/dynamixel_sdk_custom_interfaces/rosidl_adapter/dynamixel_sdk_custom_interfaces:srv/SetExtension.idl",
+    "/home/haodong/Swarm_Module/Swarm_Module_ws/build/dynamixel_sdk_custom_interfaces/rosidl_adapter/dynamixel_sdk_custom_interfaces:srv/SetBending.idl",
+    "/home/haodong/Swarm_Module/Swarm_Module_ws/build/dynamixel_sdk_custom_interfaces/rosidl_adapter/dynamixel_sdk_custom_interfaces:srv/Movement.idl",
+    "/home/haodong/Swarm_Module/Swarm_Module_ws/build/dynamixel_sdk_custom_interfaces/rosidl_adapter/dynamixel_sdk_custom_interfaces:srv/SetTwisting.idl"
+  ],
+  "ros_interface_dependencies": [
+    "builtin_interfaces:/opt/ros/jazzy/share/builtin_interfaces/msg/Duration.idl",
+    "builtin_interfaces:/opt/ros/jazzy/share/builtin_interfaces/msg/Time.idl",
+    "service_msgs:/opt/ros/jazzy/share/service_msgs/msg/ServiceEventInfo.idl"
+  ],
+  "target_dependencies": [
+    "/opt/ros/jazzy/lib/rosidl_typesupport_c/rosidl_typesupport_c",
+    "/opt/ros/jazzy/lib/python3.12/site-packages/rosidl_typesupport_c/__init__.py",
+    "/opt/ros/jazzy/share/rosidl_typesupport_c/resource/action__type_support.c.em",
+    "/opt/ros/jazzy/share/rosidl_typesupport_c/resource/idl__type_support.cpp.em",
+    "/opt/ros/jazzy/share/rosidl_typesupport_c/resource/msg__type_support.cpp.em",
+    "/opt/ros/jazzy/share/rosidl_typesupport_c/resource/srv__type_support.cpp.em",
+    "/home/haodong/Swarm_Module/Swarm_Module_ws/build/dynamixel_sdk_custom_interfaces/rosidl_adapter/dynamixel_sdk_custom_interfaces/msg/SetPosition.idl",
+    "/home/haodong/Swarm_Module/Swarm_Module_ws/build/dynamixel_sdk_custom_interfaces/rosidl_adapter/dynamixel_sdk_custom_interfaces/msg/Rolling.idl",
+    "/home/haodong/Swarm_Module/Swarm_Module_ws/build/dynamixel_sdk_custom_interfaces/rosidl_adapter/dynamixel_sdk_custom_interfaces/msg/SetMode.idl",
+    "/home/haodong/Swarm_Module/Swarm_Module_ws/build/dynamixel_sdk_custom_interfaces/rosidl_adapter/dynamixel_sdk_custom_interfaces/srv/GetPosition.idl",
+    "/home/haodong/Swarm_Module/Swarm_Module_ws/build/dynamixel_sdk_custom_interfaces/rosidl_adapter/dynamixel_sdk_custom_interfaces/srv/SetVelocity.idl",
+    "/home/haodong/Swarm_Module/Swarm_Module_ws/build/dynamixel_sdk_custom_interfaces/rosidl_adapter/dynamixel_sdk_custom_interfaces/srv/SetExtension.idl",
+    "/home/haodong/Swarm_Module/Swarm_Module_ws/build/dynamixel_sdk_custom_interfaces/rosidl_adapter/dynamixel_sdk_custom_interfaces/srv/SetBending.idl",
+    "/home/haodong/Swarm_Module/Swarm_Module_ws/build/dynamixel_sdk_custom_interfaces/rosidl_adapter/dynamixel_sdk_custom_interfaces/srv/Movement.idl",
+    "/home/haodong/Swarm_Module/Swarm_Module_ws/build/dynamixel_sdk_custom_interfaces/rosidl_adapter/dynamixel_sdk_custom_interfaces/srv/SetTwisting.idl",
+    "/opt/ros/jazzy/share/builtin_interfaces/msg/Duration.idl",
+    "/opt/ros/jazzy/share/builtin_interfaces/msg/Time.idl",
+    "/opt/ros/jazzy/share/service_msgs/msg/ServiceEventInfo.idl"
+  ]
+}

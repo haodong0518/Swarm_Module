@@ -1,0 +1,518 @@
+[0.017s] Invoking command in '/home/haodong/Swarm_Module/Swarm_Module_ws/build/dynamixel_sdk_custom_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/haodong/ws_moveit/install/moveit_configs_utils:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/haodong/Swarm_Module/Swarm_Module_ws/src/dynamixel_sdk_custom_interfaces -DCMAKE_INSTALL_PREFIX=/home/haodong/Swarm_Module/Swarm_Module_ws/install/dynamixel_sdk_custom_interfaces
+[0.100s] -- The C compiler identification is GNU 13.3.0
+[0.304s] -- The CXX compiler identification is GNU 13.3.0
+[0.339s] -- Detecting C compiler ABI info
+[0.738s] -- Detecting C compiler ABI info - done
+[0.773s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.774s] -- Detecting C compile features
+[0.774s] -- Detecting C compile features - done
+[0.791s] -- Detecting CXX compiler ABI info
+[1.059s] -- Detecting CXX compiler ABI info - done
+[1.085s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[1.086s] -- Detecting CXX compile features
+[1.086s] -- Detecting CXX compile features - done
+[1.107s] -- Found ament_cmake: 2.5.2 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[1.394s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+[1.659s] -- Found builtin_interfaces: 2.0.2 (/opt/ros/jazzy/share/builtin_interfaces/cmake)
+[1.764s] -- Found rosidl_generator_c: 4.6.4 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)
+[1.805s] -- Found rosidl_generator_cpp: 4.6.4 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)
+[1.891s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.988s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[2.081s] -- Found rosidl_default_generators: 1.6.0 (/opt/ros/jazzy/share/rosidl_default_generators/cmake)
+[2.192s] -- Found rosidl_adapter: 4.6.4 (/opt/ros/jazzy/share/rosidl_adapter/cmake)
+[3.225s] -- Found ament_cmake_ros: 0.12.0 (/opt/ros/jazzy/share/ament_cmake_ros/cmake)
+[5.444s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[6.115s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[6.131s] -- Found python_cmake_module: 0.11.1 (/opt/ros/jazzy/share/python_cmake_module/cmake)
+[6.371s] -- Found PythonExtra: /usr/bin/python3  
+[7.321s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter Development NumPy Development.Module Development.Embed 
+[7.376s] -- Configuring done (7.3s)
+[7.463s] -- Generating done (0.1s)
+[7.467s] -- Build files have been written to: /home/haodong/Swarm_Module/Swarm_Module_ws/build/dynamixel_sdk_custom_interfaces
+[7.480s] Invoked command in '/home/haodong/Swarm_Module/Swarm_Module_ws/build/dynamixel_sdk_custom_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/haodong/ws_moveit/install/moveit_configs_utils:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/haodong/Swarm_Module/Swarm_Module_ws/src/dynamixel_sdk_custom_interfaces -DCMAKE_INSTALL_PREFIX=/home/haodong/Swarm_Module/Swarm_Module_ws/install/dynamixel_sdk_custom_interfaces
+[7.481s] Invoking command in '/home/haodong/Swarm_Module/Swarm_Module_ws/build/dynamixel_sdk_custom_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/haodong/ws_moveit/install/moveit_configs_utils:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/haodong/Swarm_Module/Swarm_Module_ws/build/dynamixel_sdk_custom_interfaces -- -j12 -l12
+[7.648s] [  1%] [34m[1mGenerating type hashes for ROS interfaces[0m
+[7.709s] [  1%] Built target ament_cmake_python_copy_dynamixel_sdk_custom_interfaces
+[8.016s] running egg_info
+[8.017s] creating dynamixel_sdk_custom_interfaces.egg-info
+[8.054s] [  1%] Built target dynamixel_sdk_custom_interfaces__rosidl_generator_type_description
+[8.059s] writing dynamixel_sdk_custom_interfaces.egg-info/PKG-INFO
+[8.059s] writing dependency_links to dynamixel_sdk_custom_interfaces.egg-info/dependency_links.txt
+[8.059s] writing top-level names to dynamixel_sdk_custom_interfaces.egg-info/top_level.txt
+[8.059s] writing manifest file 'dynamixel_sdk_custom_interfaces.egg-info/SOURCES.txt'
+[8.071s] [  2%] [34m[1mGenerating C code for ROS interfaces[0m
+[8.088s] [  2%] [34m[1mGenerating C++ code for ROS interfaces[0m
+[8.168s] reading manifest file 'dynamixel_sdk_custom_interfaces.egg-info/SOURCES.txt'
+[8.168s] writing manifest file 'dynamixel_sdk_custom_interfaces.egg-info/SOURCES.txt'
+[8.200s] [  2%] Built target ament_cmake_python_build_dynamixel_sdk_custom_interfaces_egg
+[8.962s] [  2%] Built target dynamixel_sdk_custom_interfaces__cpp
+[9.206s] [  6%] [32mBuilding C object CMakeFiles/dynamixel_sdk_custom_interfaces__rosidl_generator_c.dir/rosidl_generator_c/dynamixel_sdk_custom_interfaces/msg/detail/set_position__type_support.c.o[0m
+[9.206s] [  6%] [32mBuilding C object CMakeFiles/dynamixel_sdk_custom_interfaces__rosidl_generator_c.dir/rosidl_generator_c/dynamixel_sdk_custom_interfaces/msg/detail/set_position__description.c.o[0m
+[9.206s] [  6%] [32mBuilding C object CMakeFiles/dynamixel_sdk_custom_interfaces__rosidl_generator_c.dir/rosidl_generator_c/dynamixel_sdk_custom_interfaces/msg/detail/set_position__functions.c.o[0m
+[9.206s] [  6%] [32mBuilding C object CMakeFiles/dynamixel_sdk_custom_interfaces__rosidl_generator_c.dir/rosidl_generator_c/dynamixel_sdk_custom_interfaces/msg/detail/rolling__description.c.o[0m
+[9.206s] [  7%] [32mBuilding C object CMakeFiles/dynamixel_sdk_custom_interfaces__rosidl_generator_c.dir/rosidl_generator_c/dynamixel_sdk_custom_interfaces/msg/detail/rolling__functions.c.o[0m
+[9.207s] [  7%] [32mBuilding C object CMakeFiles/dynamixel_sdk_custom_interfaces__rosidl_generator_c.dir/rosidl_generator_c/dynamixel_sdk_custom_interfaces/msg/detail/rolling__type_support.c.o[0m
+[9.207s] [  8%] [32mBuilding C object CMakeFiles/dynamixel_sdk_custom_interfaces__rosidl_generator_c.dir/rosidl_generator_c/dynamixel_sdk_custom_interfaces/msg/detail/set_mode__functions.c.o[0m
+[9.207s] [  9%] [32mBuilding C object CMakeFiles/dynamixel_sdk_custom_interfaces__rosidl_generator_c.dir/rosidl_generator_c/dynamixel_sdk_custom_interfaces/msg/detail/set_mode__description.c.o[0m
+[9.207s] [ 10%] [32mBuilding C object CMakeFiles/dynamixel_sdk_custom_interfaces__rosidl_generator_c.dir/rosidl_generator_c/dynamixel_sdk_custom_interfaces/msg/detail/set_mode__type_support.c.o[0m
+[9.208s] [ 11%] [32mBuilding C object CMakeFiles/dynamixel_sdk_custom_interfaces__rosidl_generator_c.dir/rosidl_generator_c/dynamixel_sdk_custom_interfaces/srv/detail/get_position__description.c.o[0m
+[9.208s] [ 12%] [32mBuilding C object CMakeFiles/dynamixel_sdk_custom_interfaces__rosidl_generator_c.dir/rosidl_generator_c/dynamixel_sdk_custom_interfaces/srv/detail/get_position__functions.c.o[0m
+[9.208s] [ 13%] [32mBuilding C object CMakeFiles/dynamixel_sdk_custom_interfaces__rosidl_generator_c.dir/rosidl_generator_c/dynamixel_sdk_custom_interfaces/srv/detail/get_position__type_support.c.o[0m
+[9.278s] [ 14%] [32mBuilding C object CMakeFiles/dynamixel_sdk_custom_interfaces__rosidl_generator_c.dir/rosidl_generator_c/dynamixel_sdk_custom_interfaces/srv/detail/set_velocity__description.c.o[0m
+[9.278s] [ 14%] [32mBuilding C object CMakeFiles/dynamixel_sdk_custom_interfaces__rosidl_generator_c.dir/rosidl_generator_c/dynamixel_sdk_custom_interfaces/srv/detail/set_velocity__functions.c.o[0m
+[9.282s] [ 15%] [32mBuilding C object CMakeFiles/dynamixel_sdk_custom_interfaces__rosidl_generator_c.dir/rosidl_generator_c/dynamixel_sdk_custom_interfaces/srv/detail/set_velocity__type_support.c.o[0m
+[9.290s] [ 16%] [32mBuilding C object CMakeFiles/dynamixel_sdk_custom_interfaces__rosidl_generator_c.dir/rosidl_generator_c/dynamixel_sdk_custom_interfaces/srv/detail/set_extension__description.c.o[0m
+[9.290s] [ 17%] [32mBuilding C object CMakeFiles/dynamixel_sdk_custom_interfaces__rosidl_generator_c.dir/rosidl_generator_c/dynamixel_sdk_custom_interfaces/srv/detail/set_extension__functions.c.o[0m
+[9.296s] [ 18%] [32mBuilding C object CMakeFiles/dynamixel_sdk_custom_interfaces__rosidl_generator_c.dir/rosidl_generator_c/dynamixel_sdk_custom_interfaces/srv/detail/set_extension__type_support.c.o[0m
+[9.298s] [ 19%] [32mBuilding C object CMakeFiles/dynamixel_sdk_custom_interfaces__rosidl_generator_c.dir/rosidl_generator_c/dynamixel_sdk_custom_interfaces/srv/detail/set_bending__description.c.o[0m
+[9.309s] [ 20%] [32mBuilding C object CMakeFiles/dynamixel_sdk_custom_interfaces__rosidl_generator_c.dir/rosidl_generator_c/dynamixel_sdk_custom_interfaces/srv/detail/set_bending__functions.c.o[0m
+[9.311s] [ 21%] [32mBuilding C object CMakeFiles/dynamixel_sdk_custom_interfaces__rosidl_generator_c.dir/rosidl_generator_c/dynamixel_sdk_custom_interfaces/srv/detail/movement__description.c.o[0m
+[9.311s] [ 21%] [32mBuilding C object CMakeFiles/dynamixel_sdk_custom_interfaces__rosidl_generator_c.dir/rosidl_generator_c/dynamixel_sdk_custom_interfaces/srv/detail/set_bending__type_support.c.o[0m
+[9.315s] [ 22%] [32mBuilding C object CMakeFiles/dynamixel_sdk_custom_interfaces__rosidl_generator_c.dir/rosidl_generator_c/dynamixel_sdk_custom_interfaces/srv/detail/movement__functions.c.o[0m
+[9.366s] [ 23%] [32mBuilding C object CMakeFiles/dynamixel_sdk_custom_interfaces__rosidl_generator_c.dir/rosidl_generator_c/dynamixel_sdk_custom_interfaces/srv/detail/movement__type_support.c.o[0m
+[9.378s] [ 24%] [32mBuilding C object CMakeFiles/dynamixel_sdk_custom_interfaces__rosidl_generator_c.dir/rosidl_generator_c/dynamixel_sdk_custom_interfaces/srv/detail/set_twisting__description.c.o[0m
+[9.382s] [ 25%] [32mBuilding C object CMakeFiles/dynamixel_sdk_custom_interfaces__rosidl_generator_c.dir/rosidl_generator_c/dynamixel_sdk_custom_interfaces/srv/detail/set_twisting__functions.c.o[0m
+[9.384s] [ 26%] [32mBuilding C object CMakeFiles/dynamixel_sdk_custom_interfaces__rosidl_generator_c.dir/rosidl_generator_c/dynamixel_sdk_custom_interfaces/srv/detail/set_twisting__type_support.c.o[0m
+[9.492s] [ 27%] [32m[1mLinking C shared library libdynamixel_sdk_custom_interfaces__rosidl_generator_c.so[0m
+[9.587s] [ 27%] Built target dynamixel_sdk_custom_interfaces__rosidl_generator_c
+[9.658s] [ 28%] [34m[1mGenerating C++ type support dispatch for ROS interfaces[0m
+[9.659s] [ 29%] [34m[1mGenerating C type support for eProsima Fast-RTPS[0m
+[9.660s] [ 30%] [34m[1mGenerating C++ type support for eProsima Fast-RTPS[0m
+[9.662s] [ 31%] [34m[1mGenerating C introspection for ROS interfaces[0m
+[9.663s] [ 32%] [34m[1mGenerating C type support dispatch for ROS interfaces[0m
+[9.664s] [ 32%] [34m[1mGenerating C++ introspection for ROS interfaces[0m
+[10.426s] [ 33%] [32mBuilding CXX object CMakeFiles/dynamixel_sdk_custom_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/dynamixel_sdk_custom_interfaces/msg/set_position__type_support.cpp.o[0m
+[10.426s] [ 35%] [32mBuilding CXX object CMakeFiles/dynamixel_sdk_custom_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/dynamixel_sdk_custom_interfaces/msg/set_mode__type_support.cpp.o[0m
+[10.426s] [ 35%] [32mBuilding CXX object CMakeFiles/dynamixel_sdk_custom_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/dynamixel_sdk_custom_interfaces/srv/get_position__type_support.cpp.o[0m
+[10.426s] [ 36%] [32mBuilding CXX object CMakeFiles/dynamixel_sdk_custom_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/dynamixel_sdk_custom_interfaces/srv/set_velocity__type_support.cpp.o[0m
+[10.426s] [ 37%] [32mBuilding CXX object CMakeFiles/dynamixel_sdk_custom_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/dynamixel_sdk_custom_interfaces/msg/rolling__type_support.cpp.o[0m
+[10.427s] [ 38%] [32mBuilding CXX object CMakeFiles/dynamixel_sdk_custom_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/dynamixel_sdk_custom_interfaces/srv/set_extension__type_support.cpp.o[0m
+[10.427s] [ 38%] [32mBuilding CXX object CMakeFiles/dynamixel_sdk_custom_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/dynamixel_sdk_custom_interfaces/srv/set_bending__type_support.cpp.o[0m
+[10.451s] [ 39%] [32mBuilding CXX object CMakeFiles/dynamixel_sdk_custom_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/dynamixel_sdk_custom_interfaces/msg/set_position__type_support.cpp.o[0m
+[10.518s] [ 40%] [32mBuilding CXX object CMakeFiles/dynamixel_sdk_custom_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/dynamixel_sdk_custom_interfaces/msg/rolling__type_support.cpp.o[0m
+[10.520s] [ 41%] [32mBuilding CXX object CMakeFiles/dynamixel_sdk_custom_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/dynamixel_sdk_custom_interfaces/msg/set_mode__type_support.cpp.o[0m
+[10.521s] [ 42%] [32mBuilding CXX object CMakeFiles/dynamixel_sdk_custom_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/dynamixel_sdk_custom_interfaces/srv/movement__type_support.cpp.o[0m
+[10.526s] [ 42%] [32mBuilding CXX object CMakeFiles/dynamixel_sdk_custom_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/dynamixel_sdk_custom_interfaces/srv/get_position__type_support.cpp.o[0m
+[10.535s] [ 43%] [32mBuilding CXX object CMakeFiles/dynamixel_sdk_custom_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/dynamixel_sdk_custom_interfaces/srv/set_extension__type_support.cpp.o[0m
+[10.536s] [ 44%] [32mBuilding CXX object CMakeFiles/dynamixel_sdk_custom_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/dynamixel_sdk_custom_interfaces/srv/set_twisting__type_support.cpp.o[0m
+[10.537s] [ 45%] [32mBuilding CXX object CMakeFiles/dynamixel_sdk_custom_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/dynamixel_sdk_custom_interfaces/srv/set_velocity__type_support.cpp.o[0m
+[10.630s] [ 46%] [32mBuilding CXX object CMakeFiles/dynamixel_sdk_custom_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/dynamixel_sdk_custom_interfaces/srv/set_bending__type_support.cpp.o[0m
+[10.653s] [ 47%] [32m[1mLinking CXX shared library libdynamixel_sdk_custom_interfaces__rosidl_typesupport_c.so[0m
+[10.761s] [ 47%] Built target dynamixel_sdk_custom_interfaces__rosidl_typesupport_c
+[10.808s] [ 48%] [32mBuilding CXX object CMakeFiles/dynamixel_sdk_custom_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/dynamixel_sdk_custom_interfaces/srv/movement__type_support.cpp.o[0m
+[11.102s] [ 49%] [32mBuilding CXX object CMakeFiles/dynamixel_sdk_custom_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/dynamixel_sdk_custom_interfaces/msg/detail/set_position__type_support.cpp.o[0m
+[11.111s] [ 50%] [32mBuilding CXX object CMakeFiles/dynamixel_sdk_custom_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/dynamixel_sdk_custom_interfaces/msg/detail/rolling__type_support.cpp.o[0m
+[11.111s] [ 51%] [32mBuilding CXX object CMakeFiles/dynamixel_sdk_custom_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/dynamixel_sdk_custom_interfaces/srv/set_twisting__type_support.cpp.o[0m
+[11.112s] [ 52%] [32mBuilding CXX object CMakeFiles/dynamixel_sdk_custom_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/dynamixel_sdk_custom_interfaces/msg/detail/set_mode__type_support.cpp.o[0m
+[11.189s] [ 53%] [32mBuilding C object CMakeFiles/dynamixel_sdk_custom_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/dynamixel_sdk_custom_interfaces/msg/detail/set_position__type_support.c.o[0m
+[11.272s] [ 54%] [32mBuilding C object CMakeFiles/dynamixel_sdk_custom_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/dynamixel_sdk_custom_interfaces/msg/detail/rolling__type_support.c.o[0m
+[11.333s] [ 55%] [32mBuilding C object CMakeFiles/dynamixel_sdk_custom_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/dynamixel_sdk_custom_interfaces/msg/detail/set_mode__type_support.c.o[0m
+[11.333s] [ 55%] [32mBuilding CXX object CMakeFiles/dynamixel_sdk_custom_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/dynamixel_sdk_custom_interfaces/srv/detail/get_position__type_support.cpp.o[0m
+[11.363s] [ 56%] [32mBuilding CXX object CMakeFiles/dynamixel_sdk_custom_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/dynamixel_sdk_custom_interfaces/srv/detail/set_velocity__type_support.cpp.o[0m
+[11.382s] [ 57%] [32mBuilding CXX object CMakeFiles/dynamixel_sdk_custom_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/dynamixel_sdk_custom_interfaces/srv/detail/set_extension__type_support.cpp.o[0m
+[11.413s] [ 58%] [32mBuilding C object CMakeFiles/dynamixel_sdk_custom_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/dynamixel_sdk_custom_interfaces/srv/detail/get_position__type_support.c.o[0m
+[11.422s] [ 59%] [32mBuilding CXX object CMakeFiles/dynamixel_sdk_custom_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/dynamixel_sdk_custom_interfaces/srv/detail/set_bending__type_support.cpp.o[0m
+[11.524s] [ 60%] [32mBuilding C object CMakeFiles/dynamixel_sdk_custom_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/dynamixel_sdk_custom_interfaces/srv/detail/set_velocity__type_support.c.o[0m
+[11.634s] [ 61%] [32mBuilding C object CMakeFiles/dynamixel_sdk_custom_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/dynamixel_sdk_custom_interfaces/srv/detail/set_extension__type_support.c.o[0m
+[11.644s] [ 61%] [32mBuilding CXX object CMakeFiles/dynamixel_sdk_custom_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/dynamixel_sdk_custom_interfaces/srv/detail/movement__type_support.cpp.o[0m
+[11.742s] [ 62%] [32mBuilding C object CMakeFiles/dynamixel_sdk_custom_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/dynamixel_sdk_custom_interfaces/srv/detail/set_bending__type_support.c.o[0m
+[11.754s] [ 63%] [32mBuilding CXX object CMakeFiles/dynamixel_sdk_custom_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/dynamixel_sdk_custom_interfaces/srv/detail/set_twisting__type_support.cpp.o[0m
+[11.779s] [ 64%] [32mBuilding C object CMakeFiles/dynamixel_sdk_custom_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/dynamixel_sdk_custom_interfaces/srv/detail/movement__type_support.c.o[0m
+[11.782s] [ 65%] [32mBuilding C object CMakeFiles/dynamixel_sdk_custom_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/dynamixel_sdk_custom_interfaces/srv/detail/set_twisting__type_support.c.o[0m
+[11.798s] [ 66%] [32mBuilding CXX object CMakeFiles/dynamixel_sdk_custom_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/dynamixel_sdk_custom_interfaces/msg/detail/dds_fastrtps/set_position__type_support.cpp.o[0m
+[11.884s] [ 68%] [32mBuilding CXX object CMakeFiles/dynamixel_sdk_custom_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/dynamixel_sdk_custom_interfaces/msg/detail/dds_fastrtps/rolling__type_support.cpp.o[0m
+[11.884s] [ 68%] [32m[1mLinking CXX shared library libdynamixel_sdk_custom_interfaces__rosidl_typesupport_cpp.so[0m
+[11.886s] [ 69%] [32m[1mLinking C shared library libdynamixel_sdk_custom_interfaces__rosidl_typesupport_introspection_c.so[0m
+[11.886s] [ 70%] [32mBuilding CXX object CMakeFiles/dynamixel_sdk_custom_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/dynamixel_sdk_custom_interfaces/msg/detail/dds_fastrtps/set_mode__type_support.cpp.o[0m
+[11.939s] [ 70%] [32mBuilding CXX object CMakeFiles/dynamixel_sdk_custom_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/dynamixel_sdk_custom_interfaces/msg/detail/set_position__type_support_c.cpp.o[0m
+[11.971s] [ 70%] Built target dynamixel_sdk_custom_interfaces__rosidl_typesupport_introspection_c
+[11.999s] [ 71%] [32mBuilding CXX object CMakeFiles/dynamixel_sdk_custom_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/dynamixel_sdk_custom_interfaces/srv/detail/dds_fastrtps/get_position__type_support.cpp.o[0m
+[12.087s] [ 71%] Built target dynamixel_sdk_custom_interfaces__rosidl_typesupport_cpp
+[12.113s] [ 72%] [32mBuilding CXX object CMakeFiles/dynamixel_sdk_custom_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/dynamixel_sdk_custom_interfaces/msg/detail/rolling__type_support_c.cpp.o[0m
+[12.187s] [ 74%] [32mBuilding CXX object CMakeFiles/dynamixel_sdk_custom_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/dynamixel_sdk_custom_interfaces/srv/detail/dds_fastrtps/set_velocity__type_support.cpp.o[0m
+[12.187s] [ 74%] [32mBuilding CXX object CMakeFiles/dynamixel_sdk_custom_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/dynamixel_sdk_custom_interfaces/msg/detail/set_mode__type_support_c.cpp.o[0m
+[12.228s] [ 75%] [32mBuilding CXX object CMakeFiles/dynamixel_sdk_custom_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/dynamixel_sdk_custom_interfaces/srv/detail/get_position__type_support_c.cpp.o[0m
+[12.314s] [ 76%] [32mBuilding CXX object CMakeFiles/dynamixel_sdk_custom_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/dynamixel_sdk_custom_interfaces/srv/detail/set_velocity__type_support_c.cpp.o[0m
+[12.499s] [ 76%] [32mBuilding CXX object CMakeFiles/dynamixel_sdk_custom_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/dynamixel_sdk_custom_interfaces/srv/detail/dds_fastrtps/set_extension__type_support.cpp.o[0m
+[12.618s] [ 77%] [32m[1mLinking CXX shared library libdynamixel_sdk_custom_interfaces__rosidl_typesupport_introspection_cpp.so[0m
+[12.758s] [ 78%] [32mBuilding CXX object CMakeFiles/dynamixel_sdk_custom_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/dynamixel_sdk_custom_interfaces/srv/detail/set_extension__type_support_c.cpp.o[0m
+[12.821s] [ 79%] [32mBuilding CXX object CMakeFiles/dynamixel_sdk_custom_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/dynamixel_sdk_custom_interfaces/srv/detail/set_bending__type_support_c.cpp.o[0m
+[12.830s] [ 79%] Built target dynamixel_sdk_custom_interfaces__rosidl_typesupport_introspection_cpp
+[12.834s] [ 80%] [32mBuilding CXX object CMakeFiles/dynamixel_sdk_custom_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/dynamixel_sdk_custom_interfaces/srv/detail/movement__type_support_c.cpp.o[0m
+[12.856s] [ 80%] [32mBuilding CXX object CMakeFiles/dynamixel_sdk_custom_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/dynamixel_sdk_custom_interfaces/srv/detail/set_twisting__type_support_c.cpp.o[0m
+[12.881s] [ 81%] [32mBuilding CXX object CMakeFiles/dynamixel_sdk_custom_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/dynamixel_sdk_custom_interfaces/srv/detail/dds_fastrtps/set_bending__type_support.cpp.o[0m
+[13.039s] [ 82%] [32mBuilding CXX object CMakeFiles/dynamixel_sdk_custom_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/dynamixel_sdk_custom_interfaces/srv/detail/dds_fastrtps/movement__type_support.cpp.o[0m
+[13.143s] [ 83%] [32mBuilding CXX object CMakeFiles/dynamixel_sdk_custom_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/dynamixel_sdk_custom_interfaces/srv/detail/dds_fastrtps/set_twisting__type_support.cpp.o[0m
+[13.781s] [ 84%] [32m[1mLinking CXX shared library libdynamixel_sdk_custom_interfaces__rosidl_typesupport_fastrtps_c.so[0m
+[13.884s] [ 84%] Built target dynamixel_sdk_custom_interfaces__rosidl_typesupport_fastrtps_c
+[14.006s] [ 85%] [32m[1mLinking CXX shared library libdynamixel_sdk_custom_interfaces__rosidl_typesupport_fastrtps_cpp.so[0m
+[14.119s] [ 85%] Built target dynamixel_sdk_custom_interfaces__rosidl_typesupport_fastrtps_cpp
+[14.161s] [ 85%] Built target dynamixel_sdk_custom_interfaces
+[14.211s] [ 86%] [34m[1mGenerating Python code for ROS interfaces[0m
+[15.632s] [ 86%] Built target dynamixel_sdk_custom_interfaces__py
+[15.668s] [ 89%] [32mBuilding C object CMakeFiles/dynamixel_sdk_custom_interfaces__rosidl_generator_py.dir/rosidl_generator_py/dynamixel_sdk_custom_interfaces/srv/_set_extension_s.c.o[0m
+[15.669s] [ 89%] [32mBuilding C object CMakeFiles/dynamixel_sdk_custom_interfaces__rosidl_generator_py.dir/rosidl_generator_py/dynamixel_sdk_custom_interfaces/srv/_movement_s.c.o[0m
+[15.669s] [ 89%] [32mBuilding C object CMakeFiles/dynamixel_sdk_custom_interfaces__rosidl_generator_py.dir/rosidl_generator_py/dynamixel_sdk_custom_interfaces/msg/_set_mode_s.c.o[0m
+[15.674s] [ 90%] [32mBuilding C object CMakeFiles/dynamixel_sdk_custom_interfaces__rosidl_generator_py.dir/rosidl_generator_py/dynamixel_sdk_custom_interfaces/msg/_set_position_s.c.o[0m
+[15.674s] [ 90%] [32mBuilding C object CMakeFiles/dynamixel_sdk_custom_interfaces__rosidl_generator_py.dir/rosidl_generator_py/dynamixel_sdk_custom_interfaces/msg/_rolling_s.c.o[0m
+[15.675s] [ 91%] [32mBuilding C object CMakeFiles/dynamixel_sdk_custom_interfaces__rosidl_generator_py.dir/rosidl_generator_py/dynamixel_sdk_custom_interfaces/srv/_get_position_s.c.o[0m
+[15.675s] [ 92%] [32mBuilding C object CMakeFiles/dynamixel_sdk_custom_interfaces__rosidl_generator_py.dir/rosidl_generator_py/dynamixel_sdk_custom_interfaces/srv/_set_velocity_s.c.o[0m
+[15.675s] [ 93%] [32mBuilding C object CMakeFiles/dynamixel_sdk_custom_interfaces__rosidl_generator_py.dir/rosidl_generator_py/dynamixel_sdk_custom_interfaces/srv/_set_bending_s.c.o[0m
+[15.677s] [ 94%] [32mBuilding C object CMakeFiles/dynamixel_sdk_custom_interfaces__rosidl_generator_py.dir/rosidl_generator_py/dynamixel_sdk_custom_interfaces/srv/_set_twisting_s.c.o[0m
+[15.967s] [ 94%] [32m[1mLinking C shared library libdynamixel_sdk_custom_interfaces__rosidl_generator_py.so[0m
+[16.129s] [ 94%] Built target dynamixel_sdk_custom_interfaces__rosidl_generator_py
+[16.269s] [ 96%] [32mBuilding C object CMakeFiles/dynamixel_sdk_custom_interfaces_s__rosidl_typesupport_fastrtps_c.dir/rosidl_generator_py/dynamixel_sdk_custom_interfaces/_dynamixel_sdk_custom_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c.o[0m
+[16.270s] [ 96%] [32mBuilding C object CMakeFiles/dynamixel_sdk_custom_interfaces_s__rosidl_typesupport_introspection_c.dir/rosidl_generator_py/dynamixel_sdk_custom_interfaces/_dynamixel_sdk_custom_interfaces_s.ep.rosidl_typesupport_introspection_c.c.o[0m
+[16.271s] [ 97%] [32mBuilding C object CMakeFiles/dynamixel_sdk_custom_interfaces_s__rosidl_typesupport_c.dir/rosidl_generator_py/dynamixel_sdk_custom_interfaces/_dynamixel_sdk_custom_interfaces_s.ep.rosidl_typesupport_c.c.o[0m
+[16.503s] [ 98%] [32m[1mLinking C shared module rosidl_generator_py/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces_s__rosidl_typesupport_c.so[0m
+[16.509s] [ 99%] [32m[1mLinking C shared module rosidl_generator_py/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces_s__rosidl_typesupport_fastrtps_c.so[0m
+[16.510s] [100%] [32m[1mLinking C shared module rosidl_generator_py/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces_s__rosidl_typesupport_introspection_c.so[0m
+[16.552s] [100%] Built target dynamixel_sdk_custom_interfaces_s__rosidl_typesupport_c
+[16.558s] [100%] Built target dynamixel_sdk_custom_interfaces_s__rosidl_typesupport_introspection_c
+[16.558s] [100%] Built target dynamixel_sdk_custom_interfaces_s__rosidl_typesupport_fastrtps_c
+[16.578s] Invoked command in '/home/haodong/Swarm_Module/Swarm_Module_ws/build/dynamixel_sdk_custom_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/haodong/ws_moveit/install/moveit_configs_utils:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/haodong/Swarm_Module/Swarm_Module_ws/build/dynamixel_sdk_custom_interfaces -- -j12 -l12
+[18.222s] Invoking command in '/home/haodong/Swarm_Module/Swarm_Module_ws/build/dynamixel_sdk_custom_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/haodong/ws_moveit/install/moveit_configs_utils:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/haodong/Swarm_Module/Swarm_Module_ws/build/dynamixel_sdk_custom_interfaces
+[18.284s] -- Install configuration: ""
+[18.286s] -- Installing: /home/haodong/Swarm_Module/Swarm_Module_ws/install/dynamixel_sdk_custom_interfaces/share/ament_index/resource_index/rosidl_interfaces/dynamixel_sdk_custom_interfaces
+[18.287s] -- Installing: /home/haodong/Swarm_Module/Swarm_Module_ws/install/dynamixel_sdk_custom_interfaces/share/dynamixel_sdk_custom_interfaces/msg/SetPosition.json
+[18.288s] -- Installing: /home/haodong/Swarm_Module/Swarm_Module_ws/install/dynamixel_sdk_custom_interfaces/share/dynamixel_sdk_custom_interfaces/msg/Rolling.json
+[18.288s] -- Installing: /home/haodong/Swarm_Module/Swarm_Module_ws/install/dynamixel_sdk_custom_interfaces/share/dynamixel_sdk_custom_interfaces/msg/SetMode.json
+[18.289s] -- Installing: /home/haodong/Swarm_Module/Swarm_Module_ws/install/dynamixel_sdk_custom_interfaces/share/dynamixel_sdk_custom_interfaces/srv/GetPosition.json
+[18.290s] -- Installing: /home/haodong/Swarm_Module/Swarm_Module_ws/install/dynamixel_sdk_custom_interfaces/share/dynamixel_sdk_custom_interfaces/srv/SetVelocity.json
+[18.291s] -- Installing: /home/haodong/Swarm_Module/Swarm_Module_ws/install/dynamixel_sdk_custom_interfaces/share/dynamixel_sdk_custom_interfaces/srv/SetExtension.json
+[18.292s] -- Installing: /home/haodong/Swarm_Module/Swarm_Module_ws/install/dynamixel_sdk_custom_interfaces/share/dynamixel_sdk_custom_interfaces/srv/SetBending.json
+[18.292s] -- Installing: /home/haodong/Swarm_Module/Swarm_Module_ws/install/dynamixel_sdk_custom_interfaces/share/dynamixel_sdk_custom_interfaces/srv/Movement.json
+[18.293s] -- Installing: /home/haodong/Swarm_Module/Swarm_Module_ws/install/dynamixel_sdk_custom_interfaces/share/dynamixel_sdk_custom_interfaces/srv/SetTwisting.json
+[18.293s] -- Installing: /home/haodong/Swarm_Module/Swarm_Module_ws/install/dynamixel_sdk_custom_interfaces/include/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces
+[18.293s] -- Installing: /home/haodong/Swarm_Module/Swarm_Module_ws/install/dynamixel_sdk_custom_interfaces/include/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces/msg
+[18.294s] -- Installing: /home/haodong/Swarm_Module/Swarm_Module_ws/install/dynamixel_sdk_custom_interfaces/include/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces/msg/rosidl_generator_c__visibility_control.h
+[18.294s] -- Installing: /home/haodong/Swarm_Module/Swarm_Module_ws/install/dynamixel_sdk_custom_interfaces/include/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces/msg/set_mode.h
+[18.295s] -- Installing: /home/haodong/Swarm_Module/Swarm_Module_ws/install/dynamixel_sdk_custom_interfaces/include/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces/msg/set_position.h
+[18.295s] -- Installing: /home/haodong/Swarm_Module/Swarm_Module_ws/install/dynamixel_sdk_custom_interfaces/include/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces/msg/detail
+[18.296s] -- Installing: /home/haodong/Swarm_Module/Swarm_Module_ws/install/dynamixel_sdk_custom_interfaces/include/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces/msg/detail/set_mode__type_support.h
+[18.296s] -- Installing: /home/haodong/Swarm_Module/Swarm_Module_ws/install/dynamixel_sdk_custom_interfaces/include/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces/msg/detail/rolling__type_support.h
+[18.297s] -- Installing: /home/haodong/Swarm_Module/Swarm_Module_ws/install/dynamixel_sdk_custom_interfaces/include/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces/msg/detail/set_mode__functions.h
+[18.298s] -- Installing: /home/haodong/Swarm_Module/Swarm_Module_ws/install/dynamixel_sdk_custom_interfaces/include/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces/msg/detail/set_position__type_support.c
+[18.298s] -- Installing: /home/haodong/Swarm_Module/Swarm_Module_ws/install/dynamixel_sdk_custom_interfaces/include/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces/msg/detail/set_position__type_support.h
+[18.299s] -- Installing: /home/haodong/Swarm_Module/Swarm_Module_ws/install/dynamixel_sdk_custom_interfaces/include/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces/msg/detail/rolling__functions.h
+[18.300s] -- Installing: /home/haodong/Swarm_Module/Swarm_Module_ws/install/dynamixel_sdk_custom_interfaces/include/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces/msg/detail/set_mode__functions.c
+[18.300s] -- Installing: /home/haodong/Swarm_Module/Swarm_Module_ws/install/dynamixel_sdk_custom_interfaces/include/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces/msg/detail/set_position__struct.h
+[18.301s] -- Installing: /home/haodong/Swarm_Module/Swarm_Module_ws/install/dynamixel_sdk_custom_interfaces/include/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces/msg/detail/set_mode__description.c
+[18.302s] -- Installing: /home/haodong/Swarm_Module/Swarm_Module_ws/install/dynamixel_sdk_custom_interfaces/include/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces/msg/detail/set_position__functions.h
+[18.302s] -- Installing: /home/haodong/Swarm_Module/Swarm_Module_ws/install/dynamixel_sdk_custom_interfaces/include/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces/msg/detail/set_mode__struct.h
+[18.303s] -- Installing: /home/haodong/Swarm_Module/Swarm_Module_ws/install/dynamixel_sdk_custom_interfaces/include/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces/msg/detail/set_position__description.c
+[18.303s] -- Installing: /home/haodong/Swarm_Module/Swarm_Module_ws/install/dynamixel_sdk_custom_interfaces/include/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces/msg/detail/set_mode__type_support.c
+[18.303s] -- Installing: /home/haodong/Swarm_Module/Swarm_Module_ws/install/dynamixel_sdk_custom_interfaces/include/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces/msg/detail/set_position__functions.c
+[18.304s] -- Installing: /home/haodong/Swarm_Module/Swarm_Module_ws/install/dynamixel_sdk_custom_interfaces/include/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces/msg/detail/rolling__description.c
+[18.304s] -- Installing: /home/haodong/Swarm_Module/Swarm_Module_ws/install/dynamixel_sdk_custom_interfaces/include/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces/msg/detail/rolling__functions.c
+[18.305s] -- Installing: /home/haodong/Swarm_Module/Swarm_Module_ws/install/dynamixel_sdk_custom_interfaces/include/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces/msg/detail/rolling__type_support.c
+[18.305s] -- Installing: /home/haodong/Swarm_Module/Swarm_Module_ws/install/dynamixel_sdk_custom_interfaces/include/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces/msg/detail/rolling__struct.h
+[18.306s] -- Installing: /home/haodong/Swarm_Module/Swarm_Module_ws/install/dynamixel_sdk_custom_interfaces/include/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces/msg/rolling.h
+[18.306s] -- Installing: /home/haodong/Swarm_Module/Swarm_Module_ws/install/dynamixel_sdk_custom_interfaces/include/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces/srv
+[18.307s] -- Installing: /home/haodong/Swarm_Module/Swarm_Module_ws/install/dynamixel_sdk_custom_interfaces/include/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces/srv/movement.h
+[18.308s] -- Installing: /home/haodong/Swarm_Module/Swarm_Module_ws/install/dynamixel_sdk_custom_interfaces/include/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces/srv/detail
+[18.308s] -- Installing: /home/haodong/Swarm_Module/Swarm_Module_ws/install/dynamixel_sdk_custom_interfaces/include/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces/srv/detail/set_bending__type_support.c
+[18.309s] -- Installing: /home/haodong/Swarm_Module/Swarm_Module_ws/install/dynamixel_sdk_custom_interfaces/include/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces/srv/detail/set_extension__description.c
+[18.310s] -- Installing: /home/haodong/Swarm_Module/Swarm_Module_ws/install/dynamixel_sdk_custom_interfaces/include/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces/srv/detail/set_velocity__functions.h
+[18.310s] -- Installing: /home/haodong/Swarm_Module/Swarm_Module_ws/install/dynamixel_sdk_custom_interfaces/include/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces/srv/detail/set_twisting__type_support.c
+[18.311s] -- Installing: /home/haodong/Swarm_Module/Swarm_Module_ws/install/dynamixel_sdk_custom_interfaces/include/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces/srv/detail/get_position__type_support.h
+[18.311s] -- Installing: /home/haodong/Swarm_Module/Swarm_Module_ws/install/dynamixel_sdk_custom_interfaces/include/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces/srv/detail/set_bending__functions.h
+[18.312s] -- Installing: /home/haodong/Swarm_Module/Swarm_Module_ws/install/dynamixel_sdk_custom_interfaces/include/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces/srv/detail/get_position__description.c
+[18.312s] -- Installing: /home/haodong/Swarm_Module/Swarm_Module_ws/install/dynamixel_sdk_custom_interfaces/include/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces/srv/detail/set_bending__struct.h
+[18.312s] -- Installing: /home/haodong/Swarm_Module/Swarm_Module_ws/install/dynamixel_sdk_custom_interfaces/include/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces/srv/detail/get_position__functions.c
+[18.313s] -- Installing: /home/haodong/Swarm_Module/Swarm_Module_ws/install/dynamixel_sdk_custom_interfaces/include/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces/srv/detail/movement__struct.h
+[18.313s] -- Installing: /home/haodong/Swarm_Module/Swarm_Module_ws/install/dynamixel_sdk_custom_interfaces/include/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces/srv/detail/set_velocity__functions.c
+[18.314s] -- Installing: /home/haodong/Swarm_Module/Swarm_Module_ws/install/dynamixel_sdk_custom_interfaces/include/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces/srv/detail/movement__type_support.h
+[18.314s] -- Installing: /home/haodong/Swarm_Module/Swarm_Module_ws/install/dynamixel_sdk_custom_interfaces/include/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces/srv/detail/set_velocity__description.c
+[18.315s] -- Installing: /home/haodong/Swarm_Module/Swarm_Module_ws/install/dynamixel_sdk_custom_interfaces/include/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces/srv/detail/set_velocity__type_support.c
+[18.315s] -- Installing: /home/haodong/Swarm_Module/Swarm_Module_ws/install/dynamixel_sdk_custom_interfaces/include/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces/srv/detail/set_velocity__struct.h
+[18.316s] -- Installing: /home/haodong/Swarm_Module/Swarm_Module_ws/install/dynamixel_sdk_custom_interfaces/include/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces/srv/detail/movement__description.c
+[18.316s] -- Installing: /home/haodong/Swarm_Module/Swarm_Module_ws/install/dynamixel_sdk_custom_interfaces/include/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces/srv/detail/set_velocity__type_support.h
+[18.317s] -- Installing: /home/haodong/Swarm_Module/Swarm_Module_ws/install/dynamixel_sdk_custom_interfaces/include/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces/srv/detail/movement__functions.h
+[18.318s] -- Installing: /home/haodong/Swarm_Module/Swarm_Module_ws/install/dynamixel_sdk_custom_interfaces/include/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces/srv/detail/set_extension__type_support.c
+[18.319s] -- Installing: /home/haodong/Swarm_Module/Swarm_Module_ws/install/dynamixel_sdk_custom_interfaces/include/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces/srv/detail/set_twisting__functions.h
+[18.319s] -- Installing: /home/haodong/Swarm_Module/Swarm_Module_ws/install/dynamixel_sdk_custom_interfaces/include/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces/srv/detail/set_twisting__functions.c
+[18.320s] -- Installing: /home/haodong/Swarm_Module/Swarm_Module_ws/install/dynamixel_sdk_custom_interfaces/include/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces/srv/detail/set_twisting__type_support.h
+[18.321s] -- Installing: /home/haodong/Swarm_Module/Swarm_Module_ws/install/dynamixel_sdk_custom_interfaces/include/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces/srv/detail/set_bending__type_support.h
+[18.321s] -- Installing: /home/haodong/Swarm_Module/Swarm_Module_ws/install/dynamixel_sdk_custom_interfaces/include/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces/srv/detail/set_extension__struct.h
+[18.321s] -- Installing: /home/haodong/Swarm_Module/Swarm_Module_ws/install/dynamixel_sdk_custom_interfaces/include/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces/srv/detail/movement__functions.c
+[18.322s] -- Installing: /home/haodong/Swarm_Module/Swarm_Module_ws/install/dynamixel_sdk_custom_interfaces/include/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces/srv/detail/set_bending__functions.c
+[18.322s] -- Installing: /home/haodong/Swarm_Module/Swarm_Module_ws/install/dynamixel_sdk_custom_interfaces/include/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces/srv/detail/set_twisting__struct.h
+[18.323s] -- Installing: /home/haodong/Swarm_Module/Swarm_Module_ws/install/dynamixel_sdk_custom_interfaces/include/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces/srv/detail/movement__type_support.c
+[18.323s] -- Installing: /home/haodong/Swarm_Module/Swarm_Module_ws/install/dynamixel_sdk_custom_interfaces/include/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces/srv/detail/set_twisting__description.c
+[18.324s] -- Installing: /home/haodong/Swarm_Module/Swarm_Module_ws/install/dynamixel_sdk_custom_interfaces/include/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces/srv/detail/get_position__struct.h
+[18.324s] -- Installing: /home/haodong/Swarm_Module/Swarm_Module_ws/install/dynamixel_sdk_custom_interfaces/include/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces/srv/detail/set_extension__type_support.h
+[18.325s] -- Installing: /home/haodong/Swarm_Module/Swarm_Module_ws/install/dynamixel_sdk_custom_interfaces/include/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces/srv/detail/set_bending__description.c
+[18.325s] -- Installing: /home/haodong/Swarm_Module/Swarm_Module_ws/install/dynamixel_sdk_custom_interfaces/include/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces/srv/detail/set_extension__functions.h
+[18.325s] -- Installing: /home/haodong/Swarm_Module/Swarm_Module_ws/install/dynamixel_sdk_custom_interfaces/include/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces/srv/detail/get_position__type_support.c
+[18.326s] -- Installing: /home/haodong/Swarm_Module/Swarm_Module_ws/install/dynamixel_sdk_custom_interfaces/include/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces/srv/detail/set_extension__functions.c
+[18.327s] -- Installing: /home/haodong/Swarm_Module/Swarm_Module_ws/install/dynamixel_sdk_custom_interfaces/include/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces/srv/detail/get_position__functions.h
+[18.327s] -- Installing: /home/haodong/Swarm_Module/Swarm_Module_ws/install/dynamixel_sdk_custom_interfaces/include/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces/srv/set_bending.h
+[18.328s] -- Installing: /home/haodong/Swarm_Module/Swarm_Module_ws/install/dynamixel_sdk_custom_interfaces/include/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces/srv/set_extension.h
+[18.328s] -- Installing: /home/haodong/Swarm_Module/Swarm_Module_ws/install/dynamixel_sdk_custom_interfaces/include/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces/srv/set_twisting.h
+[18.329s] -- Installing: /home/haodong/Swarm_Module/Swarm_Module_ws/install/dynamixel_sdk_custom_interfaces/include/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces/srv/get_position.h
+[18.330s] -- Installing: /home/haodong/Swarm_Module/Swarm_Module_ws/install/dynamixel_sdk_custom_interfaces/include/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces/srv/set_velocity.h
+[18.330s] -- Installing: /home/haodong/Swarm_Module/Swarm_Module_ws/install/dynamixel_sdk_custom_interfaces/share/dynamixel_sdk_custom_interfaces/environment/library_path.sh
+[18.331s] -- Installing: /home/haodong/Swarm_Module/Swarm_Module_ws/install/dynamixel_sdk_custom_interfaces/share/dynamixel_sdk_custom_interfaces/environment/library_path.dsv
+[18.332s] -- Installing: /home/haodong/Swarm_Module/Swarm_Module_ws/install/dynamixel_sdk_custom_interfaces/lib/libdynamixel_sdk_custom_interfaces__rosidl_generator_c.so
+[18.335s] -- Set non-toolchain portion of runtime path of "/home/haodong/Swarm_Module/Swarm_Module_ws/install/dynamixel_sdk_custom_interfaces/lib/libdynamixel_sdk_custom_interfaces__rosidl_generator_c.so" to ""
+[18.335s] -- Up-to-date: /home/haodong/Swarm_Module/Swarm_Module_ws/install/dynamixel_sdk_custom_interfaces/include/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces
+[18.336s] -- Up-to-date: /home/haodong/Swarm_Module/Swarm_Module_ws/install/dynamixel_sdk_custom_interfaces/include/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces/msg
+[18.336s] -- Installing: /home/haodong/Swarm_Module/Swarm_Module_ws/install/dynamixel_sdk_custom_interfaces/include/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[18.337s] -- Up-to-date: /home/haodong/Swarm_Module/Swarm_Module_ws/install/dynamixel_sdk_custom_interfaces/include/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces/msg/detail
+[18.337s] -- Installing: /home/haodong/Swarm_Module/Swarm_Module_ws/install/dynamixel_sdk_custom_interfaces/include/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces/msg/detail/rolling__rosidl_typesupport_fastrtps_c.h
+[18.338s] -- Installing: /home/haodong/Swarm_Module/Swarm_Module_ws/install/dynamixel_sdk_custom_interfaces/include/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces/msg/detail/set_mode__rosidl_typesupport_fastrtps_c.h
+[18.338s] -- Installing: /home/haodong/Swarm_Module/Swarm_Module_ws/install/dynamixel_sdk_custom_interfaces/include/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces/msg/detail/set_position__rosidl_typesupport_fastrtps_c.h
+[18.338s] -- Up-to-date: /home/haodong/Swarm_Module/Swarm_Module_ws/install/dynamixel_sdk_custom_interfaces/include/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces/srv
+[18.339s] -- Up-to-date: /home/haodong/Swarm_Module/Swarm_Module_ws/install/dynamixel_sdk_custom_interfaces/include/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces/srv/detail
+[18.339s] -- Installing: /home/haodong/Swarm_Module/Swarm_Module_ws/install/dynamixel_sdk_custom_interfaces/include/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces/srv/detail/set_velocity__rosidl_typesupport_fastrtps_c.h
+[18.340s] -- Installing: /home/haodong/Swarm_Module/Swarm_Module_ws/install/dynamixel_sdk_custom_interfaces/include/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces/srv/detail/set_twisting__rosidl_typesupport_fastrtps_c.h
+[18.340s] -- Installing: /home/haodong/Swarm_Module/Swarm_Module_ws/install/dynamixel_sdk_custom_interfaces/include/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces/srv/detail/set_extension__rosidl_typesupport_fastrtps_c.h
+[18.340s] -- Installing: /home/haodong/Swarm_Module/Swarm_Module_ws/install/dynamixel_sdk_custom_interfaces/include/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces/srv/detail/movement__rosidl_typesupport_fastrtps_c.h
+[18.341s] -- Installing: /home/haodong/Swarm_Module/Swarm_Module_ws/install/dynamixel_sdk_custom_interfaces/include/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces/srv/detail/set_bending__rosidl_typesupport_fastrtps_c.h
+[18.341s] -- Installing: /home/haodong/Swarm_Module/Swarm_Module_ws/install/dynamixel_sdk_custom_interfaces/include/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces/srv/detail/get_position__rosidl_typesupport_fastrtps_c.h
+[18.341s] -- Installing: /home/haodong/Swarm_Module/Swarm_Module_ws/install/dynamixel_sdk_custom_interfaces/lib/libdynamixel_sdk_custom_interfaces__rosidl_typesupport_fastrtps_c.so
+[18.343s] -- Set non-toolchain portion of runtime path of "/home/haodong/Swarm_Module/Swarm_Module_ws/install/dynamixel_sdk_custom_interfaces/lib/libdynamixel_sdk_custom_interfaces__rosidl_typesupport_fastrtps_c.so" to ""
+[18.344s] -- Up-to-date: /home/haodong/Swarm_Module/Swarm_Module_ws/install/dynamixel_sdk_custom_interfaces/include/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces
+[18.344s] -- Up-to-date: /home/haodong/Swarm_Module/Swarm_Module_ws/install/dynamixel_sdk_custom_interfaces/include/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces/msg
+[18.345s] -- Installing: /home/haodong/Swarm_Module/Swarm_Module_ws/install/dynamixel_sdk_custom_interfaces/include/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces/msg/set_mode.hpp
+[18.346s] -- Installing: /home/haodong/Swarm_Module/Swarm_Module_ws/install/dynamixel_sdk_custom_interfaces/include/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces/msg/set_position.hpp
+[18.346s] -- Installing: /home/haodong/Swarm_Module/Swarm_Module_ws/install/dynamixel_sdk_custom_interfaces/include/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces/msg/rolling.hpp
+[18.347s] -- Up-to-date: /home/haodong/Swarm_Module/Swarm_Module_ws/install/dynamixel_sdk_custom_interfaces/include/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces/msg/detail
+[18.347s] -- Installing: /home/haodong/Swarm_Module/Swarm_Module_ws/install/dynamixel_sdk_custom_interfaces/include/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces/msg/detail/set_mode__type_support.hpp
+[18.347s] -- Installing: /home/haodong/Swarm_Module/Swarm_Module_ws/install/dynamixel_sdk_custom_interfaces/include/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces/msg/detail/rolling__type_support.hpp
+[18.348s] -- Installing: /home/haodong/Swarm_Module/Swarm_Module_ws/install/dynamixel_sdk_custom_interfaces/include/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces/msg/detail/set_mode__traits.hpp
+[18.348s] -- Installing: /home/haodong/Swarm_Module/Swarm_Module_ws/install/dynamixel_sdk_custom_interfaces/include/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces/msg/detail/rolling__struct.hpp
+[18.348s] -- Installing: /home/haodong/Swarm_Module/Swarm_Module_ws/install/dynamixel_sdk_custom_interfaces/include/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces/msg/detail/set_position__builder.hpp
+[18.349s] -- Installing: /home/haodong/Swarm_Module/Swarm_Module_ws/install/dynamixel_sdk_custom_interfaces/include/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces/msg/detail/rolling__traits.hpp
+[18.349s] -- Installing: /home/haodong/Swarm_Module/Swarm_Module_ws/install/dynamixel_sdk_custom_interfaces/include/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces/msg/detail/set_position__traits.hpp
+[18.349s] -- Installing: /home/haodong/Swarm_Module/Swarm_Module_ws/install/dynamixel_sdk_custom_interfaces/include/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces/msg/detail/set_mode__builder.hpp
+[18.350s] -- Installing: /home/haodong/Swarm_Module/Swarm_Module_ws/install/dynamixel_sdk_custom_interfaces/include/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces/msg/detail/set_position__struct.hpp
+[18.350s] -- Installing: /home/haodong/Swarm_Module/Swarm_Module_ws/install/dynamixel_sdk_custom_interfaces/include/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces/msg/detail/set_mode__struct.hpp
+[18.350s] -- Installing: /home/haodong/Swarm_Module/Swarm_Module_ws/install/dynamixel_sdk_custom_interfaces/include/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces/msg/detail/rolling__builder.hpp
+[18.350s] -- Installing: /home/haodong/Swarm_Module/Swarm_Module_ws/install/dynamixel_sdk_custom_interfaces/include/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces/msg/detail/set_position__type_support.hpp
+[18.351s] -- Installing: /home/haodong/Swarm_Module/Swarm_Module_ws/install/dynamixel_sdk_custom_interfaces/include/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces/msg/rosidl_generator_cpp__visibility_control.hpp
+[18.351s] -- Up-to-date: /home/haodong/Swarm_Module/Swarm_Module_ws/install/dynamixel_sdk_custom_interfaces/include/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces/srv
+[18.351s] -- Installing: /home/haodong/Swarm_Module/Swarm_Module_ws/install/dynamixel_sdk_custom_interfaces/include/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces/srv/movement.hpp
+[18.352s] -- Installing: /home/haodong/Swarm_Module/Swarm_Module_ws/install/dynamixel_sdk_custom_interfaces/include/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces/srv/get_position.hpp
+[18.352s] -- Installing: /home/haodong/Swarm_Module/Swarm_Module_ws/install/dynamixel_sdk_custom_interfaces/include/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces/srv/set_twisting.hpp
+[18.352s] -- Installing: /home/haodong/Swarm_Module/Swarm_Module_ws/install/dynamixel_sdk_custom_interfaces/include/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces/srv/set_velocity.hpp
+[18.353s] -- Up-to-date: /home/haodong/Swarm_Module/Swarm_Module_ws/install/dynamixel_sdk_custom_interfaces/include/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces/srv/detail
+[18.353s] -- Installing: /home/haodong/Swarm_Module/Swarm_Module_ws/install/dynamixel_sdk_custom_interfaces/include/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces/srv/detail/movement__struct.hpp
+[18.353s] -- Installing: /home/haodong/Swarm_Module/Swarm_Module_ws/install/dynamixel_sdk_custom_interfaces/include/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces/srv/detail/movement__type_support.hpp
+[18.353s] -- Installing: /home/haodong/Swarm_Module/Swarm_Module_ws/install/dynamixel_sdk_custom_interfaces/include/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces/srv/detail/set_velocity__struct.hpp
+[18.354s] -- Installing: /home/haodong/Swarm_Module/Swarm_Module_ws/install/dynamixel_sdk_custom_interfaces/include/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces/srv/detail/set_twisting__type_support.hpp
+[18.354s] -- Installing: /home/haodong/Swarm_Module/Swarm_Module_ws/install/dynamixel_sdk_custom_interfaces/include/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces/srv/detail/set_twisting__traits.hpp
+[18.354s] -- Installing: /home/haodong/Swarm_Module/Swarm_Module_ws/install/dynamixel_sdk_custom_interfaces/include/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces/srv/detail/set_twisting__builder.hpp
+[18.355s] -- Installing: /home/haodong/Swarm_Module/Swarm_Module_ws/install/dynamixel_sdk_custom_interfaces/include/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces/srv/detail/set_bending__type_support.hpp
+[18.355s] -- Installing: /home/haodong/Swarm_Module/Swarm_Module_ws/install/dynamixel_sdk_custom_interfaces/include/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces/srv/detail/set_extension__builder.hpp
+[18.356s] -- Installing: /home/haodong/Swarm_Module/Swarm_Module_ws/install/dynamixel_sdk_custom_interfaces/include/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces/srv/detail/set_velocity__traits.hpp
+[18.357s] -- Installing: /home/haodong/Swarm_Module/Swarm_Module_ws/install/dynamixel_sdk_custom_interfaces/include/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces/srv/detail/movement__traits.hpp
+[18.357s] -- Installing: /home/haodong/Swarm_Module/Swarm_Module_ws/install/dynamixel_sdk_custom_interfaces/include/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces/srv/detail/get_position__struct.hpp
+[18.358s] -- Installing: /home/haodong/Swarm_Module/Swarm_Module_ws/install/dynamixel_sdk_custom_interfaces/include/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces/srv/detail/get_position__traits.hpp
+[18.358s] -- Installing: /home/haodong/Swarm_Module/Swarm_Module_ws/install/dynamixel_sdk_custom_interfaces/include/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces/srv/detail/get_position__builder.hpp
+[18.358s] -- Installing: /home/haodong/Swarm_Module/Swarm_Module_ws/install/dynamixel_sdk_custom_interfaces/include/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces/srv/detail/movement__builder.hpp
+[18.359s] -- Installing: /home/haodong/Swarm_Module/Swarm_Module_ws/install/dynamixel_sdk_custom_interfaces/include/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces/srv/detail/set_extension__traits.hpp
+[18.359s] -- Installing: /home/haodong/Swarm_Module/Swarm_Module_ws/install/dynamixel_sdk_custom_interfaces/include/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces/srv/detail/set_velocity__type_support.hpp
+[18.359s] -- Installing: /home/haodong/Swarm_Module/Swarm_Module_ws/install/dynamixel_sdk_custom_interfaces/include/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces/srv/detail/get_position__type_support.hpp
+[18.359s] -- Installing: /home/haodong/Swarm_Module/Swarm_Module_ws/install/dynamixel_sdk_custom_interfaces/include/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces/srv/detail/set_bending__traits.hpp
+[18.359s] -- Installing: /home/haodong/Swarm_Module/Swarm_Module_ws/install/dynamixel_sdk_custom_interfaces/include/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces/srv/detail/set_bending__struct.hpp
+[18.360s] -- Installing: /home/haodong/Swarm_Module/Swarm_Module_ws/install/dynamixel_sdk_custom_interfaces/include/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces/srv/detail/set_twisting__struct.hpp
+[18.360s] -- Installing: /home/haodong/Swarm_Module/Swarm_Module_ws/install/dynamixel_sdk_custom_interfaces/include/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces/srv/detail/set_velocity__builder.hpp
+[18.360s] -- Installing: /home/haodong/Swarm_Module/Swarm_Module_ws/install/dynamixel_sdk_custom_interfaces/include/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces/srv/detail/set_extension__struct.hpp
+[18.360s] -- Installing: /home/haodong/Swarm_Module/Swarm_Module_ws/install/dynamixel_sdk_custom_interfaces/include/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces/srv/detail/set_extension__type_support.hpp
+[18.360s] -- Installing: /home/haodong/Swarm_Module/Swarm_Module_ws/install/dynamixel_sdk_custom_interfaces/include/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces/srv/detail/set_bending__builder.hpp
+[18.361s] -- Installing: /home/haodong/Swarm_Module/Swarm_Module_ws/install/dynamixel_sdk_custom_interfaces/include/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces/srv/set_bending.hpp
+[18.361s] -- Installing: /home/haodong/Swarm_Module/Swarm_Module_ws/install/dynamixel_sdk_custom_interfaces/include/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces/srv/set_extension.hpp
+[18.361s] -- Up-to-date: /home/haodong/Swarm_Module/Swarm_Module_ws/install/dynamixel_sdk_custom_interfaces/include/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces
+[18.361s] -- Up-to-date: /home/haodong/Swarm_Module/Swarm_Module_ws/install/dynamixel_sdk_custom_interfaces/include/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces/msg
+[18.362s] -- Installing: /home/haodong/Swarm_Module/Swarm_Module_ws/install/dynamixel_sdk_custom_interfaces/include/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[18.362s] -- Up-to-date: /home/haodong/Swarm_Module/Swarm_Module_ws/install/dynamixel_sdk_custom_interfaces/include/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces/msg/detail
+[18.362s] -- Installing: /home/haodong/Swarm_Module/Swarm_Module_ws/install/dynamixel_sdk_custom_interfaces/include/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces/msg/detail/set_mode__rosidl_typesupport_fastrtps_cpp.hpp
+[18.362s] -- Installing: /home/haodong/Swarm_Module/Swarm_Module_ws/install/dynamixel_sdk_custom_interfaces/include/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces/msg/detail/rolling__rosidl_typesupport_fastrtps_cpp.hpp
+[18.362s] -- Installing: /home/haodong/Swarm_Module/Swarm_Module_ws/install/dynamixel_sdk_custom_interfaces/include/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces/msg/detail/set_position__rosidl_typesupport_fastrtps_cpp.hpp
+[18.363s] -- Installing: /home/haodong/Swarm_Module/Swarm_Module_ws/install/dynamixel_sdk_custom_interfaces/include/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces/msg/detail/dds_fastrtps
+[18.363s] -- Up-to-date: /home/haodong/Swarm_Module/Swarm_Module_ws/install/dynamixel_sdk_custom_interfaces/include/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces/srv
+[18.363s] -- Up-to-date: /home/haodong/Swarm_Module/Swarm_Module_ws/install/dynamixel_sdk_custom_interfaces/include/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces/srv/detail
+[18.363s] -- Installing: /home/haodong/Swarm_Module/Swarm_Module_ws/install/dynamixel_sdk_custom_interfaces/include/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces/srv/detail/set_velocity__rosidl_typesupport_fastrtps_cpp.hpp
+[18.363s] -- Installing: /home/haodong/Swarm_Module/Swarm_Module_ws/install/dynamixel_sdk_custom_interfaces/include/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces/srv/detail/set_twisting__rosidl_typesupport_fastrtps_cpp.hpp
+[18.364s] -- Installing: /home/haodong/Swarm_Module/Swarm_Module_ws/install/dynamixel_sdk_custom_interfaces/include/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces/srv/detail/set_extension__rosidl_typesupport_fastrtps_cpp.hpp
+[18.364s] -- Installing: /home/haodong/Swarm_Module/Swarm_Module_ws/install/dynamixel_sdk_custom_interfaces/include/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces/srv/detail/get_position__rosidl_typesupport_fastrtps_cpp.hpp
+[18.364s] -- Installing: /home/haodong/Swarm_Module/Swarm_Module_ws/install/dynamixel_sdk_custom_interfaces/include/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces/srv/detail/movement__rosidl_typesupport_fastrtps_cpp.hpp
+[18.364s] -- Installing: /home/haodong/Swarm_Module/Swarm_Module_ws/install/dynamixel_sdk_custom_interfaces/include/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces/srv/detail/set_bending__rosidl_typesupport_fastrtps_cpp.hpp
+[18.364s] -- Installing: /home/haodong/Swarm_Module/Swarm_Module_ws/install/dynamixel_sdk_custom_interfaces/include/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces/srv/detail/dds_fastrtps
+[18.365s] -- Installing: /home/haodong/Swarm_Module/Swarm_Module_ws/install/dynamixel_sdk_custom_interfaces/lib/libdynamixel_sdk_custom_interfaces__rosidl_typesupport_fastrtps_cpp.so
+[18.367s] -- Set non-toolchain portion of runtime path of "/home/haodong/Swarm_Module/Swarm_Module_ws/install/dynamixel_sdk_custom_interfaces/lib/libdynamixel_sdk_custom_interfaces__rosidl_typesupport_fastrtps_cpp.so" to ""
+[18.367s] -- Up-to-date: /home/haodong/Swarm_Module/Swarm_Module_ws/install/dynamixel_sdk_custom_interfaces/include/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces
+[18.367s] -- Up-to-date: /home/haodong/Swarm_Module/Swarm_Module_ws/install/dynamixel_sdk_custom_interfaces/include/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces/msg
+[18.367s] -- Installing: /home/haodong/Swarm_Module/Swarm_Module_ws/install/dynamixel_sdk_custom_interfaces/include/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[18.368s] -- Up-to-date: /home/haodong/Swarm_Module/Swarm_Module_ws/install/dynamixel_sdk_custom_interfaces/include/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces/msg/detail
+[18.368s] -- Installing: /home/haodong/Swarm_Module/Swarm_Module_ws/install/dynamixel_sdk_custom_interfaces/include/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces/msg/detail/set_position__type_support.c
+[18.368s] -- Installing: /home/haodong/Swarm_Module/Swarm_Module_ws/install/dynamixel_sdk_custom_interfaces/include/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces/msg/detail/set_position__rosidl_typesupport_introspection_c.h
+[18.368s] -- Installing: /home/haodong/Swarm_Module/Swarm_Module_ws/install/dynamixel_sdk_custom_interfaces/include/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces/msg/detail/rolling__rosidl_typesupport_introspection_c.h
+[18.368s] -- Installing: /home/haodong/Swarm_Module/Swarm_Module_ws/install/dynamixel_sdk_custom_interfaces/include/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces/msg/detail/set_mode__rosidl_typesupport_introspection_c.h
+[18.368s] -- Installing: /home/haodong/Swarm_Module/Swarm_Module_ws/install/dynamixel_sdk_custom_interfaces/include/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces/msg/detail/set_mode__type_support.c
+[18.369s] -- Installing: /home/haodong/Swarm_Module/Swarm_Module_ws/install/dynamixel_sdk_custom_interfaces/include/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces/msg/detail/rolling__type_support.c
+[18.369s] -- Up-to-date: /home/haodong/Swarm_Module/Swarm_Module_ws/install/dynamixel_sdk_custom_interfaces/include/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces/srv
+[18.369s] -- Up-to-date: /home/haodong/Swarm_Module/Swarm_Module_ws/install/dynamixel_sdk_custom_interfaces/include/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces/srv/detail
+[18.369s] -- Installing: /home/haodong/Swarm_Module/Swarm_Module_ws/install/dynamixel_sdk_custom_interfaces/include/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces/srv/detail/set_bending__type_support.c
+[18.369s] -- Installing: /home/haodong/Swarm_Module/Swarm_Module_ws/install/dynamixel_sdk_custom_interfaces/include/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces/srv/detail/set_velocity__rosidl_typesupport_introspection_c.h
+[18.369s] -- Installing: /home/haodong/Swarm_Module/Swarm_Module_ws/install/dynamixel_sdk_custom_interfaces/include/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces/srv/detail/set_twisting__type_support.c
+[18.369s] -- Installing: /home/haodong/Swarm_Module/Swarm_Module_ws/install/dynamixel_sdk_custom_interfaces/include/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces/srv/detail/set_bending__rosidl_typesupport_introspection_c.h
+[18.370s] -- Installing: /home/haodong/Swarm_Module/Swarm_Module_ws/install/dynamixel_sdk_custom_interfaces/include/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces/srv/detail/get_position__rosidl_typesupport_introspection_c.h
+[18.370s] -- Installing: /home/haodong/Swarm_Module/Swarm_Module_ws/install/dynamixel_sdk_custom_interfaces/include/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces/srv/detail/movement__rosidl_typesupport_introspection_c.h
+[18.370s] -- Installing: /home/haodong/Swarm_Module/Swarm_Module_ws/install/dynamixel_sdk_custom_interfaces/include/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces/srv/detail/set_velocity__type_support.c
+[18.370s] -- Installing: /home/haodong/Swarm_Module/Swarm_Module_ws/install/dynamixel_sdk_custom_interfaces/include/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces/srv/detail/set_extension__type_support.c
+[18.370s] -- Installing: /home/haodong/Swarm_Module/Swarm_Module_ws/install/dynamixel_sdk_custom_interfaces/include/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces/srv/detail/set_twisting__rosidl_typesupport_introspection_c.h
+[18.371s] -- Installing: /home/haodong/Swarm_Module/Swarm_Module_ws/install/dynamixel_sdk_custom_interfaces/include/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces/srv/detail/movement__type_support.c
+[18.371s] -- Installing: /home/haodong/Swarm_Module/Swarm_Module_ws/install/dynamixel_sdk_custom_interfaces/include/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces/srv/detail/set_extension__rosidl_typesupport_introspection_c.h
+[18.371s] -- Installing: /home/haodong/Swarm_Module/Swarm_Module_ws/install/dynamixel_sdk_custom_interfaces/include/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces/srv/detail/get_position__type_support.c
+[18.372s] -- Installing: /home/haodong/Swarm_Module/Swarm_Module_ws/install/dynamixel_sdk_custom_interfaces/lib/libdynamixel_sdk_custom_interfaces__rosidl_typesupport_introspection_c.so
+[18.373s] -- Set non-toolchain portion of runtime path of "/home/haodong/Swarm_Module/Swarm_Module_ws/install/dynamixel_sdk_custom_interfaces/lib/libdynamixel_sdk_custom_interfaces__rosidl_typesupport_introspection_c.so" to ""
+[18.373s] -- Installing: /home/haodong/Swarm_Module/Swarm_Module_ws/install/dynamixel_sdk_custom_interfaces/lib/libdynamixel_sdk_custom_interfaces__rosidl_typesupport_c.so
+[18.374s] -- Set non-toolchain portion of runtime path of "/home/haodong/Swarm_Module/Swarm_Module_ws/install/dynamixel_sdk_custom_interfaces/lib/libdynamixel_sdk_custom_interfaces__rosidl_typesupport_c.so" to ""
+[18.374s] -- Up-to-date: /home/haodong/Swarm_Module/Swarm_Module_ws/install/dynamixel_sdk_custom_interfaces/include/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces
+[18.374s] -- Up-to-date: /home/haodong/Swarm_Module/Swarm_Module_ws/install/dynamixel_sdk_custom_interfaces/include/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces/msg
+[18.374s] -- Up-to-date: /home/haodong/Swarm_Module/Swarm_Module_ws/install/dynamixel_sdk_custom_interfaces/include/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces/msg/detail
+[18.374s] -- Installing: /home/haodong/Swarm_Module/Swarm_Module_ws/install/dynamixel_sdk_custom_interfaces/include/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces/msg/detail/rolling__type_support.cpp
+[18.374s] -- Installing: /home/haodong/Swarm_Module/Swarm_Module_ws/install/dynamixel_sdk_custom_interfaces/include/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces/msg/detail/set_position__type_support.cpp
+[18.375s] -- Installing: /home/haodong/Swarm_Module/Swarm_Module_ws/install/dynamixel_sdk_custom_interfaces/include/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces/msg/detail/rolling__rosidl_typesupport_introspection_cpp.hpp
+[18.375s] -- Installing: /home/haodong/Swarm_Module/Swarm_Module_ws/install/dynamixel_sdk_custom_interfaces/include/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces/msg/detail/set_mode__type_support.cpp
+[18.375s] -- Installing: /home/haodong/Swarm_Module/Swarm_Module_ws/install/dynamixel_sdk_custom_interfaces/include/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces/msg/detail/set_position__rosidl_typesupport_introspection_cpp.hpp
+[18.375s] -- Installing: /home/haodong/Swarm_Module/Swarm_Module_ws/install/dynamixel_sdk_custom_interfaces/include/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces/msg/detail/set_mode__rosidl_typesupport_introspection_cpp.hpp
+[18.375s] -- Up-to-date: /home/haodong/Swarm_Module/Swarm_Module_ws/install/dynamixel_sdk_custom_interfaces/include/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces/srv
+[18.375s] -- Up-to-date: /home/haodong/Swarm_Module/Swarm_Module_ws/install/dynamixel_sdk_custom_interfaces/include/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces/srv/detail
+[18.375s] -- Installing: /home/haodong/Swarm_Module/Swarm_Module_ws/install/dynamixel_sdk_custom_interfaces/include/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces/srv/detail/set_twisting__rosidl_typesupport_introspection_cpp.hpp
+[18.376s] -- Installing: /home/haodong/Swarm_Module/Swarm_Module_ws/install/dynamixel_sdk_custom_interfaces/include/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces/srv/detail/movement__type_support.cpp
+[18.376s] -- Installing: /home/haodong/Swarm_Module/Swarm_Module_ws/install/dynamixel_sdk_custom_interfaces/include/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces/srv/detail/get_position__type_support.cpp
+[18.376s] -- Installing: /home/haodong/Swarm_Module/Swarm_Module_ws/install/dynamixel_sdk_custom_interfaces/include/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces/srv/detail/set_velocity__rosidl_typesupport_introspection_cpp.hpp
+[18.376s] -- Installing: /home/haodong/Swarm_Module/Swarm_Module_ws/install/dynamixel_sdk_custom_interfaces/include/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces/srv/detail/set_velocity__type_support.cpp
+[18.376s] -- Installing: /home/haodong/Swarm_Module/Swarm_Module_ws/install/dynamixel_sdk_custom_interfaces/include/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces/srv/detail/movement__rosidl_typesupport_introspection_cpp.hpp
+[18.376s] -- Installing: /home/haodong/Swarm_Module/Swarm_Module_ws/install/dynamixel_sdk_custom_interfaces/include/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces/srv/detail/get_position__rosidl_typesupport_introspection_cpp.hpp
+[18.376s] -- Installing: /home/haodong/Swarm_Module/Swarm_Module_ws/install/dynamixel_sdk_custom_interfaces/include/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces/srv/detail/set_bending__type_support.cpp
+[18.377s] -- Installing: /home/haodong/Swarm_Module/Swarm_Module_ws/install/dynamixel_sdk_custom_interfaces/include/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces/srv/detail/set_extension__type_support.cpp
+[18.377s] -- Installing: /home/haodong/Swarm_Module/Swarm_Module_ws/install/dynamixel_sdk_custom_interfaces/include/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces/srv/detail/set_extension__rosidl_typesupport_introspection_cpp.hpp
+[18.377s] -- Installing: /home/haodong/Swarm_Module/Swarm_Module_ws/install/dynamixel_sdk_custom_interfaces/include/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces/srv/detail/set_bending__rosidl_typesupport_introspection_cpp.hpp
+[18.378s] -- Installing: /home/haodong/Swarm_Module/Swarm_Module_ws/install/dynamixel_sdk_custom_interfaces/include/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces/srv/detail/set_twisting__type_support.cpp
+[18.378s] -- Installing: /home/haodong/Swarm_Module/Swarm_Module_ws/install/dynamixel_sdk_custom_interfaces/lib/libdynamixel_sdk_custom_interfaces__rosidl_typesupport_introspection_cpp.so
+[18.379s] -- Set non-toolchain portion of runtime path of "/home/haodong/Swarm_Module/Swarm_Module_ws/install/dynamixel_sdk_custom_interfaces/lib/libdynamixel_sdk_custom_interfaces__rosidl_typesupport_introspection_cpp.so" to ""
+[18.379s] -- Installing: /home/haodong/Swarm_Module/Swarm_Module_ws/install/dynamixel_sdk_custom_interfaces/lib/libdynamixel_sdk_custom_interfaces__rosidl_typesupport_cpp.so
+[18.380s] -- Set non-toolchain portion of runtime path of "/home/haodong/Swarm_Module/Swarm_Module_ws/install/dynamixel_sdk_custom_interfaces/lib/libdynamixel_sdk_custom_interfaces__rosidl_typesupport_cpp.so" to ""
+[18.380s] -- Installing: /home/haodong/Swarm_Module/Swarm_Module_ws/install/dynamixel_sdk_custom_interfaces/share/dynamixel_sdk_custom_interfaces/environment/pythonpath.sh
+[18.380s] -- Installing: /home/haodong/Swarm_Module/Swarm_Module_ws/install/dynamixel_sdk_custom_interfaces/share/dynamixel_sdk_custom_interfaces/environment/pythonpath.dsv
+[18.381s] -- Installing: /home/haodong/Swarm_Module/Swarm_Module_ws/install/dynamixel_sdk_custom_interfaces/lib/python3.12/site-packages/dynamixel_sdk_custom_interfaces-3.7.60-py3.12.egg-info
+[18.381s] -- Installing: /home/haodong/Swarm_Module/Swarm_Module_ws/install/dynamixel_sdk_custom_interfaces/lib/python3.12/site-packages/dynamixel_sdk_custom_interfaces-3.7.60-py3.12.egg-info/dependency_links.txt
+[18.381s] -- Installing: /home/haodong/Swarm_Module/Swarm_Module_ws/install/dynamixel_sdk_custom_interfaces/lib/python3.12/site-packages/dynamixel_sdk_custom_interfaces-3.7.60-py3.12.egg-info/PKG-INFO
+[18.381s] -- Installing: /home/haodong/Swarm_Module/Swarm_Module_ws/install/dynamixel_sdk_custom_interfaces/lib/python3.12/site-packages/dynamixel_sdk_custom_interfaces-3.7.60-py3.12.egg-info/SOURCES.txt
+[18.381s] -- Installing: /home/haodong/Swarm_Module/Swarm_Module_ws/install/dynamixel_sdk_custom_interfaces/lib/python3.12/site-packages/dynamixel_sdk_custom_interfaces-3.7.60-py3.12.egg-info/top_level.txt
+[18.381s] -- Installing: /home/haodong/Swarm_Module/Swarm_Module_ws/install/dynamixel_sdk_custom_interfaces/lib/python3.12/site-packages/dynamixel_sdk_custom_interfaces
+[18.382s] -- Installing: /home/haodong/Swarm_Module/Swarm_Module_ws/install/dynamixel_sdk_custom_interfaces/lib/python3.12/site-packages/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces_s__rosidl_typesupport_fastrtps_c.so
+[18.382s] -- Installing: /home/haodong/Swarm_Module/Swarm_Module_ws/install/dynamixel_sdk_custom_interfaces/lib/python3.12/site-packages/dynamixel_sdk_custom_interfaces/msg
+[18.382s] -- Installing: /home/haodong/Swarm_Module/Swarm_Module_ws/install/dynamixel_sdk_custom_interfaces/lib/python3.12/site-packages/dynamixel_sdk_custom_interfaces/msg/_set_position_s.c
+[18.382s] -- Installing: /home/haodong/Swarm_Module/Swarm_Module_ws/install/dynamixel_sdk_custom_interfaces/lib/python3.12/site-packages/dynamixel_sdk_custom_interfaces/msg/_rolling.py
+[18.382s] -- Installing: /home/haodong/Swarm_Module/Swarm_Module_ws/install/dynamixel_sdk_custom_interfaces/lib/python3.12/site-packages/dynamixel_sdk_custom_interfaces/msg/_set_mode_s.c
+[18.382s] -- Installing: /home/haodong/Swarm_Module/Swarm_Module_ws/install/dynamixel_sdk_custom_interfaces/lib/python3.12/site-packages/dynamixel_sdk_custom_interfaces/msg/_set_position.py
+[18.382s] -- Installing: /home/haodong/Swarm_Module/Swarm_Module_ws/install/dynamixel_sdk_custom_interfaces/lib/python3.12/site-packages/dynamixel_sdk_custom_interfaces/msg/_set_mode.py
+[18.383s] -- Installing: /home/haodong/Swarm_Module/Swarm_Module_ws/install/dynamixel_sdk_custom_interfaces/lib/python3.12/site-packages/dynamixel_sdk_custom_interfaces/msg/__init__.py
+[18.383s] -- Installing: /home/haodong/Swarm_Module/Swarm_Module_ws/install/dynamixel_sdk_custom_interfaces/lib/python3.12/site-packages/dynamixel_sdk_custom_interfaces/msg/_rolling_s.c
+[18.383s] -- Installing: /home/haodong/Swarm_Module/Swarm_Module_ws/install/dynamixel_sdk_custom_interfaces/lib/python3.12/site-packages/dynamixel_sdk_custom_interfaces/srv
+[18.383s] -- Installing: /home/haodong/Swarm_Module/Swarm_Module_ws/install/dynamixel_sdk_custom_interfaces/lib/python3.12/site-packages/dynamixel_sdk_custom_interfaces/srv/_movement.py
+[18.383s] -- Installing: /home/haodong/Swarm_Module/Swarm_Module_ws/install/dynamixel_sdk_custom_interfaces/lib/python3.12/site-packages/dynamixel_sdk_custom_interfaces/srv/_set_velocity.py
+[18.383s] -- Installing: /home/haodong/Swarm_Module/Swarm_Module_ws/install/dynamixel_sdk_custom_interfaces/lib/python3.12/site-packages/dynamixel_sdk_custom_interfaces/srv/_set_extension.py
+[18.384s] -- Installing: /home/haodong/Swarm_Module/Swarm_Module_ws/install/dynamixel_sdk_custom_interfaces/lib/python3.12/site-packages/dynamixel_sdk_custom_interfaces/srv/_get_position.py
+[18.384s] -- Installing: /home/haodong/Swarm_Module/Swarm_Module_ws/install/dynamixel_sdk_custom_interfaces/lib/python3.12/site-packages/dynamixel_sdk_custom_interfaces/srv/_get_position_s.c
+[18.384s] -- Installing: /home/haodong/Swarm_Module/Swarm_Module_ws/install/dynamixel_sdk_custom_interfaces/lib/python3.12/site-packages/dynamixel_sdk_custom_interfaces/srv/_set_bending.py
+[18.384s] -- Installing: /home/haodong/Swarm_Module/Swarm_Module_ws/install/dynamixel_sdk_custom_interfaces/lib/python3.12/site-packages/dynamixel_sdk_custom_interfaces/srv/__init__.py
+[18.384s] -- Installing: /home/haodong/Swarm_Module/Swarm_Module_ws/install/dynamixel_sdk_custom_interfaces/lib/python3.12/site-packages/dynamixel_sdk_custom_interfaces/srv/_set_twisting_s.c
+[18.384s] -- Installing: /home/haodong/Swarm_Module/Swarm_Module_ws/install/dynamixel_sdk_custom_interfaces/lib/python3.12/site-packages/dynamixel_sdk_custom_interfaces/srv/_set_bending_s.c
+[18.385s] -- Installing: /home/haodong/Swarm_Module/Swarm_Module_ws/install/dynamixel_sdk_custom_interfaces/lib/python3.12/site-packages/dynamixel_sdk_custom_interfaces/srv/_set_twisting.py
+[18.385s] -- Installing: /home/haodong/Swarm_Module/Swarm_Module_ws/install/dynamixel_sdk_custom_interfaces/lib/python3.12/site-packages/dynamixel_sdk_custom_interfaces/srv/_set_velocity_s.c
+[18.385s] -- Installing: /home/haodong/Swarm_Module/Swarm_Module_ws/install/dynamixel_sdk_custom_interfaces/lib/python3.12/site-packages/dynamixel_sdk_custom_interfaces/srv/_movement_s.c
+[18.385s] -- Installing: /home/haodong/Swarm_Module/Swarm_Module_ws/install/dynamixel_sdk_custom_interfaces/lib/python3.12/site-packages/dynamixel_sdk_custom_interfaces/srv/_set_extension_s.c
+[18.385s] -- Installing: /home/haodong/Swarm_Module/Swarm_Module_ws/install/dynamixel_sdk_custom_interfaces/lib/python3.12/site-packages/dynamixel_sdk_custom_interfaces/__init__.py
+[18.385s] -- Installing: /home/haodong/Swarm_Module/Swarm_Module_ws/install/dynamixel_sdk_custom_interfaces/lib/python3.12/site-packages/dynamixel_sdk_custom_interfaces/_dynamixel_sdk_custom_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c
+[18.386s] -- Installing: /home/haodong/Swarm_Module/Swarm_Module_ws/install/dynamixel_sdk_custom_interfaces/lib/python3.12/site-packages/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces_s__rosidl_typesupport_c.so
+[18.386s] -- Installing: /home/haodong/Swarm_Module/Swarm_Module_ws/install/dynamixel_sdk_custom_interfaces/lib/python3.12/site-packages/dynamixel_sdk_custom_interfaces/_dynamixel_sdk_custom_interfaces_s.ep.rosidl_typesupport_c.c
+[18.386s] -- Installing: /home/haodong/Swarm_Module/Swarm_Module_ws/install/dynamixel_sdk_custom_interfaces/lib/python3.12/site-packages/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces_s__rosidl_typesupport_introspection_c.so
+[18.386s] -- Installing: /home/haodong/Swarm_Module/Swarm_Module_ws/install/dynamixel_sdk_custom_interfaces/lib/python3.12/site-packages/dynamixel_sdk_custom_interfaces/_dynamixel_sdk_custom_interfaces_s.ep.rosidl_typesupport_introspection_c.c
+[18.468s] Listing '/home/haodong/Swarm_Module/Swarm_Module_ws/install/dynamixel_sdk_custom_interfaces/lib/python3.12/site-packages/dynamixel_sdk_custom_interfaces'...
+[18.468s] Compiling '/home/haodong/Swarm_Module/Swarm_Module_ws/install/dynamixel_sdk_custom_interfaces/lib/python3.12/site-packages/dynamixel_sdk_custom_interfaces/__init__.py'...
+[18.468s] Listing '/home/haodong/Swarm_Module/Swarm_Module_ws/install/dynamixel_sdk_custom_interfaces/lib/python3.12/site-packages/dynamixel_sdk_custom_interfaces/msg'...
+[18.468s] Compiling '/home/haodong/Swarm_Module/Swarm_Module_ws/install/dynamixel_sdk_custom_interfaces/lib/python3.12/site-packages/dynamixel_sdk_custom_interfaces/msg/__init__.py'...
+[18.468s] Compiling '/home/haodong/Swarm_Module/Swarm_Module_ws/install/dynamixel_sdk_custom_interfaces/lib/python3.12/site-packages/dynamixel_sdk_custom_interfaces/msg/_rolling.py'...
+[18.468s] Compiling '/home/haodong/Swarm_Module/Swarm_Module_ws/install/dynamixel_sdk_custom_interfaces/lib/python3.12/site-packages/dynamixel_sdk_custom_interfaces/msg/_set_mode.py'...
+[18.468s] Compiling '/home/haodong/Swarm_Module/Swarm_Module_ws/install/dynamixel_sdk_custom_interfaces/lib/python3.12/site-packages/dynamixel_sdk_custom_interfaces/msg/_set_position.py'...
+[18.468s] Listing '/home/haodong/Swarm_Module/Swarm_Module_ws/install/dynamixel_sdk_custom_interfaces/lib/python3.12/site-packages/dynamixel_sdk_custom_interfaces/srv'...
+[18.468s] Compiling '/home/haodong/Swarm_Module/Swarm_Module_ws/install/dynamixel_sdk_custom_interfaces/lib/python3.12/site-packages/dynamixel_sdk_custom_interfaces/srv/__init__.py'...
+[18.468s] Compiling '/home/haodong/Swarm_Module/Swarm_Module_ws/install/dynamixel_sdk_custom_interfaces/lib/python3.12/site-packages/dynamixel_sdk_custom_interfaces/srv/_get_position.py'...
+[18.468s] Compiling '/home/haodong/Swarm_Module/Swarm_Module_ws/install/dynamixel_sdk_custom_interfaces/lib/python3.12/site-packages/dynamixel_sdk_custom_interfaces/srv/_movement.py'...
+[18.469s] Compiling '/home/haodong/Swarm_Module/Swarm_Module_ws/install/dynamixel_sdk_custom_interfaces/lib/python3.12/site-packages/dynamixel_sdk_custom_interfaces/srv/_set_bending.py'...
+[18.469s] Compiling '/home/haodong/Swarm_Module/Swarm_Module_ws/install/dynamixel_sdk_custom_interfaces/lib/python3.12/site-packages/dynamixel_sdk_custom_interfaces/srv/_set_extension.py'...
+[18.469s] Compiling '/home/haodong/Swarm_Module/Swarm_Module_ws/install/dynamixel_sdk_custom_interfaces/lib/python3.12/site-packages/dynamixel_sdk_custom_interfaces/srv/_set_twisting.py'...
+[18.469s] Compiling '/home/haodong/Swarm_Module/Swarm_Module_ws/install/dynamixel_sdk_custom_interfaces/lib/python3.12/site-packages/dynamixel_sdk_custom_interfaces/srv/_set_velocity.py'...
+[18.475s] -- Installing: /home/haodong/Swarm_Module/Swarm_Module_ws/install/dynamixel_sdk_custom_interfaces/lib/python3.12/site-packages/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces_s__rosidl_typesupport_fastrtps_c.so
+[18.476s] -- Set non-toolchain portion of runtime path of "/home/haodong/Swarm_Module/Swarm_Module_ws/install/dynamixel_sdk_custom_interfaces/lib/python3.12/site-packages/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces_s__rosidl_typesupport_fastrtps_c.so" to ""
+[18.476s] -- Installing: /home/haodong/Swarm_Module/Swarm_Module_ws/install/dynamixel_sdk_custom_interfaces/lib/python3.12/site-packages/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces_s__rosidl_typesupport_introspection_c.so
+[18.477s] -- Set non-toolchain portion of runtime path of "/home/haodong/Swarm_Module/Swarm_Module_ws/install/dynamixel_sdk_custom_interfaces/lib/python3.12/site-packages/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces_s__rosidl_typesupport_introspection_c.so" to ""
+[18.477s] -- Installing: /home/haodong/Swarm_Module/Swarm_Module_ws/install/dynamixel_sdk_custom_interfaces/lib/python3.12/site-packages/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces_s__rosidl_typesupport_c.so
+[18.478s] -- Set non-toolchain portion of runtime path of "/home/haodong/Swarm_Module/Swarm_Module_ws/install/dynamixel_sdk_custom_interfaces/lib/python3.12/site-packages/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces_s__rosidl_typesupport_c.so" to ""
+[18.478s] -- Installing: /home/haodong/Swarm_Module/Swarm_Module_ws/install/dynamixel_sdk_custom_interfaces/lib/libdynamixel_sdk_custom_interfaces__rosidl_generator_py.so
+[18.478s] -- Set non-toolchain portion of runtime path of "/home/haodong/Swarm_Module/Swarm_Module_ws/install/dynamixel_sdk_custom_interfaces/lib/libdynamixel_sdk_custom_interfaces__rosidl_generator_py.so" to ""
+[18.478s] -- Installing: /home/haodong/Swarm_Module/Swarm_Module_ws/install/dynamixel_sdk_custom_interfaces/share/dynamixel_sdk_custom_interfaces/msg/SetPosition.idl
+[18.479s] -- Installing: /home/haodong/Swarm_Module/Swarm_Module_ws/install/dynamixel_sdk_custom_interfaces/share/dynamixel_sdk_custom_interfaces/msg/Rolling.idl
+[18.479s] -- Installing: /home/haodong/Swarm_Module/Swarm_Module_ws/install/dynamixel_sdk_custom_interfaces/share/dynamixel_sdk_custom_interfaces/msg/SetMode.idl
+[18.479s] -- Installing: /home/haodong/Swarm_Module/Swarm_Module_ws/install/dynamixel_sdk_custom_interfaces/share/dynamixel_sdk_custom_interfaces/srv/GetPosition.idl
+[18.479s] -- Installing: /home/haodong/Swarm_Module/Swarm_Module_ws/install/dynamixel_sdk_custom_interfaces/share/dynamixel_sdk_custom_interfaces/srv/SetVelocity.idl
+[18.479s] -- Installing: /home/haodong/Swarm_Module/Swarm_Module_ws/install/dynamixel_sdk_custom_interfaces/share/dynamixel_sdk_custom_interfaces/srv/SetExtension.idl
+[18.480s] -- Installing: /home/haodong/Swarm_Module/Swarm_Module_ws/install/dynamixel_sdk_custom_interfaces/share/dynamixel_sdk_custom_interfaces/srv/SetBending.idl
+[18.480s] -- Installing: /home/haodong/Swarm_Module/Swarm_Module_ws/install/dynamixel_sdk_custom_interfaces/share/dynamixel_sdk_custom_interfaces/srv/Movement.idl
+[18.480s] -- Installing: /home/haodong/Swarm_Module/Swarm_Module_ws/install/dynamixel_sdk_custom_interfaces/share/dynamixel_sdk_custom_interfaces/srv/SetTwisting.idl
+[18.480s] -- Installing: /home/haodong/Swarm_Module/Swarm_Module_ws/install/dynamixel_sdk_custom_interfaces/share/dynamixel_sdk_custom_interfaces/msg/SetPosition.msg
+[18.480s] -- Installing: /home/haodong/Swarm_Module/Swarm_Module_ws/install/dynamixel_sdk_custom_interfaces/share/dynamixel_sdk_custom_interfaces/msg/Rolling.msg
+[18.481s] -- Installing: /home/haodong/Swarm_Module/Swarm_Module_ws/install/dynamixel_sdk_custom_interfaces/share/dynamixel_sdk_custom_interfaces/msg/SetMode.msg
+[18.481s] -- Installing: /home/haodong/Swarm_Module/Swarm_Module_ws/install/dynamixel_sdk_custom_interfaces/share/dynamixel_sdk_custom_interfaces/srv/GetPosition.srv
+[18.481s] -- Installing: /home/haodong/Swarm_Module/Swarm_Module_ws/install/dynamixel_sdk_custom_interfaces/share/dynamixel_sdk_custom_interfaces/srv/SetVelocity.srv
+[18.481s] -- Installing: /home/haodong/Swarm_Module/Swarm_Module_ws/install/dynamixel_sdk_custom_interfaces/share/dynamixel_sdk_custom_interfaces/srv/SetExtension.srv
+[18.481s] -- Installing: /home/haodong/Swarm_Module/Swarm_Module_ws/install/dynamixel_sdk_custom_interfaces/share/dynamixel_sdk_custom_interfaces/srv/SetBending.srv
+[18.482s] -- Installing: /home/haodong/Swarm_Module/Swarm_Module_ws/install/dynamixel_sdk_custom_interfaces/share/dynamixel_sdk_custom_interfaces/srv/Movement.srv
+[18.482s] -- Installing: /home/haodong/Swarm_Module/Swarm_Module_ws/install/dynamixel_sdk_custom_interfaces/share/dynamixel_sdk_custom_interfaces/srv/SetTwisting.srv
+[18.482s] -- Installing: /home/haodong/Swarm_Module/Swarm_Module_ws/install/dynamixel_sdk_custom_interfaces/share/ament_index/resource_index/package_run_dependencies/dynamixel_sdk_custom_interfaces
+[18.482s] -- Installing: /home/haodong/Swarm_Module/Swarm_Module_ws/install/dynamixel_sdk_custom_interfaces/share/ament_index/resource_index/parent_prefix_path/dynamixel_sdk_custom_interfaces
+[18.482s] -- Installing: /home/haodong/Swarm_Module/Swarm_Module_ws/install/dynamixel_sdk_custom_interfaces/share/dynamixel_sdk_custom_interfaces/environment/ament_prefix_path.sh
+[18.483s] -- Installing: /home/haodong/Swarm_Module/Swarm_Module_ws/install/dynamixel_sdk_custom_interfaces/share/dynamixel_sdk_custom_interfaces/environment/ament_prefix_path.dsv
+[18.483s] -- Installing: /home/haodong/Swarm_Module/Swarm_Module_ws/install/dynamixel_sdk_custom_interfaces/share/dynamixel_sdk_custom_interfaces/environment/path.sh
+[18.483s] -- Installing: /home/haodong/Swarm_Module/Swarm_Module_ws/install/dynamixel_sdk_custom_interfaces/share/dynamixel_sdk_custom_interfaces/environment/path.dsv
+[18.483s] -- Installing: /home/haodong/Swarm_Module/Swarm_Module_ws/install/dynamixel_sdk_custom_interfaces/share/dynamixel_sdk_custom_interfaces/local_setup.bash
+[18.484s] -- Installing: /home/haodong/Swarm_Module/Swarm_Module_ws/install/dynamixel_sdk_custom_interfaces/share/dynamixel_sdk_custom_interfaces/local_setup.sh
+[18.484s] -- Installing: /home/haodong/Swarm_Module/Swarm_Module_ws/install/dynamixel_sdk_custom_interfaces/share/dynamixel_sdk_custom_interfaces/local_setup.zsh
+[18.484s] -- Installing: /home/haodong/Swarm_Module/Swarm_Module_ws/install/dynamixel_sdk_custom_interfaces/share/dynamixel_sdk_custom_interfaces/local_setup.dsv
+[18.484s] -- Installing: /home/haodong/Swarm_Module/Swarm_Module_ws/install/dynamixel_sdk_custom_interfaces/share/dynamixel_sdk_custom_interfaces/package.dsv
+[18.484s] -- Installing: /home/haodong/Swarm_Module/Swarm_Module_ws/install/dynamixel_sdk_custom_interfaces/share/ament_index/resource_index/packages/dynamixel_sdk_custom_interfaces
+[18.485s] -- Installing: /home/haodong/Swarm_Module/Swarm_Module_ws/install/dynamixel_sdk_custom_interfaces/share/dynamixel_sdk_custom_interfaces/cmake/export_dynamixel_sdk_custom_interfaces__rosidl_generator_cExport.cmake
+[18.485s] -- Installing: /home/haodong/Swarm_Module/Swarm_Module_ws/install/dynamixel_sdk_custom_interfaces/share/dynamixel_sdk_custom_interfaces/cmake/export_dynamixel_sdk_custom_interfaces__rosidl_generator_cExport-noconfig.cmake
+[18.485s] -- Installing: /home/haodong/Swarm_Module/Swarm_Module_ws/install/dynamixel_sdk_custom_interfaces/share/dynamixel_sdk_custom_interfaces/cmake/export_dynamixel_sdk_custom_interfaces__rosidl_typesupport_fastrtps_cExport.cmake
+[18.485s] -- Installing: /home/haodong/Swarm_Module/Swarm_Module_ws/install/dynamixel_sdk_custom_interfaces/share/dynamixel_sdk_custom_interfaces/cmake/export_dynamixel_sdk_custom_interfaces__rosidl_typesupport_fastrtps_cExport-noconfig.cmake
+[18.486s] -- Installing: /home/haodong/Swarm_Module/Swarm_Module_ws/install/dynamixel_sdk_custom_interfaces/share/dynamixel_sdk_custom_interfaces/cmake/export_dynamixel_sdk_custom_interfaces__rosidl_generator_cppExport.cmake
+[18.486s] -- Installing: /home/haodong/Swarm_Module/Swarm_Module_ws/install/dynamixel_sdk_custom_interfaces/share/dynamixel_sdk_custom_interfaces/cmake/export_dynamixel_sdk_custom_interfaces__rosidl_typesupport_fastrtps_cppExport.cmake
+[18.486s] -- Installing: /home/haodong/Swarm_Module/Swarm_Module_ws/install/dynamixel_sdk_custom_interfaces/share/dynamixel_sdk_custom_interfaces/cmake/export_dynamixel_sdk_custom_interfaces__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake
+[18.486s] -- Installing: /home/haodong/Swarm_Module/Swarm_Module_ws/install/dynamixel_sdk_custom_interfaces/share/dynamixel_sdk_custom_interfaces/cmake/dynamixel_sdk_custom_interfaces__rosidl_typesupport_introspection_cExport.cmake
+[18.487s] -- Installing: /home/haodong/Swarm_Module/Swarm_Module_ws/install/dynamixel_sdk_custom_interfaces/share/dynamixel_sdk_custom_interfaces/cmake/dynamixel_sdk_custom_interfaces__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[18.487s] -- Installing: /home/haodong/Swarm_Module/Swarm_Module_ws/install/dynamixel_sdk_custom_interfaces/share/dynamixel_sdk_custom_interfaces/cmake/dynamixel_sdk_custom_interfaces__rosidl_typesupport_cExport.cmake
+[18.487s] -- Installing: /home/haodong/Swarm_Module/Swarm_Module_ws/install/dynamixel_sdk_custom_interfaces/share/dynamixel_sdk_custom_interfaces/cmake/dynamixel_sdk_custom_interfaces__rosidl_typesupport_cExport-noconfig.cmake
+[18.487s] -- Installing: /home/haodong/Swarm_Module/Swarm_Module_ws/install/dynamixel_sdk_custom_interfaces/share/dynamixel_sdk_custom_interfaces/cmake/dynamixel_sdk_custom_interfaces__rosidl_typesupport_introspection_cppExport.cmake
+[18.487s] -- Installing: /home/haodong/Swarm_Module/Swarm_Module_ws/install/dynamixel_sdk_custom_interfaces/share/dynamixel_sdk_custom_interfaces/cmake/dynamixel_sdk_custom_interfaces__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[18.488s] -- Installing: /home/haodong/Swarm_Module/Swarm_Module_ws/install/dynamixel_sdk_custom_interfaces/share/dynamixel_sdk_custom_interfaces/cmake/dynamixel_sdk_custom_interfaces__rosidl_typesupport_cppExport.cmake
+[18.488s] -- Installing: /home/haodong/Swarm_Module/Swarm_Module_ws/install/dynamixel_sdk_custom_interfaces/share/dynamixel_sdk_custom_interfaces/cmake/dynamixel_sdk_custom_interfaces__rosidl_typesupport_cppExport-noconfig.cmake
+[18.488s] -- Installing: /home/haodong/Swarm_Module/Swarm_Module_ws/install/dynamixel_sdk_custom_interfaces/share/dynamixel_sdk_custom_interfaces/cmake/export_dynamixel_sdk_custom_interfaces__rosidl_generator_pyExport.cmake
+[18.488s] -- Installing: /home/haodong/Swarm_Module/Swarm_Module_ws/install/dynamixel_sdk_custom_interfaces/share/dynamixel_sdk_custom_interfaces/cmake/export_dynamixel_sdk_custom_interfaces__rosidl_generator_pyExport-noconfig.cmake
+[18.489s] -- Installing: /home/haodong/Swarm_Module/Swarm_Module_ws/install/dynamixel_sdk_custom_interfaces/share/dynamixel_sdk_custom_interfaces/cmake/rosidl_cmake-extras.cmake
+[18.489s] -- Installing: /home/haodong/Swarm_Module/Swarm_Module_ws/install/dynamixel_sdk_custom_interfaces/share/dynamixel_sdk_custom_interfaces/cmake/ament_cmake_export_dependencies-extras.cmake
+[18.489s] -- Installing: /home/haodong/Swarm_Module/Swarm_Module_ws/install/dynamixel_sdk_custom_interfaces/share/dynamixel_sdk_custom_interfaces/cmake/ament_cmake_export_include_directories-extras.cmake
+[18.489s] -- Installing: /home/haodong/Swarm_Module/Swarm_Module_ws/install/dynamixel_sdk_custom_interfaces/share/dynamixel_sdk_custom_interfaces/cmake/ament_cmake_export_libraries-extras.cmake
+[18.489s] -- Installing: /home/haodong/Swarm_Module/Swarm_Module_ws/install/dynamixel_sdk_custom_interfaces/share/dynamixel_sdk_custom_interfaces/cmake/ament_cmake_export_targets-extras.cmake
+[18.490s] -- Installing: /home/haodong/Swarm_Module/Swarm_Module_ws/install/dynamixel_sdk_custom_interfaces/share/dynamixel_sdk_custom_interfaces/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[18.490s] -- Installing: /home/haodong/Swarm_Module/Swarm_Module_ws/install/dynamixel_sdk_custom_interfaces/share/dynamixel_sdk_custom_interfaces/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[18.490s] -- Installing: /home/haodong/Swarm_Module/Swarm_Module_ws/install/dynamixel_sdk_custom_interfaces/share/dynamixel_sdk_custom_interfaces/cmake/dynamixel_sdk_custom_interfacesConfig.cmake
+[18.490s] -- Installing: /home/haodong/Swarm_Module/Swarm_Module_ws/install/dynamixel_sdk_custom_interfaces/share/dynamixel_sdk_custom_interfaces/cmake/dynamixel_sdk_custom_interfacesConfig-version.cmake
+[18.491s] -- Installing: /home/haodong/Swarm_Module/Swarm_Module_ws/install/dynamixel_sdk_custom_interfaces/share/dynamixel_sdk_custom_interfaces/package.xml
+[18.493s] Invoked command in '/home/haodong/Swarm_Module/Swarm_Module_ws/build/dynamixel_sdk_custom_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/haodong/ws_moveit/install/moveit_configs_utils:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/haodong/Swarm_Module/Swarm_Module_ws/build/dynamixel_sdk_custom_interfaces

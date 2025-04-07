@@ -1,0 +1,22 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from dynamixel_sdk_custom_interfaces/srv/SetBending.srv
+// generated code does not contain a copyright notice
+
+
+module dynamixel_sdk_custom_interfaces {
+  module srv {
+    @verbatim (language="comment", text=
+      "Constants" "\n"
+      "Request")
+    struct SetBending_Request {
+      double bending_range;
+
+      int32 bending_face;
+    };
+    @verbatim (language="comment", text=
+      "Response")
+    struct SetBending_Response {
+      boolean success;
+    };
+  };
+};

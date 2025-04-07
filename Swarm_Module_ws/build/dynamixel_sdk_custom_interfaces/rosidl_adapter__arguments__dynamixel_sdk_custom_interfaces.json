@@ -1,0 +1,14 @@
+{
+  "package_name": "dynamixel_sdk_custom_interfaces",
+  "non_idl_tuples": [
+    "/home/haodong/Swarm_Module/Swarm_Module_ws/src/dynamixel_sdk_custom_interfaces:msg/SetPosition.msg",
+    "/home/haodong/Swarm_Module/Swarm_Module_ws/src/dynamixel_sdk_custom_interfaces:msg/Rolling.msg",
+    "/home/haodong/Swarm_Module/Swarm_Module_ws/src/dynamixel_sdk_custom_interfaces:msg/SetMode.msg",
+    "/home/haodong/Swarm_Module/Swarm_Module_ws/src/dynamixel_sdk_custom_interfaces:srv/GetPosition.srv",
+    "/home/haodong/Swarm_Module/Swarm_Module_ws/src/dynamixel_sdk_custom_interfaces:srv/SetVelocity.srv",
+    "/home/haodong/Swarm_Module/Swarm_Module_ws/src/dynamixel_sdk_custom_interfaces:srv/SetExtension.srv",
+    "/home/haodong/Swarm_Module/Swarm_Module_ws/src/dynamixel_sdk_custom_interfaces:srv/SetBending.srv",
+    "/home/haodong/Swarm_Module/Swarm_Module_ws/src/dynamixel_sdk_custom_interfaces:srv/Movement.srv",
+    "/home/haodong/Swarm_Module/Swarm_Module_ws/src/dynamixel_sdk_custom_interfaces:srv/SetTwisting.srv"
+  ]
+}

@@ -1,0 +1,5 @@
+<launch>
+    <node pkg = "dynamixel_motor" exec="MovementControl"></node>
+    <node pkg = "dynamixel_sdk_examples" exec="read_write_node"></node>
+
+</launch>
